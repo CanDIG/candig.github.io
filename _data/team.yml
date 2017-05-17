@@ -1,0 +1,100 @@
+# Team names, titles and social links
+people:
+- name: Jonathan Dursi
+  pic: 1
+  position: Coordinator
+  social:
+    - title: twitter
+      url: http://www.twitter.com/ljdursi
+    - title: github
+      url: http://github.com/ljdursi
+    - title: stack-overflow
+      url: http://stackoverflow.com/users/463827/jonathan-dursi
+
+- name: Justin Foong
+  pic: 2
+  position: Data Mining
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Neelam Memon
+  pic: 3
+  position: Privacy-Preserving Data Mining
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
+
+- name: David Bujold
+  pic: 1
+  position: Portal Development
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
+
+- name: Bar Parker
+  pic: 2
+  position: Lead Marketer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Baz Petersen
+  pic: 3
+  position: Lead Developer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
+
+- name: Kay Garland
+  pic: 1
+  position: Lead Designer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
+
+- name: Larry Parker
+  pic: 2
+  position: Lead Marketer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Diana Petersen
+  pic: 3
+  position: Lead Developer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
