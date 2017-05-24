@@ -6,6 +6,8 @@
 
 ## Classification
 
+(reference to the paper we're using)
+
 ### ID3
 
 ### Random Forst
