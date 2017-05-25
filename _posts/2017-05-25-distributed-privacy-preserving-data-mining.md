@@ -3,7 +3,7 @@ layout: page
 title: Distributed privacy preserving data mining
 ---
 
-# Distributed privacy preserving data mining
+
 
 
 ## Motivation

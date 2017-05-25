@@ -1,4 +1,9 @@
-# Federated Analysis of the Thousand Genomes Project.
+---
+layout: page
+title: Federated Analysis of the Thousand Genomes Project.
+---
+
+
 
 The [thousand genome project](http://www.internationalgenome.org) was an early large-scale population genomics
 project which sequenced 2504 individuals from a broad range of regions and ancestries, with aligned reads and called
