@@ -5,12 +5,18 @@ subtitle: Blog posts from the CanDIG team
 permalink: blog/index.html
 ---
 
-{% for post in pagninator.posts %}
+<!-- {% for post in site.posts %} -->
+<!-- <h1> {{post.title}} </h1> -->
+
+<!-- {% endfor %} -->
+
+
+{% for post in paginator.posts %}
 <section class="blog-entries">
   {% if post.header-media.size > 0 %}
   <header class="media">
-    {{ post.header-media }}
-  </header>
+    {{post.header-media}}
+  </header
   {% endif %}
   <h1 class="post-title"><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{post.title}}</a></h1>
   <div class="blog-data">
@@ -20,7 +26,6 @@ permalink: blog/index.html
       </div>
       <a class="post-author" href="{% if site.baseurl == "/" %}/author{% else %}{{ site.baseurl }}/author{% endif %}">{{ post.author }}</a>
     </div>
-
     {% if post.tags.size > 0 %}
       <ul class="tags">
         {% for tag in post.tags %}
@@ -28,11 +33,15 @@ permalink: blog/index.html
         {% endfor %}
       </ul>
     {% endif %}
-  </div>
-
   <p class="post-content">{{ post.content | split:"<!-- more -->" | first | strip_html | truncatewords: 85 }}</p>
   <a class="read-more" href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">Continue...</a>
+  </div>
+
+
 </section>
+
+
+
 {% endfor %}
 
 
