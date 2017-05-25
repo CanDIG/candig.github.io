@@ -30,7 +30,7 @@ gems:
 - jekyll-autoprefixer
 - jekyll-paginate
 
-paginate: 6
+paginate: 2
 paginate_path: "/_pages/blog/page:num"
 
 include: [ "_posts", "_pages" ]

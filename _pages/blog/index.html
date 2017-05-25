@@ -2,7 +2,6 @@
 layout: page
 title: CanDIG Blog
 subtitle: Blog posts from the CanDIG team
-permalink: blog/index.html
 ---
 
 <!-- {% for post in site.posts %} -->
@@ -44,6 +43,47 @@ permalink: blog/index.html
 
 {% endfor %}
 
+
+
+
+<!-- {% if paginator.total_pages > 1 %} -->
+<!-- <div class="pagination"> -->
+<!--   {% if paginator.previous_page %} -->
+<!--     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a> -->
+<!--   {% else %} -->
+<!--     <span>&laquo; Prev</span> -->
+<!--   {% endif %} -->
+
+<!--   {% for page in (1..paginator.total_pages) %} -->
+<!--     {% if page == paginator.page %} -->
+<!--       <em>{{ page }}</em> -->
+<!--     {% elsif page == 1 %} -->
+<!--       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a> -->
+<!--     {% else %} -->
+<!--       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a> -->
+<!--     {% endif %} -->
+<!--   {% endfor %} -->
+
+<!--   {% if paginator.next_page %} -->
+<!--     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a> -->
+<!--   {% else %} -->
+<!--     <span>Next &raquo;</span> -->
+<!--   {% endif %} -->
+<!-- </div> -->
+<!-- {% endif %} -->
+<!-- <nav id="pagination"> -->
+<!--     {% if paginator.previous_page %} -->
+<!--       {% if paginator.previous_page == 1 %} -->
+<!--       <a href="/" title="Previous Page">&laquo; Previous</a> -->
+<!--       {% else %} -->
+<!--       <a href="/_pages/blog/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a> -->
+<!--       {% endif %} -->
+<!--     {% endif %} -->
+    
+<!--     {% if paginator.next_page %}  -->
+<!--     <a href="/_pages/blog/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a> -->
+<!--     {% endif %}  -->
+<!--   </nav> -->
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">

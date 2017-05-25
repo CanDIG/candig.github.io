@@ -5,4 +5,4 @@ layout: page
 permalink: architecture.html
 ---
 
-Foo bar baz
+Something something about authentication and authorization. Really just testing to see if this line fills out.
