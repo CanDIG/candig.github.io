@@ -33,7 +33,7 @@ involving large number of co-related queries require large amount of noise to be
 We reserve the term unrelated for any two queries if the outputs by them are from two disjoint data partitions under a data analysis task. The output produced by the data analysis task in such cases gives the privacy loss equal to the maximum of the privacy loss achieved by any of the individual queries. For example, assume that **_q<sub>1</sub>_** and **_q<sub>2</sub>_** are unrelated and produce output with privacy loss **_e<sub>1</sub>_** and **_e<sub>2</sub>_** respectively. The output task will achieve **_max(e<sub>1</sub>, e<sub>2</sub>)_** 
 
 ## Privacy-Preserving Decision Tree Classification over 1000 Genome Data
-For experimentation purposes, we implemented differentially-private decision tree learning algorithms originally presented by Jagannathan **et. al** [ref] under CanDIG. 
+For experimentation purposes, we implemented differentially-private decision tree learning algorithms originally presented by Jagannathan _et. al_ [ref] under CanDIG. 
 
 We report our findings over 1000 Genome data. More specifically, we considered the problem of classifying individuals into one of the given ancestral populations based on the single-neucleotide polymorphisms (SNPs). The SNPs overlapping xenobiotic metabolisim and human pigmentation gene regions e.g. TYR, OCA2, DCT **etc** were considered. It was noticed that not all the SNPs are equally informative and further filteration was therefore performed based on their allele frequencies in each population.   
  
@@ -42,7 +42,9 @@ We report our findings over 1000 Genome data. More specifically, we considered t
 (reference to the paper we're using)
 
 ### ID3
-
+- ID3 Intro: in general with some main steps outlined 
+- How data was ingested (over distributed sites using ga4gh)
+- The steps of how differential privacy was achieved.   
 ### Random Forst
 
 ## Accuracy vs epsilon
