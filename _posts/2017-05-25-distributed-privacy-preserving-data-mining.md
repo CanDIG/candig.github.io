@@ -13,7 +13,7 @@ CanDIG provides an additional layer of privacy that enable to perform different 
 
 With differential privacy, a data user can perform analyses collectively over the available data in a way that lets him glean useful notions about the associated group of individuals as a whole. But anything about a single, specific one of those participants can’t be learned.
 
-CanDIG extends the privacy-preserving solution in two ways. First, it facilitates the choice of **_e_** thereby supporting the use of differential privacy in practice. Second, it supports privacy-preserving data analyses in distributed settings. This is an important requirement in modern biomedicine research since data collected at one site are usually sparse and insufficient to draw significantly reliable scientific conclusions. CanDIG ensures that the required level of privacy be achieved when  analysis be performed collectily over the data partitions residing distributively.   
+CanDIG implements the extension of differential privacy in two ways. First, it facilitates the choice of **_e_** in a more meaningful way thereby simplifying the application of differential privacy in practice. Second, it supports privacy-preserving data analyses in distributed settings. This is an important requirement in modern biomedicine research since data collected at one site are usually sparse and insufficient to draw significantly reliable scientific conclusions. CanDIG ensures that the required level of privacy be achieved when analysis be performed collectily over the data partitions residing distributively.   
 
 ## Why Differential Privacy
 Because it is future proof. Backed by a formal proof, Differential Privacy gives a specified level of assurance that no participant of a data analysis will be affected in privacy perspective irrespective of what other datasets, studies, or information sources are or will become available in future. This also implies that sensitive data can readily be made available for useful analysis without such practices as data usage agreement or data protection plans.      
@@ -24,7 +24,10 @@ The parameter **_e_** gives a way to precisely control and quantify the privacy 
 
 CanDig implements differentially privacy in simple low-level computational constructs that require a data access. This allows the privacy loss over multiple computations be quantified and hence complex data mining can be made in a privacy-preserving way. These data accesses are carried out using laplace mechanism. A laplace mechanism computes the original results from given input and adds random noise from 0-centered laplace distribution. The scale of the distribution is determined by the sensitivity of the computation (i.e. the maximum amount by which the original output changes when a computation is performed over a dataset and a neighbouring dataset) and by the choice of privacy settings **_e_**.    
 
-## Classification
+## Privacy-Preserving Decision Tree Classification over 1000 Genome Data
+We tested our implementation of differential privacy to construct decision tree learning algorithm over 1000 Genome data in a privacy-preserving manner. More specifically, we considered the problem of classifying individuals into one of the given ancestral populations based on the single-neucleotide polymorphisms (SNPs) overlapping xenobiotic metabolisim and human pigmentation gene regions e.g. TYR, OCA2, DCT etc. It was noticed that not all the SNPs equally informative and therefore were selected based on their allele frequencies in each population.  
+ 
+
 
 (reference to the paper we're using)
 
