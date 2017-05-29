@@ -18,6 +18,8 @@ that we can perform a wide range of federated analysis over vertically-partition
 
 ## Genotype matrix API
 
+When implementing the privacy-preserving algorithms using the Python GA4GH API, we found that querying the data was prohibitively slow. In particular, querying variants with a large callset takes a long time. Testing revealed that for 900 calls, it would take ~10s to retrieve 50 variants. To find the cause, a profiler was inserted into the GA4GH Flask server. The majority of time was spent in the convertVariant function. This function converts the variants from pysam objects to google protocol buffer (protobuf) messages. This process creates millions of small objects that takes a long time to process when querying a large callset. Querying variants can be sped up using the C++ version of protobuf, using protobuf serialization and implementing a separate API call to directly return a genotype matrix.
+
 ## Fig 1b
 
 ## Fig 1c
