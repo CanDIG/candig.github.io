@@ -1,100 +1,76 @@
 # Team names, titles and social links
 people:
 - name: Jonathan Dursi
-  pic: 1
-  position: Coordinator
-  social:
-    - title: twitter
-      url: http://www.twitter.com/ljdursi
-    - title: github
-      url: http://github.com/ljdursi
-    - title: stack-overflow
-      url: http://stackoverflow.com/users/463827/jonathan-dursi
+  pic: jonathan_dursi
+  position: Coordinator - Sick Kids
+#  social:
+#    - title: twitter
+#      url: http://www.twitter.com/ljdursi
+#    - title: github
+#      url: http://github.com/ljdursi
+#    - title: stack-overflow
+#      url: http://stackoverflow.com/users/463827/jonathan-dursi
 
 - name: Justin Foong
-  pic: 2
-  position: Data Mining
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+  pic: justin_foong
+  position: Data Mining - Sick Kids
 
 - name: Neelam Memon
-  pic: 3
-  position: Privacy-Preserving Data Mining
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+  pic: blank
+  position: Privacy-Preserving Data Mining - BCGSC
+
+- name: Carol Gauthier
+  pic: carol_gauthier
+  position: Systems - Sherbrooke
+
+- name: Scott Baker
+  pic: scott_baker
+  position: Project Manager (GSC) - BCGSC
+
+- name: Brendan O'Huiginn
+  pic: blank
+  position: Systems Administrator - BCGSC
+
+- name: Quan Nguyen
+  pic: blank
+  position: Systems Administrator - MUGQIC
 
 - name: David Bujold
-  pic: 4
-  position: Portal Development
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+  pic: blank
+  position: Metadata - MUGQIC
 
-- name: Bar Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+- name: Pierre-Étienne Jacques
+  pic: pe_jacques
+  position: Assistant Professor, Biology - Sherbrooke
 
-- name: Baz Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+- name: Yann Joly
+  pic: yann_joly
+  position: Associate Professor, Genomics and Policy - McGill
 
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+- name: Trevor Pugh
+  pic: trevor_pugh
+  position: Assistant Professor, Medical Biophysics - Princess Margaret Cancer Centre 
 
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+- name: Guillaume Bourque
+  pic: guillaume_bourque
+  position: Associate Professor, Human Genetics - McGill, MUQGIC
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+- name: Steven Jones
+  pic: steven_jones
+  position: Associate Director, BCGSC; Professor, UBC & SFU
+
+- name: Carl Virtanen
+  pic: carl_virtanen
+  position: Director and Research Lead, UHN Digital
+
+- name: Michael Brudno
+  pic: michael_brudno
+  position: Prof, CS, U Toronto; Director, Centre for Computational Medicine, HSC
+
+- name: Steven Li
+  pic: blank
+  position: Alumnus
+
+- name: Isaac Ellman
+  pic: blank
+  position: Alumnus
