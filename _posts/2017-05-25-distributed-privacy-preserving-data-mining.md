@@ -32,19 +32,22 @@ involving large number of co-related queries require large amount of noise to be
 
 We reserve the term unrelated for any two queries if the outputs by them are from two disjoint data partitions under a data analysis task. The output produced by the data analysis task in such cases gives the privacy loss equal to the maximum of the privacy loss achieved by any of the individual queries. For example, assume that **_q<sub>1</sub>_** and **_q<sub>2</sub>_** are unrelated and produce output with privacy loss **_e<sub>1</sub>_** and **_e<sub>2</sub>_** respectively. The output task will achieve **_max(e<sub>1</sub>, e<sub>2</sub>)_** 
 
-## Privacy-Preserving Decision Tree Classification over 1000 Genome Data
-For experimentation purposes, we implemented differentially-private decision tree learning algorithms originally presented by Jagannathan _et. al_ [ref] under CanDIG. 
+## Privacy-Preserving Decision Tree Induction over 1000 Genome Data
+For experimentation purposes, we implemented differentially-private decision tree induction algorithms originally presented by Jagannathan _et. al_ [ref] under CanDIG. A Decision tree Induction builds classification or regression models in the form of a tree structure. Given a set of pre-classified instances as input, the algorithm decides which of the so far unused attributes is best to split on, uses the attribute values to split the instances into smaller subsets, and recurses over the resulting subsets until all training instances are categorized or a pre-specified condition is met. The final result is a tree with decision nodes and leaf nodes representing the attributes used to classify the attribute at the corresponding recursive step and the classification results respectively.
 
-We report our findings over 1000 Genome data. More specifically, we considered the problem of classifying individuals into one of the given ancestral populations based on the single-neucleotide polymorphisms (SNPs). The SNPs overlapping xenobiotic metabolisim and human pigmentation gene regions e.g. TYR, OCA2, DCT **etc** were considered. It was noticed that not all the SNPs are equally informative and further filteration was therefore performed based on their allele frequencies in each population.   
+We report our findings over 1000 Genome data. More specifically, we considered the problem of classifying individuals into one of the given ancestral populations based on the single-neucleotide polymorphisms (SNPs). The SNPs overlapping xenobiotic metabolisim and human pigmentation gene regions e.g. TYR, OCA2, DCT _etc._ were considered. It was noticed that not all the SNPs are equally informative and further filteration was therefore performed based on their allele frequencies in each population.   
  
 
 
 (reference to the paper we're using)
 
-### ID3
-- ID3 Intro: in general with some main steps outlined 
+### ID3 (Iterative Dichotomiser 3)
+ID3 is a classical decison tree induction method. It uses a heuristic that is based around the goal of constructing a tree with the purest possible leaf-nodes but the minimum possible depth. At each split, it chooses an attribute that leads to the data subsets with maximum purity. The purity is measured using the concept of information gain. That is, the change in the amount of information needed to classify the instances of a current dataset partition, to the amount of information required to classify them if the current dataset partition were to be further partitioned on a given attribute.  
+- highlight the steps where differential privacy is required. 
 - How data was ingested (over distributed sites using ga4gh)
-- The steps of how differential privacy was achieved.   
+- The steps of how differential privacy was achieved.
+
+
 ### Random Forst
 
 ## Accuracy vs epsilon
