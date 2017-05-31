@@ -39,7 +39,7 @@ We obtained the differentially private ID3 algorithm by replacing original low-l
 
 Queries posed at different hierarchical levels use sequential compositition. That is, they operate on the same data and the query functions at particular hierarchical level are composed of the query functions at the previous level. Assume, if the depth of the tree is **_d_** and privacy loss at each level is **_e_** then the overall privacy loss is **_d e_**.           
 
-[Data Ingestion and Federated Distributed Data] (ga4gh)
+[Data Ingestion and Differentially private Federated Classification] (ga4gh)
 
 
 ### Random Forst
