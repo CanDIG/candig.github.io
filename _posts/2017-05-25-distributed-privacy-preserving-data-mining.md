@@ -39,7 +39,7 @@ We obtained the differentially private ID3 algorithm by replacing original low-l
 
 Queries posed at different hierarchical levels use sequential compositition. That is, they operate on the same data and the query functions at particular hierarchical level are composed of the query functions at the previous level. Assume, if the depth of the tree is **_d_** and privacy loss at each level is **_e_** then the overall privacy loss is **_d e_**.           
 
-[Data Ingestion and Differentially private Federated Classification] (ga4gh)
+[Data Ingestion and Differentially private Federated Classification needs first implementation] (ga4gh)
 
 
 ### Random Forst
@@ -47,6 +47,13 @@ Queries posed at different hierarchical levels use sequential compositition. Tha
 ## Accuracy vs epsilon
 
 ## Adverarial model
+While differential privacy backed by formal proof seems a perfect solution, the choice of **_e_** still makes the proper application of differential privacy in practice difficult. For example, adhering to a jurisdiction's privacy law, the goal of a data curator is to achieve the privacy to the level that no data participant is individually identified. Interpreting the values of  **_e_** to achieve this goal in different data summaries is not simple yet important. Note that setting **_e_** to singificantly low values may be required in a number of scenarios but not always a panacea since it also controls the accuracy with which a data analysis can be made and hence may leave the data over-protected but useless at the same time for any research purposes. 
+
+CanDIG supports the choice of **_e_** for proper privacy protection by interpretating it in a more meaningful way thereby assuming the presence of a very strong adversary [ref] who has access to a dataset **_D_** consisting of **_|D|_** records. Consider a study in which **_|D|-1_** of the individuals participated. Let the prior beliefs of the adversary about the participance of an individual on the study is **_1/|D|_**. That is, the absence of an individual in the study is equally probable. Given the noisy results of the study, the adversary may learn that some of the individuals are less likely to participate in the study than others. Our goal is to choose **_e_** in a way that the associated disclosure risk about the participation of an individual is upper bounded by a pre-specified threshold **_B_**. 
+        
+- How do we compute posterior beliefs in general?
+- ID3 specifics
+- 
 
 ## Accuracy vs Privacy
 
