@@ -45,6 +45,9 @@ Queries posed at different hierarchical levels use sequential compositition. Tha
 ### Random Forst
 
 ## Accuracy vs epsilon
+We experimented the effect of  **_e_** and **_d_** over the accuracy of ID3 classification. At each particular setting of **_e_** and **_d_**, we repeated the experiment 40 times and diplayed the results using a five-number summary(_i.e._ minimum, first quartile, median, third quartile and maximum). 
+
+Overall, the results follow the s-shaped growth. That is, for certain range of **_e_**, the accuracy grows dramatically(_e.g._ 0.15 to 1.0 when depth is set to 30). Increasing or decreasing the **_e_** values beyond that range does not significantly effect the accuracy level. 
 
 <table style="text-align:center">
 <tr><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth10.png'>
@@ -55,6 +58,7 @@ Queries posed at different hierarchical levels use sequential compositition. Tha
 </td></tr>
 </table>
 
+As expected, the accuracy level is also effected by **_d_**. For some fixed **_e_**, increasing **_d_** to significantly high values causes small privacy loss budget to be allocated to each query and hence high amount of noise to be added to each query results. This causes low accuracy achieved at most of the **_e_** settings but when **_d_** is set to relatively very low value (_e.g._ **_d_** = 5) constructs highly generalized model and hence an underfit to the data.                
 
 ## Adverarial model
 While differential privacy backed by formal proof seems a perfect solution, the choice of **_e_** still makes the proper application of differential privacy in practice difficult. For example, adhering to a jurisdiction's privacy law, the goal of a data curator is to achieve the privacy to the level that no data participant is individually identified. Interpreting the values of  **_e_** to achieve this goal in different data summaries is not simple yet important. Note that setting **_e_** to singificantly low values may be required in a number of scenarios but not always a panacea since it also controls the accuracy with which a data analysis can be made and hence may leave the data over-protected but useless at the same time for any research purposes. 
