@@ -56,5 +56,13 @@ CanDIG supports the choice of **_e_** for proper privacy protection by interpret
 - 
 
 ## Accuracy vs Privacy
+<table style="text-align:center">
+<tr><td><img src='epsilonversusaccuracy_depth5.png'>
+</td><td><img src='epsilonversusaccuracy_depth5.png'>
+</td></tr>
+<tr><td><img src='epsilonversusaccuracy_depth5.png'>
+</td><td><img src='epsilonversusaccuracy_depth5.png'>
+</td></tr>
+</table>
 
 ## References
