@@ -57,11 +57,11 @@ CanDIG supports the choice of **_e_** for proper privacy protection by interpret
 
 ## Accuracy vs Privacy
 <table style="text-align:center">
-<tr><td><img src='epsilonversusaccuracy_depth5.png'>
-</td><td><img src='epsilonversusaccuracy_depth5.png'>
+<tr><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth10.png'>
+</td><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth30.png'>
 </td></tr>
-<tr><td><img src='epsilonversusaccuracy_depth5.png'>
-</td><td><img src='epsilonversusaccuracy_depth5.png'>
+<tr><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth60.png'>
+</td><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth90.png'>
 </td></tr>
 </table>
 
