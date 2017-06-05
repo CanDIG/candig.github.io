@@ -46,6 +46,16 @@ Queries posed at different hierarchical levels use sequential compositition. Tha
 
 ## Accuracy vs epsilon
 
+<table style="text-align:center">
+<tr><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth10.png'>
+</td><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth30.png'>
+</td></tr>
+<tr><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth60.png'>
+</td><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth90.png'>
+</td></tr>
+</table>
+
+
 ## Adverarial model
 While differential privacy backed by formal proof seems a perfect solution, the choice of **_e_** still makes the proper application of differential privacy in practice difficult. For example, adhering to a jurisdiction's privacy law, the goal of a data curator is to achieve the privacy to the level that no data participant is individually identified. Interpreting the values of  **_e_** to achieve this goal in different data summaries is not simple yet important. Note that setting **_e_** to singificantly low values may be required in a number of scenarios but not always a panacea since it also controls the accuracy with which a data analysis can be made and hence may leave the data over-protected but useless at the same time for any research purposes. 
 
@@ -56,13 +66,5 @@ CanDIG supports the choice of **_e_** for proper privacy protection by interpret
 - 
 
 ## Accuracy vs Privacy
-<table style="text-align:center">
-<tr><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth10.png'>
-</td><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth30.png'>
-</td></tr>
-<tr><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth60.png'>
-</td><td><img src='https://github.com/CanDIG/candig.github.io/blob/master/img/IMGs_Classification/ID3_depth90.png'>
-</td></tr>
-</table>
 
 ## References
