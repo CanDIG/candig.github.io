@@ -139,7 +139,34 @@ privacy loss is **_d e_**.
 
 [Data Ingestion and Differentially private Federated Classification needs first implementation] (ga4gh)
 
-### Random Forst
+### Random Decision Trees
+The random decision tree classifier presented in Jagannathan et. al is composed of an ensemble of random decision trees (RDT). As written in the paper, a random decision tree is built by repeatedly splitting the data by a randomly chosen feature. After a random tree structure is built, the training data is filtered through the tree to collect counts of each class label at the leaf nodes. To classify an individual, its data is passed through the tree until a leaf node is reached. The individual is classified as the class with the highest count at the leaf node. To privatize the classifier, laplacian noise is added to the counts.
+
+An of ensemble of these random trees is used to increases the robustness of the classifier. The counts are added up from each individual tree and the highest sum is used to classify a data point.
+
+In the case of the 1000 genomes data, the features of an individual were based on the SNPs at certain locations in the genome that were informative of their ancestral population [ref]. The data in the paper (~20) had relatively fewer features than our dataset (~180). This caused the RDT ensembles to produce poor classification results. To improve the results, PCA was run on the data to product features that were more informative.
+
+Building an ensemble of trees of the top 40 principal components with a maximum height of 10 seemed to produce the best results with an accuracy of 74.48. Adding noise with a very low epsilon of 0.0001 reduced the accuracy to 22.32 while an epsilon of 0.15 only reduced the accuracy to 65.83.
+
+```
+                  mean        std
+              accuracy   accuracy
+ncomponents         40         40
+ntrees              10         10
+max_h               10         10
+eps                              
+-1.0000      74.484127   3.632744
+ 0.0001      22.321429  10.616327
+ 0.0010      21.607143  12.978305
+ 0.0100      42.480159  10.975078
+ 0.0200      51.607143   6.281403
+ 0.0500      63.432540   3.605242
+ 0.1000      65.793651   2.806267
+ 0.1500      65.833333   2.841442
+ 0.3000      67.301587   3.019191
+ 5.0000      77.202381   1.760838
+ 10.0000     77.658730   1.530844
+ ```
 
 ## Accuracy vs epsilon
 
