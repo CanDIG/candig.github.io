@@ -19,10 +19,6 @@ people:
   pic: blank
   position: Privacy-Preserving Data Mining - BCGSC
 
-- name: Carol Gauthier
-  pic: carol_gauthier
-  position: Systems - Sherbrooke
-
 - name: Scott Baker
   pic: scott_baker
   position: Project Manager, BCGSC
@@ -31,9 +27,21 @@ people:
   pic: zhibin
   position: Bioinformatics Lead, PMCC
 
+- name: Kevin Chan
+  pic: blank
+  position: Authentication
+
+- name: Dustin Hu
+  pic: blank
+  position: Authentication
+
 - name: Brendan O'Huiginn
   pic: blank
   position: Systems Administrator - BCGSC
+
+- name: Carol Gauthier
+  pic: carol_gauthier
+  position: Systems - Sherbrooke
 
 - name: Quan Nguyen
   pic: blank
