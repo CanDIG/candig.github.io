@@ -27,6 +27,10 @@ people:
   pic: scott_baker
   position: Project Manager, BCGSC
 
+- name: Zhibin Lu
+  pic: zhibin
+  position: Bioinformatics Lead, PMCC
+
 - name: Brendan O'Huiginn
   pic: blank
   position: Systems Administrator - BCGSC
