@@ -1,8 +1,12 @@
 # Team names, titles and social links
 people:
 - name: Jonathan Dursi
+  lastname: Dursi
+  firstname: Jonathan
   pic: jonathan_dursi
-  position: Coordinator - Sick Kids
+  position: Technical Lead
+  team: technical
+
 #  social:
 #    - title: twitter
 #      url: http://www.twitter.com/ljdursi
@@ -12,77 +16,134 @@ people:
 #      url: http://stackoverflow.com/users/463827/jonathan-dursi
 
 - name: Justin Foong
+  lastname: Foong
+  firstname: Justin
   pic: justin_foong
-  position: Data Mining - Sick Kids
+  position: Data Mining 
+  team: technical
 
 - name: Neelam Memon
+  lastname: Memon
+  firstname: Neelam
   pic: blank
-  position: Privacy-Preserving Data Mining - BCGSC
+  position: Privacy-Preserving Data Mining
+  team: technical
 
 - name: Scott Baker
+  lastname: Baker
+  firstname: Scott
   pic: scott_baker
   position: Project Manager, BCGSC
+  team: technical
 
 - name: Zhibin Lu
+  lastname: Lu
+  firstname: Zhibin
   pic: zhibin
-  position: Bioinformatics Lead, PMCC
+  position: Bioinformatics @ PMCC
+  team: technical
 
 - name: Kevin Chan
+  lastname: Chan
+  firstname: Kevin
   pic: kevin_chan
   position: Authentication
+  team: technical
 
 - name: Dustin Hu
+  lastname: Hu
+  firstname: Hustin
   pic: dustin
   position: Authentication
+  team: technical
 
 - name: Brendan O'Huiginn
+  lastname: O'Huiginn
+  firstname: Brendan
   pic: brendan_ohuiginn
   position: Systems Administrator - BCGSC
+  team: technical
 
 - name: Carol Gauthier
+  lastname: Gauthier
+  firstname: Carol
   pic: carol_gauthier
   position: Systems - Sherbrooke
+  team: technical
 
 - name: Quan Nguyen
+  lastname: Nguyen
+  firstname: Quan
   pic: blank
-  position: Systems Administrator - MUGQIC
+  position: Systems - MUGQIC
+  team: technical
 
 - name: David Bujold
+  lastname: Bujold
+  firstname: David
   pic: david_bujold
-  position: Metadata - MUGQIC
+  position: PROFYLE - MUGQIC
+  team: technical
 
 - name: Pierre-Étienne Jacques
+  lastname: Jacques
+  firstname: Pierre-Étienne
   pic: pe_jacques
-  position: Assistant Professor, Biology - Sherbrooke
+  position: Asst. Professor, Biology - Sherbrooke
+  team: leadership
 
 - name: Yann Joly
+  lastname: Joly
+  firstname: Yann
   pic: yann_joly
-  position: Associate Professor, Genomics and Policy - McGill
+  position: Assoc. Professor, Genomics and Policy - McGill
+  team: leadership
 
 - name: Trevor Pugh
+  lastname: Pugh
+  firstname: Trevor
   pic: trevor_pugh
-  position: Assistant Professor, Medical Biophysics - U. Toronto
+  position: Asst. Professor, Medical Biophysics - U. Toronto
+  team: leadership
 
 - name: Guillaume Bourque
+  lastname: Bourque
+  firstname: Guillaume
   pic: guillaume_bourque
-  position: Associate Professor, Human Genetics - McGill, MUQGIC
+  position: Assoc. Professor, Human Genetics - McGill, MUQGIC
+  team: leadership
 
 - name: Steven Jones
+  lastname: Jones
+  firstname: Steven
   pic: steven_jones
-  position: Associate Director, BCGSC; Professor, UBC & SFU
+  position: Assoc. Director, BCGSC; Professor, UBC & SFU
+  team: leadership
 
 - name: Carl Virtanen
+  lastname: Virtanen
+  firstname: Carl
   pic: carl_virtanen
   position: Director and Research Lead, UHN Digital
+  team: leadership
 
 - name: Michael Brudno
+  lastname: Brudno
+  firstname: Michael
   pic: michael_brudno
   position: Prof, CS, U Toronto; Director, HPC4Health
+  team: leadership
 
 - name: Steven Li
+  lastname: Li
+  firstname: Steven
   pic: blank
   position: Alumnus
+  team: alumni
 
 - name: Isaac Ellman
+  lastname: Ellman
+  firstname: Isaac
   pic: blank
   position: Alumnus
+  team: alumni
