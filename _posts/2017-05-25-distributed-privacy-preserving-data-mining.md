@@ -227,9 +227,3 @@ to participate in the study than others. Our goal is to choose
 participation of an individual is upper bounded by a pre-specified
 threshold **_B_**.
 
-* How do we compute posterior beliefs in general?
-* ID3 specifics
-
-## Accuracy vs Privacy
-
-## References
