@@ -43,20 +43,6 @@ people:
   position: Bioinformatics @ PMCC
   team: technical
 
-- name: Kevin Chan
-  lastname: Chan
-  firstname: Kevin
-  pic: kevin_chan
-  position: Authentication
-  team: technical
-
-- name: Dustin Hu
-  lastname: Hu
-  firstname: Hustin
-  pic: dustin
-  position: Authentication
-  team: technical
-
 - name: Brendan O'Huiginn
   lastname: O'Huiginn
   firstname: Brendan
@@ -138,12 +124,26 @@ people:
   lastname: Li
   firstname: Steven
   pic: blank
-  position: Alumnus
+  position: Authentication
   team: alumni
 
 - name: Isaac Ellman
   lastname: Ellman
   firstname: Isaac
   pic: blank
-  position: Alumnus
+  position: Authentication
+  team: alumni
+
+- name: Kevin Chan
+  lastname: Chan
+  firstname: Kevin
+  pic: kevin_chan
+  position: Authentication
+  team: alumni
+
+- name: Dustin Hu
+  lastname: Hu
+  firstname: Hustin
+  pic: dustin
+  position: Authentication
   team: alumni
