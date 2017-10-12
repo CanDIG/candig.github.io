@@ -43,6 +43,13 @@ people:
   position: Research Associate, BCGSC
   team: technical
 
+- name: Andrew Ponomarev
+  lastname: Ponomarev
+  firstname: Andrew
+  pic: andrew_ponomarev
+  position: Bioinformatics Engineer, BCGSC
+  team: technical
+
 - name: Zhibin Lu
   lastname: Lu
   firstname: Zhibin
