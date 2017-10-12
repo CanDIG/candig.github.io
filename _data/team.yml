@@ -36,6 +36,13 @@ people:
   position: Project Manager, BCGSC
   team: technical
 
+- name: Zoltan Bozoky
+  lastname: Bozoky
+  firstname: Zoltan
+  pic: zoltan_bozoky
+  position: Research Associate, BCGSC
+  team: technical
+
 - name: Zhibin Lu
   lastname: Lu
   firstname: Zhibin
@@ -96,7 +103,7 @@ people:
   lastname: Bourque
   firstname: Guillaume
   pic: guillaume_bourque
-  position: Assoc. Professor, Human Genetics - McGill, MUQGIC
+  position: Assoc. Professor - McGill, MUQGIC
   team: leadership
 
 - name: Steven Jones
