@@ -57,6 +57,27 @@ people:
   position: Bioinformatics @ PMCC
   team: technical
 
+- name: Richard de Borja
+  lastname: de Borja
+  firstname: Richard
+  pic: richard_deborja
+  position: UHN site technical contact
+  team: technical
+
+- name: Dale Dupont
+  lastname: Dupont
+  firstname: Dale
+  pic: dale_dupont
+  position: Authentication
+  team: technical
+
+- name: Jone Kim
+  lastname: Kim
+  firstname: Jone
+  pic: jone_kim
+  position: Authentication
+  team: technical
+
 - name: Brendan O'Huiginn
   lastname: O'Huiginn
   firstname: Brendan
