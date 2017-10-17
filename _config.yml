@@ -16,6 +16,8 @@ social:
     url: http://twitter.com/distribgenomics
   - title: github
     url: http://github.com/candig
+  - title: envelope
+    url: mailto:info@distributedgenomics.ca
 
 # Build settings
 markdown: kramdown
