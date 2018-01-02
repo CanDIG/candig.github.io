@@ -43,13 +43,6 @@ people:
   position: Research Associate, BCGSC
   team: technical
 
-- name: Andrew Ponomarev
-  lastname: Ponomarev
-  firstname: Andrew
-  pic: andrew_ponomarev
-  position: Bioinformatics Engineer, BCGSC
-  team: technical
-
 - name: Zhibin Lu
   lastname: Lu
   firstname: Zhibin
@@ -61,21 +54,14 @@ people:
   lastname: de Borja
   firstname: Richard
   pic: richard_deborja
-  position: UHN site technical contact
+  position: UHN site technical lead
   team: technical
 
-- name: Dale Dupont
-  lastname: Dupont
-  firstname: Dale
-  pic: dale_dupont
-  position: Authentication
-  team: technical
-
-- name: Jone Kim
-  lastname: Kim
-  firstname: Jone
-  pic: jone_kim
-  position: Authentication
+- name: Mitchell Strong
+  lastname: Strong
+  firstname: Mitch
+  pic: mitchell_strong
+  position: UHN co-op
   team: technical
 
 - name: Brendan O'Huiginn
@@ -180,5 +166,26 @@ people:
   lastname: Hu
   firstname: Hustin
   pic: dustin
+  position: Authentication
+  team: alumni
+
+- name: Andrew Ponomarev
+  lastname: Ponomarev
+  firstname: Andrew
+  pic: andrew_ponomarev
+  position: Bioinformatics Engineer, BCGSC
+  team: alumni
+
+- name: Dale Dupont
+  lastname: Dupont
+  firstname: Dale
+  pic: dale_dupont
+  position: Authentication
+  team: alumni
+
+- name: Jone Kim
+  lastname: Kim
+  firstname: Jone
+  pic: jone_kim
   position: Authentication
   team: alumni
