@@ -29,13 +29,6 @@ people:
   position: Privacy-Preserving Data Mining
   team: technical
 
-- name: Scott Baker
-  lastname: Baker
-  firstname: Scott
-  pic: scott_baker
-  position: Project Manager, BCGSC
-  team: technical
-
 - name: Zoltan Bozoky
   lastname: Bozoky
   firstname: Zoltan
@@ -189,3 +182,11 @@ people:
   pic: jone_kim
   position: Authentication
   team: alumni
+
+- name: Scott Baker
+  lastname: Baker
+  firstname: Scott
+  pic: scott_baker
+  position: Project Manager, BCGSC
+  team: alumni
+
