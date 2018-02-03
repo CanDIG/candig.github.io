@@ -1,0 +1,23 @@
+language: ruby
+rvm:
+  - 2.1
+python:
+  - 2.7
+install: 
+  - gem install jekyll bundler ffi
+  - bundle update
+  - pip install --user -U pip
+  - pip install --user awscli
+script: 
+  - bundle exec jekyll build
+deploy:
+  on:
+    branch: master
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: $AWS_DEFAULT_REGION
+  bucket: "www.distributedgenomics.ca"
+  skip_cleanup: true
+  local_dir: _site
+  acl: public_read
