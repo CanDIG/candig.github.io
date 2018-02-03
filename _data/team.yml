@@ -29,25 +29,11 @@ people:
   position: Privacy-Preserving Data Mining
   team: technical
 
-- name: Scott Baker
-  lastname: Baker
-  firstname: Scott
-  pic: scott_baker
-  position: Project Manager, BCGSC
-  team: technical
-
 - name: Zoltan Bozoky
   lastname: Bozoky
   firstname: Zoltan
   pic: zoltan_bozoky
   position: Research Associate, BCGSC
-  team: technical
-
-- name: Andrew Ponomarev
-  lastname: Ponomarev
-  firstname: Andrew
-  pic: andrew_ponomarev
-  position: Bioinformatics Engineer, BCGSC
   team: technical
 
 - name: Zhibin Lu
@@ -61,21 +47,14 @@ people:
   lastname: de Borja
   firstname: Richard
   pic: richard_deborja
-  position: UHN site technical contact
+  position: UHN site technical lead
   team: technical
 
-- name: Dale Dupont
-  lastname: Dupont
-  firstname: Dale
-  pic: dale_dupont
-  position: Authentication
-  team: technical
-
-- name: Jone Kim
-  lastname: Kim
-  firstname: Jone
-  pic: jone_kim
-  position: Authentication
+- name: Mitchell Strong
+  lastname: Strong
+  firstname: Mitch
+  pic: mitchell_strong
+  position: UHN co-op
   team: technical
 
 - name: Brendan O'Huiginn
@@ -182,3 +161,32 @@ people:
   pic: dustin
   position: Authentication
   team: alumni
+
+- name: Andrew Ponomarev
+  lastname: Ponomarev
+  firstname: Andrew
+  pic: andrew_ponomarev
+  position: Bioinformatics Engineer, BCGSC
+  team: alumni
+
+- name: Dale Dupont
+  lastname: Dupont
+  firstname: Dale
+  pic: dale_dupont
+  position: Authentication
+  team: alumni
+
+- name: Jone Kim
+  lastname: Kim
+  firstname: Jone
+  pic: jone_kim
+  position: Authentication
+  team: alumni
+
+- name: Scott Baker
+  lastname: Baker
+  firstname: Scott
+  pic: scott_baker
+  position: Project Manager, BCGSC
+  team: alumni
+
