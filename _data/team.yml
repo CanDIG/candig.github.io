@@ -15,25 +15,25 @@ people:
 #    - title: stack-overflow
 #      url: http://stackoverflow.com/users/463827/jonathan-dursi
 
-- name: Justin Foong
-  lastname: Foong
-  firstname: Justin
-  pic: justin_foong
-  position: Data Mining 
-  team: technical
-
-- name: Neelam Memon
-  lastname: Memon
-  firstname: Neelam
-  pic: blank
-  position: Privacy-Preserving Data Mining
-  team: technical
-
 - name: Zoltan Bozoky
   lastname: Bozoky
   firstname: Zoltan
   pic: zoltan_bozoky
   position: Research Associate, BCGSC
+  team: technical
+
+- name: Adam Lipski
+  lastname: Lipski
+  firstname: Adam
+  pic: adam_lipski
+  position: Research Programmer, BCGSC
+  team: technical
+
+- name: Jimmy Li
+  lastname: Li
+  firstname: Jimmy
+  pic: blank
+  position: Research Programmer, BCGSC
   team: technical
 
 - name: Zhibin Lu
@@ -43,18 +43,25 @@ people:
   position: Bioinformatics @ PMCC
   team: technical
 
+- name: Kat Pavlova
+  lastname: Pavlova
+  firstname: Kat
+  pic: blank
+  position: Clin/Pheno Data Models, HSC
+  team: technical
+
+- name: Julian Mazzitelli
+  lastname: Mazzitelli
+  firstname: Julian
+  pic: blank
+  position: Workflow Data Engineering, HSC
+  team: technical
+
 - name: Richard de Borja
   lastname: de Borja
   firstname: Richard
   pic: richard_deborja
   position: UHN site technical lead
-  team: technical
-
-- name: Mitchell Strong
-  lastname: Strong
-  firstname: Mitch
-  pic: mitchell_strong
-  position: UHN co-op
   team: technical
 
 - name: Brendan O'Huiginn
@@ -176,11 +183,25 @@ people:
   position: Authentication
   team: alumni
 
+- name: Neelam Memon
+  lastname: Memon
+  firstname: Neelam
+  pic: blank
+  position: Privacy-Preserving Data Mining
+  team: alumni
+
 - name: Jone Kim
   lastname: Kim
   firstname: Jone
   pic: jone_kim
   position: Authentication
+  team: alumni
+
+- name: Justin Foong
+  lastname: Foong
+  firstname: Justin
+  pic: justin_foong
+  position: Data Mining 
   team: alumni
 
 - name: Scott Baker
@@ -190,3 +211,9 @@ people:
   position: Project Manager, BCGSC
   team: alumni
 
+- name: Mitchell Strong
+  lastname: Strong
+  firstname: Mitch
+  pic: mitchell_strong
+  position: Go services
+  team: alumni
