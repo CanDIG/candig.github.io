@@ -12,6 +12,7 @@ body {
 
 .text-muted {
     color: #{{ site.data.template.color.muted }};
+    min-height: 75px;
 }
 
 .text-primary {
