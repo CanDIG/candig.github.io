@@ -47,7 +47,7 @@ national sets of consented data; if a researcher can't find the data they need t
 their analyses, important biological questions don't get answered.&rdquo;
 
 “CanDIG is a very solid foundation for this project,” said Professor Michael Brudno, 
-PI of CanDIG and Director of the Centre for Computational Medicine at the
+PI of CanDIG and Director of the [Centre for Computational Medicine](https://ccm.sickkids.ca) at the
 Hospital for Sick Children.  “Our federated approach to making data available for
 analysis while strictly controlling direct access is exactly what is needed for health
 data service, and our international collaborations as part of the [Global Alliance for Genomics and Health (GA4GH)](https://www.ga4gh.org) will ensure the new services we
