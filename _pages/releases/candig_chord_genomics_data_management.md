@@ -8,7 +8,7 @@ permalink: releases/candig_chord_genomics_data_management.html
 
 > As data management grows more important for science, building Canadian capacity for managing and securely accessing health genomics will help accelerate biomedical discovery
 
-**Toronto, 21 Nov 2018**
+**Toronto, 22 Nov 2018**
 
 <img alt="CHORD logo" src="/img/logos/chord-sm.png" align="left" width="25%" hspace="20">
 
@@ -38,8 +38,8 @@ called &ldquo;'omics&rdquo; data), such as RNA sequencing and expression data,
 as well as more automation and a richer set of access and quality controls to make the
 platform more accessible to a winder range of researchers.  The new set of services are
 called CHORD, for &ldquo;Canadian Health 'Omics Repository, Distributed&rdquo;, and
-the project is led by Professor Guillaume Bourque the McGill University/Genome Quebec 
-Innovation Centre.
+the project is led by Professor Guillaume Bourque at the [Canadian Center for Computational 
+Genomics (C3G)](http://www.computationalgenomics.ca) at McGill.
 
 &ldquo;The CHORD project addresses real problems for genomic research across Canada,
 &rdquo; said Bourque.  &ldquo;Discoveries in this field come from availability of large
@@ -55,9 +55,10 @@ build are internationally interoperable and best-practice.&rdquo;
 
 				      ###
 
-CanDIG is a project funded by the CFI Cyberinfrastructure
-Infrastructure and connects sites at McGill University, Hospital
-for Sick Children, UHN Princess Margaret Cancer Centre, Canada's
-Michael Smith Genome Sciences Centre, Jewish General Hospital and
-Université de Sherbrooke. It is also a collaboration with Genome
-Canada, Compute Canada and CANARIE.
+CanDIG is a project building a health genomics platform for national-scale,
+federated analyses over locally controlled private data sets.  It is funded
+by the CFI Cyberinfrastructure program and connects
+sites at McGill University, Hospital for Sick Children, UHN Princess 
+Margaret Cancer Centre, Canada's Michael Smith Genome Sciences Centre,
+Jewish General Hospital and Université de Sherbrooke. It is also a
+collaboration with Genome Canada, Compute Canada and CANARIE.
