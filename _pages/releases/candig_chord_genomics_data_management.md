@@ -36,10 +36,10 @@ private datasets controlled by the local institutions who are responsible for th
 The new funding will allow support for a broader range of new data types (collectively
 called &ldquo;'omics&rdquo; data), such as RNA sequencing and expression data,
 as well as more automation and a richer set of access and quality controls to make the
-platform more accessible to a winder range of researchers.  The new set of services are
+platform more accessible to a wider range of researchers.  The new set of services are
 called CHORD, for &ldquo;Canadian Health 'Omics Repository, Distributed&rdquo;, and
-the project is led by Professor Guillaume Bourque at the [Canadian Center for Computational 
-Genomics (C3G)](http://www.computationalgenomics.ca) at McGill.
+the project is led by Professor Guillaume Bourque at the [Canadian Center for 
+Computational Genomics (C3G)](http://www.computationalgenomics.ca) at McGill.
 
 &ldquo;The CHORD project addresses real problems for genomic research across Canada,
 &rdquo; said Bourque.  &ldquo;Discoveries in this field come from availability of large
