@@ -8,7 +8,7 @@ permalink: releases/candig_chord_genomics_data_management.html
 
 > As data management grows more important for science, building Canadian capacity for managing and securely accessing health genomics will help accelerate biomedical discovery
 
-**Toronto, 22 Nov 2018**
+**Toronto, 27 Nov 2018**
 
 <img alt="CHORD logo" src="/img/logos/chord-sm.png" align="left" width="25%" hspace="20">
 
@@ -25,8 +25,8 @@ the stakes.
 
 CANARIE's [Research Data Management Program](https://www.canarie.ca/rdm/funding-information-rdm-call-1/)
 aims to address these data issues across fields, by funding software development 
-for nine National Data Services in fields as diverse as ocean studies, quantitative
-social sciences, and genomics. 
+for [nine National Data Services](https://www.canarie.ca/rdm-funding-call-recipients/) in fields as 
+diverse as ocean studies, quantitative social sciences, and genomics.
 
 In genomics, this service will be built upon [CanDIG](https://www.distributedgenomics.ca)
 &mdash; the Canadian Distributed Infrastructure for Genomics &mdash; which provides
