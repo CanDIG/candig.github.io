@@ -47,7 +47,11 @@ a.active {
     color: #{{ site.data.template.color.secondary }};
 }
 
-h1,
+h1 {
+    font-family: {{ site.data.template.font.primary }};
+    font-weight: 700;
+}
+
 h2,
 h3,
 h4,
