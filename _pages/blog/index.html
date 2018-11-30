@@ -17,7 +17,7 @@ subtitle: Blog posts from the CanDIG team
     {{post.header-media}}
   </header
   {% endif %}
-  <h1 class="post-title"><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{post.title}}</a></h1>
+  <h1 class="post-title"><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}index.html">{{post.title}}</a></h1>
   <div class="blog-data">
     <div class="author-data">
       <a class="post-author" href="{% if site.baseurl == "/" %}/author{% else %}{{ site.baseurl }}/author{% endif %}">{{ post.author }}</a>

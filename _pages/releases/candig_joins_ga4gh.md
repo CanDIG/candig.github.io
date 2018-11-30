@@ -8,6 +8,12 @@ permalink: releases/candig_joins_ga4gh.html
 
 > Making the most of biomedical research requires new ways of discovering and exchanging knowledge about genomic data; Canadian project CanDIG has been selected to help lead an effort for securely sharing and understanding such datasets.
 
+Story appeared in:
+* Genome Canada, [Canada a leader in global coalition to accelerate genomic data sharing that will benefit Canadian patients](https://www.genomecanada.ca/en/news/canada-leader-global-coalition-accelerate-genomic-data-sharing-will-benefit-canadian-patients)
+* OICR, [GA4GH Strikes Formal Collaborations with 15 International Genomic Data Initiatives](https://news.oicr.on.ca/2017/10/ga4gh-strikes-formal-collaborations-with-15-international-genomic-data-initiatives/)
+* Biotechnology Focus, [Canada in global collaboration for genomic data sharing](https://biotechnologyfocus.ca/canada-in-global-collaboration-for-genomic-data-sharing-24709-2/)
+* BioIT World, [GA4GH Announces New Strategic Plan, Vision To Create Standards](http://www.bio-itworld.com/2017/10/17/ga4gh-announces-new-strategic-plan-vision-to-create-standards.aspx)
+
 **Orlando, Florida, 17 Oct 2017**
 
 Genomics - the study of the DNA and RNA of individuals - is moving

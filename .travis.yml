@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.2
+  - 2.4
 python:
   - 2.7
 install: 
@@ -21,3 +21,6 @@ deploy:
   skip_cleanup: true
   local_dir: _site
   acl: public_read
+after_deploy:
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
