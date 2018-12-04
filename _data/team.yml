@@ -40,7 +40,7 @@ people:
   lastname: Lu
   firstname: Zhibin
   pic: zhibin
-  position: Bioinformatics @ PMCC
+  position: Bioinformatics, PMCC
   team: technical
 
 - name: Kat Pavlova
@@ -68,49 +68,49 @@ people:
   lastname: O'Huiginn
   firstname: Brendan
   pic: brendan_ohuiginn
-  position: Systems Administrator - BCGSC
+  position: Systems Administrator, BCGSC
   team: technical
 
 - name: Carol Gauthier
   lastname: Gauthier
   firstname: Carol
   pic: carol_gauthier
-  position: Systems - Sherbrooke
+  position: Systems, Sherbrooke
   team: technical
 
 - name: Quan Nguyen
   lastname: Nguyen
   firstname: Quan
   pic: blank
-  position: Systems - MUGQIC
+  position: Systems, MUGQIC
   team: technical
 
 - name: David Bujold
   lastname: Bujold
   firstname: David
   pic: david_bujold
-  position: PROFYLE - MUGQIC
+  position: C3G McGill site technical lead
   team: technical
 
 - name: Pierre-Étienne Jacques
   lastname: Jacques
   firstname: Pierre-Étienne
   pic: pe_jacques
-  position: Asst. Professor, Biology - Sherbrooke
+  position: Asst. Professor, Biology, Sherbrooke
   team: leadership
 
 - name: Yann Joly
   lastname: Joly
   firstname: Yann
   pic: yann_joly
-  position: Assoc. Professor, Genomics and Policy - McGill
+  position: Assoc. Professor, Genomics and Policy, McGill
   team: leadership
 
 - name: Trevor Pugh
   lastname: Pugh
   firstname: Trevor
   pic: trevor_pugh
-  position: Asst. Professor, Medical Biophysics - U. Toronto
+  position: Asst. Professor, Medical Biophysics, U. Toronto
   team: leadership
 
 - name: Guillaume Bourque
@@ -217,3 +217,10 @@ people:
   pic: mitchell_strong
   position: Go services
   team: alumni
+
+- name: Shaikh Farhan Rashid
+  lastname: Shaikh
+  firstname: Rashid
+  pic: shaikh_rashid
+  position: Architecture & Devops, HSC
+  team: technical
