@@ -1,4 +1,4 @@
-url: https://candig.github.io
+url: https://www.distributedgenomics.ca
 
 # Site settings
 title: CanDIG
@@ -28,7 +28,7 @@ kramdown:
 permalink: pretty
 
 # Plugins
-gems:
+plugins:
 - jekyll-autoprefixer
 - jekyll-paginate
 
