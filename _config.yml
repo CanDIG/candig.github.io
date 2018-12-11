@@ -31,8 +31,9 @@ permalink: pretty
 plugins:
 - jekyll-autoprefixer
 - jekyll-paginate
+- jekyll-sitemap
 
 paginate: 3
 paginate_path: "/_pages/blog/page:num"
 
-include: [ "_posts", "_pages" ]
+include: [ "_pages" ]
