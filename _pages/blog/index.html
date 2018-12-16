@@ -17,7 +17,7 @@ subtitle: Blog posts from the CanDIG team
     {{post.header-media}}
   </header
   {% endif %}
-  <h1 class="post-title"><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}index.html">{{post.title}}</a></h1>
+  <h1 class="post-title"><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{post.title}}</a></h1>
   <div class="blog-data">
     <div class="author-data">
       <a class="post-author" href="{% if site.baseurl == "/" %}/author{% else %}{{ site.baseurl }}/author{% endif %}">{{ post.author }}</a>
@@ -85,7 +85,7 @@ subtitle: Blog posts from the CanDIG team
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a class="paginate-button" href="{{ paginator.previous_page_path | prepend: site.baseurl | append: '/index.html' | replace: '//', '/' }}"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Newer Post</a>
+    <a class="paginate-button" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Newer Post</a>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
@@ -95,7 +95,7 @@ subtitle: Blog posts from the CanDIG team
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a class="paginate-button" href="{{ paginator.next_page_path | prepend: site.baseurl | append: '/index.html' | replace: '//', '/' }}">Older Posts <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+    <a class="paginate-button" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
   {% endif %}
 </div>
 {% endif %}

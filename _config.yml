@@ -8,7 +8,10 @@ description: "CanDIG enables national-scale analysis of locally-controlled priva
 collections:
   posts:
       output: true
-      permalink: /posts/:title/
+      permalink: /posts/:title/index.html
+  releases:
+      output: true
+      permalink: /releases/:title/index.html
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -25,13 +28,17 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-permalink: pretty
+defaults:
+ -   
+  scope:
+    type: pages
+  values:
+    permalink: /:path/:basename:output_ext
 
 # Plugins
 plugins:
 - jekyll-autoprefixer
 - jekyll-paginate
-- jekyll-sitemap
 
 paginate: 3
 paginate_path: "/_pages/blog/page:num"
