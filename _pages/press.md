@@ -2,6 +2,10 @@
 title: CanDIG and the Press
 layout: page
 permalink: press.html
+sitemap:
+  priority: 1.0
+  changefreq: 'weekly'
+
 ---
 
 ## 2018 Nov 21: [CANARIE selects CanDIG project as basis for a prototype National Data Service for Health Genomics](releases/candig_chord_genomics_data_management.html)
