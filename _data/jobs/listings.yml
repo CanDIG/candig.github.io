@@ -1,0 +1,22 @@
+- title: Research Programmer
+  site: Canada's Michael Smith Genome Sciences Centre
+  city: Vancouver
+  url: http://www.bcgsc.ca/career/RP%2012-03-2018/
+  description: The Michael Smith Genome Science Centre of BC Cancer is looking for an enthusiastic and self-motivated Research Programmer to work on a federated genome data sharing project based on the Global Alliance for Genomics and Health framework.
+  needed_skills: Python, REST API development, Web Frameworks
+
+- title: Bioinformatics Software Developer – Web Applications
+  site: McGill University/Genome Quebec Innovation Centre
+  city: Montreal
+  description: McGill is looking for a Web Application Developer to engage in the development maintenance of a number of web applications, including the <a href="https://epigenomesportal.ca/ihec/">International Human Epigenome Consortium (IHEC) Data Portal</a>, <a href="https://genap.ca">GenAP</a>, and other online resources.
+
+- title: Scientific Data Architect
+  site: Candidan Centre for Computational Genomics at McGill
+  city: Montreal
+  description: McGill is seeking a Scientific Data Architect to engage in the development of public and internal databases for projects in the fields of genomics, epigenomics, neuro-imaging, and other life science related fields.
+
+- title: Back end Developer, Authentication 
+  site: The Hospital for Sick Children
+  city: Toronto
+  description: Coming soon! Will be hiring for a position to start April 2019
+  needed_skills: Back end web development, OpenID Connect

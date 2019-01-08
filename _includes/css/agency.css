@@ -28,6 +28,16 @@ p.large {
     font-size: 16px;
 }
 
+p.job_description, p.job_skills_needed, p.job_skills_nice {
+    padding-left: 20pt;
+}
+p.job_skills_needed::before {
+    content: "Skills required:"
+}
+p.job_skills_nice::before {
+    content: "Nice-to-have skills:"
+}
+
 a,
 a:hover,
 a:focus,

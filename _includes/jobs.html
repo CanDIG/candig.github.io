@@ -1,0 +1,63 @@
+<p>
+CanDIG is building the open-source, standards-based infrastructure
+to power truly national-scale Canadian genomics health research
+projects, allowing the analysis of Canada-wide data while keeping
+patients data secure and private within the instutions entrusted
+with that data.  </p>
+
+<p>
+As a <a href="https://www.ga4gh.org">GA4GH</a> driver project, we
+work closely with our fellow driver projects - the largest genomics
+projects in the world - developing, testing, and implementing
+emerging standards for health genomics projects, on matters technical,
+of security, and of governance and ethics.  Through the GA4GH We
+collaborate with hospitals, universities, and major private sector
+companies like Amazon, Azure, and Google; and through international
+grants we are taking what Canada has learned about secure federated
+data analysis and introducing it to the international community.
+</p>
+
+<p>
+We have a modern software stack, with RESTful APIs, Python and Go,
+OpenID Connect, Swagger/OpenAPI, Docker and Singularity.  We have
+a growing national profile, supporting important research projects
+like <a
+href="https://www.marathonofhopecancercentres.ca/the_terry_fox_canadian_comprehensive_cancer_centre_network">TF4CN</a>
+and
+<a href="https://www.marathonofhopecancercentres.ca/the_precision_medicine_project_bringing_new_hope_to_young_canadians">PROFYLE</a>,
+and international visibility.</p>
+
+<p>
+Does that sound like something you'd like to be a part of?  Great!  We're frequently looking for new team mates!
+Take a look below and see if any of these job look right for you; and if not, check back soon - we continue to grow!
+</p>
+
+<!-- Jobs section -->
+{% for listing_city in site.data.jobs.cities | sort: name %}
+    {% assign jobs = site.data.jobs.listings | where:"city",listing_city.name %}
+    {% if jobs != '' %}
+    <h3>{{listing_city.name}}</h3>
+        {% for job in jobs %} 
+            <p>
+            {% if job.url != '' %}
+                <b><a href="{{job.url}}">{{job.title}}</a></b>
+            {% else %}
+                <b>{{job.title}}</b>
+            {% endif %}
+            </p>
+            <p class="job_description">
+            {{job.description}}
+            </p>
+            {% if job.needed_skills %}
+                <p class="job_skills_needed">
+                {{job.needed_skills}}
+                </p>
+            {% endif %}
+            {% if job.nice_to_have %}
+                <p class="job_skills_nice">
+                {{job.nice_to_have}}
+                </p>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
