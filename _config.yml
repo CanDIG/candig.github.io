@@ -28,19 +28,8 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-defaults:
- -   
-  scope:
-    type: pages
-  values:
-    permalink: /:path/:basename:output_ext
-
 # Plugins
 plugins:
 - jekyll-autoprefixer
-- jekyll-paginate
-
-paginate: 3
-paginate_path: "/_pages/blog/page:num"
 
 include: [ "_pages" ]
