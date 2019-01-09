@@ -39,7 +39,7 @@ Take a look below and see if any of these job look right for you; and if not, ch
     <h3>{{listing_city.name}}</h3>
         {% for job in jobs %} 
             <p>
-            {% if job.url != '' %}
+            {% if job.url %}
                 <b><a href="{{job.url}}">{{job.title}}</a></b>
             {% else %}
                 <b>{{job.title}}</b>
