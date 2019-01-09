@@ -6,13 +6,15 @@
   needed_skills: Python, REST API development, Web Frameworks
 
 - title: Bioinformatics Software Developer – Web Applications
-  site: McGill University/Genome Quebec Innovation Centre
+  site: Candidan Centre for Computational Genomics at McGille
   city: Montreal
+  url: http://www.computationalgenomics.ca/job_bioinformatics-software-developer_web-applications/
   description: McGill is looking for a Web Application Developer to engage in the development maintenance of a number of web applications, including the <a href="https://epigenomesportal.ca/ihec/">International Human Epigenome Consortium (IHEC) Data Portal</a>, <a href="https://genap.ca">GenAP</a>, and other online resources.
 
 - title: Scientific Data Architect
   site: Candidan Centre for Computational Genomics at McGill
   city: Montreal
+  url: http://www.computationalgenomics.ca/scientific-data-architect/
   description: McGill is seeking a Scientific Data Architect to engage in the development of public and internal databases for projects in the fields of genomics, epigenomics, neuro-imaging, and other life science related fields.
 
 - title: Back end Developer, Authentication 
@@ -20,3 +22,9 @@
   city: Toronto
   description: Coming soon! Will be hiring for a position to start April 2019
   needed_skills: Back end web development, OpenID Connect
+  
+- title: Waterloo co-op, spring semester 
+  site: The Hospital for Sick Children
+  city: Toronto
+  description: Coming soon! Always on the look out for co-op students
+  needed_skills: REST API development, Python
