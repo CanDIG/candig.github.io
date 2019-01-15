@@ -218,6 +218,13 @@ people:
   position: Go services
   team: alumni
 
+- name: Matthew Wong
+  lastname: Wong
+  firstname: Matthew
+  pic: matthew_wong
+  position: Waterloo Co-op, HSC
+  team: technical
+
 - name: Shaikh Farhan Rashid
   lastname: Shaikh
   firstname: Rashid
