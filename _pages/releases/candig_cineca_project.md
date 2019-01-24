@@ -71,7 +71,8 @@ international community.&rdquo;
 
 The CINECA project is funded by both the EU through the Horizon 2020
 Research and Innovation Programme and the Canadian Government through
-the Canadian Institutes for Health Research.
+the Canadian Institutes for Health Research.  More information can
+be found [here](https://www.ebi.ac.uk/about/news/press-releases/CINECA-facilitates-transcontinental-human-data-exchange).
 
 CanDIG is a Canadian national health and genomics platform for allowing
 authorized queries and analysis of data over locally-controlled private
