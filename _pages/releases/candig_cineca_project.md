@@ -35,9 +35,9 @@ Canada’s health data system has always necessarily been federated, and
 the experience of the Canadian Distributed Infrastructure for Genomics
 (CanDIG) with building federated queries and analyses over locally
 controlled private health data is essential to the project. CanDIG
-member institutions SickKids and McGill University are directly involved
-with CINECA, and CanDIG as a whole will bring its experience to bear by
-leading the work of building standard methods for federating queries,
+member institutions McGill University and The Hospital for Sick Children (SickKids)
+are directly involved with CINECA, and CanDIG as a whole will bring its
+experience to bear by leading the work of building standard methods for federating queries,
 and actively participating in building compatible and interoperable
 systems for login, access control, and running complex distributed
 analyses.
