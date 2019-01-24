@@ -43,8 +43,7 @@ systems for login, access control, and running complex distributed
 analyses.
 
 &ldquo;The technical goals we have set for ourselves are ambitious”, said Mike
-Brudno, PI of the CanDIG project and Senior Scientist at SickKids
-Hospital in Toronto. “But CanDIG has extensive experience working with
+Brudno, PI of the CanDIG project and Senior Scientist at SickKids. “But CanDIG has extensive experience working with
 CINECA partner projects EGA[^2] and ELIXIR[^3] through their
 participation as peer Driver Projects for the Global Alliance for
 Genomics and Health ([*GA4GH*](https://www.ga4gh.org)). Building on what
