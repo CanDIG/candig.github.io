@@ -20,11 +20,14 @@
 - title: Back end Developer, Authentication 
   site: The Hospital for Sick Children
   city: Toronto
-  description: Coming soon! Will be hiring for a position to start April 2019
-  needed_skills: Back end web development, OpenID Connect
+  url: https://ca.indeed.com/viewjob?jk=18fd369a34557235&tk=1d2l8s4m60g6f003
+  description: For this position, we are looking for a developer to help us develop the scalable, flexible back-end data services that our project needs, and the authorization infrastructure to oversee those services.
+  needed_skills: Back end web development, OpenID Connect, linux, git
+  nice_to_have: Docker, golang, HL7/FHIR, OpenAPI
   
 - title: Waterloo co-op, spring semester 
   site: The Hospital for Sick Children
   city: Toronto
-  description: Coming soon! Always on the look out for co-op students
-  needed_skills: REST API development, Python
+  description: We're always on the look out for co-op students!  Look for postings at the Centre for Computational Medicine at SickKids
+  needed_skills: Python, interest in genomics
+  nice_to_have: REST API development, bioinformatics experience
