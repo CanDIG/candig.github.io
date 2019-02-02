@@ -95,6 +95,16 @@ tasks themselves, the person in the job would take part in GA4GH
 workstream meetings relevant to the tasks to ensure we remain aligned on
 standards and approaches.
 
+**Interoperable authentication/authorization**: CanDIG is part of the
+CINECA project, a Canadian/European/African project for allowing
+federated access to data. Part of this will require that our authn &
+authz infrastructure is interoperable. While this is greatly helped by
+using open standards like OpenID Connect, we must ensure that claims
+language, protocols, and services are seamlessly interoperable. This
+task would involve both collaboration with our EU and African colleagues
+to develop and test such interoperability, and active participation in a
+GA4GH workstream to define the standards consistent with that work.
+
 **Extending the authorization service**: By the time you join us, we
 will have a simple authorization service implemented in our new back end
 infrastructure, likely based on [*Open Policy
@@ -116,16 +126,6 @@ determine, for instance, role/identity mapping for RBAC. This task would
 involve prototyping such a portal, integrating it into our authorization
 policy infrastructure, testing it with users, and after iteratiosn
 moving it into production.
-
-**Interoperable authentication/authorization**: CanDIG is part of the
-CINECA project, a Canadian/European/African project for allowing
-federated access to data. Part of this will require that our authn &
-authz infrastructure is interoperable. While this is greatly helped by
-using open standards like OpenID Connect, we must ensure that claims
-language, protocols, and services are seamlessly interoperable. This
-task would involve both collaboration with our EU and African colleagues
-to develop and test such interoperability, and active participation in a
-GA4GH workstream to define the standards consistent with that work.
 
 **New variants API**: Working with colleagues at OICR, we will develop a
 common variant search API powering both interactive searches and
