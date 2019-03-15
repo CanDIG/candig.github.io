@@ -1,9 +1,3 @@
-- title: Bioinformatics Software Developer – Web Applications
-  site: Candidan Centre for Computational Genomics at McGille
-  city: Montreal
-  url: http://www.computationalgenomics.ca/job_bioinformatics-software-developer_web-applications/
-  description: McGill is looking for a Web Application Developer to engage in the development maintenance of a number of web applications, including the <a href="https://epigenomesportal.ca/ihec/">International Human Epigenome Consortium (IHEC) Data Portal</a>, <a href="https://genap.ca">GenAP</a>, and other online resources.
-
 - title: Scientific Data Architect
   site: Candidan Centre for Computational Genomics at McGill
   city: Montreal
@@ -18,7 +12,7 @@
   needed_skills: Back end web development, OpenID Connect, linux, git
   nice_to_have: Docker, golang, HL7/FHIR, OpenAPI
   
-- title: Waterloo co-op, spring semester 
+- title: Waterloo co-op, autumn semester 
   site: The Hospital for Sick Children
   city: Toronto
   description: We're always on the look out for co-op students!  Look for postings at the Centre for Computational Medicine at SickKids
