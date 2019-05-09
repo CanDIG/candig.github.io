@@ -43,6 +43,13 @@ people:
   position: Bioinformatics, PMCC
   team: technical
 
+- name: Sebastian Shah
+  lastname: Shah
+  firstname: Sebastian
+  pic: blank
+  position: Research Programmer, McGill
+  team: technical
+  
 - name: Kat Pavlova
   lastname: Pavlova
   firstname: Kat
