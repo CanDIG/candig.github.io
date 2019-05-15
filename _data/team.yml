@@ -7,14 +7,6 @@ people:
   position: Technical Lead
   team: technical
 
-#  social:
-#    - title: twitter
-#      url: http://www.twitter.com/ljdursi
-#    - title: github
-#      url: http://github.com/ljdursi
-#    - title: stack-overflow
-#      url: http://stackoverflow.com/users/463827/jonathan-dursi
-
 - name: Zoltan Bozoky
   lastname: Bozoky
   firstname: Zoltan
@@ -64,13 +56,6 @@ people:
   position: Clin/Pheno Data Models, HSC
   team: technical
 
-- name: Julian Mazzitelli
-  lastname: Mazzitelli
-  firstname: Julian
-  pic: blank
-  position: Workflow Data Engineering, HSC
-  team: technical
-
 - name: Richard de Borja
   lastname: de Borja
   firstname: Richard
@@ -106,6 +91,13 @@ people:
   position: C3G McGill site technical lead
   team: technical
 
+- name: Shaikh Farhan Rashid
+  lastname: Shaikh
+  firstname: Rashid
+  pic: shaikh_rashid
+  position: Architecture & Devops, HSC
+  team: technical
+  
 - name: Pierre-Étienne Jacques
   lastname: Jacques
   firstname: Pierre-Étienne
@@ -232,16 +224,17 @@ people:
   position: Go services
   team: alumni
 
+- name: Julian Mazzitelli
+  lastname: Mazzitelli
+  firstname: Julian
+  pic: blank
+  position: Workflow Data Engineering, HSC
+  team: alumni
+
 - name: Matthew Wong
   lastname: Wong
   firstname: Matthew
   pic: matthew_wong
   position: Waterloo Co-op, HSC
-  team: technical
+  team: alumni
 
-- name: Shaikh Farhan Rashid
-  lastname: Shaikh
-  firstname: Rashid
-  pic: shaikh_rashid
-  position: Architecture & Devops, HSC
-  team: technical
