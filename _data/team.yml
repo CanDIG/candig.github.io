@@ -35,7 +35,14 @@ people:
   pic: blank
   position: Research Programmer, BCGSC
   team: technical
-
+  
+- name: Dashaylan Naidoo
+  lastname: Naidoo
+  firstname: Dashaylan
+  pic: dashaylan_naidoo
+  position: Research Programmer, BCGSC
+  team: technical
+  
 - name: Zhibin Lu
   lastname: Lu
   firstname: Zhibin
