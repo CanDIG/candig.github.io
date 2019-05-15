@@ -1,4 +1,8 @@
-# Team names, titles and social links
+# Team names, titles
+# Note - there's no real order to the names; it started as in order of joining 
+# the team but now the only real order is that we try to keep it broken down
+# by "technical", "leadership", and "alumni".
+#
 people:
 - name: Jonathan Dursi
   lastname: Dursi
@@ -75,13 +79,6 @@ people:
   firstname: Carol
   pic: carol_gauthier
   position: Systems, Sherbrooke
-  team: technical
-
-- name: Quan Nguyen
-  lastname: Nguyen
-  firstname: Quan
-  pic: blank
-  position: Systems, MUGQIC
   team: technical
 
 - name: David Bujold
@@ -238,3 +235,9 @@ people:
   position: Waterloo Co-op, HSC
   team: alumni
 
+- name: Quan Nguyen
+  lastname: Nguyen
+  firstname: Quan
+  pic: blank
+  position: Systems, MUGQIC
+  team: alumni
