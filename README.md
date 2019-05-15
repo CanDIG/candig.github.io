@@ -23,10 +23,11 @@ bundle exec jekyll serve
 ```
 
 And, absent any errors you'll be able to view the website at `http://localhost:4000`.  
-As you edit files, jekyll will re-build periodicially for frequent updates.  The generate
-pages are in the `_site` directory if you want to directly view the files generated.
+As you edit files, jekyll will re-build periodicially for frequent updates.  The generated
+pages are in the `_site` directory if you want to directly view the outputs.
 
-Commits will trigger travis deployments here to Github Pages (https://candig.github.io/)
-and then push to our AWS-powered site (https://www.distributedgenomics.ca).  Please feel
+Commits will trigger updates to our Github Pages (https://candig.github.io/), sometimes after
+a short delay (seconds to minutes), and then travis will deploy to our AWS-powered site 
+(https://www.distributedgenomics.ca) after a longer delay (many minutes).  Please feel
 free to make obvious fixes directly with commits; for any more substantial changes, make
 a PR and request a review
