@@ -1,6 +1,6 @@
 ---
 title: CanDIG joins International Community
-layout: page
+layout: release-page
 permalink: releases/candig_joins_ga4gh.html
 ---
 

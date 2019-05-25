@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body id="page-top" class="index">
+    {% include nav.html %}
+    
+    <div class="container" style="margin-top: 100px;"></div>
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                <!--                <h2 class="section-heading ">{{page.title}}</h2> -->
+                <h3 class="section-subheading text-muted ">{{page.title}}</h3>
+            </div>
+        </div>
+        
+    <div class="container-fluid row">
+      <div class="col-lg-6 col-md-8 col-xs-12 text-left col-md-offset-2 col-lg-offset-3">
+        {{content}}
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+    {% include js.html %}
+
+    </body>
+</html>

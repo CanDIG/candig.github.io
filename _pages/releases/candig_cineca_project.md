@@ -1,10 +1,10 @@
 ---
 title: CanDIG helps build Common Infrastructure for National Cohorts in Europe, Canada, and Africa
-layout: page
+layout: release-page
 permalink: releases/candig_cineca_project.html
 ---
 
-### Canada, EU, and Africa combine to allow researchers to analyze health data on the largest, most diverse scale
+# Canada, EU, and Africa combine to allow researchers to analyze health data on the largest, most diverse scale
 
 > *Canada’s experience with management and analysis of federated health
 > data an enormous addition to the project*

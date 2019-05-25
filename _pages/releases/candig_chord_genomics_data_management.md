@@ -1,6 +1,6 @@
 ---
 title: CanDIG to power Canadian National Genomics Data Service CHORD
-layout: page
+layout: release-page
 permalink: releases/candig_chord_genomics_data_management.html
 ---
 
