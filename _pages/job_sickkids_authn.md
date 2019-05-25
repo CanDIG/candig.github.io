@@ -1,7 +1,7 @@
 ---
 title: Backend and OIDC Developer
 layout: page
-permalink: job_sickkids_authn_jan2019.html
+permalink: job_sickkids_authn_mar2019.html
 sitemap:
   priority: 1.0
   changefreq: 'weekly'
@@ -88,12 +88,11 @@ years. What we expect that means is:
 
 There’s a lot to do in CanDIG, so there’s some flexibility in what
 someone taking on this role would work on. The person hired into this
-role would be tackling one or more of the following projects in their
-first six months, on their own or as part of a team; they are listed in
-roughly order of priority to the overall project. In addition to the
-tasks themselves, the person in the job would take part in GA4GH
-workstream meetings relevant to the tasks to ensure we remain aligned on
-standards and approaches.
+role would own several of the followig projects in their first six months,
+working with other members of the team.  The tasks would involve 
+solution design, code development, consultation, and testing; the person 
+in the job would also be part of international GA4GH workstream meetings
+relevant to the tasks to ensure we remain aligned on standards and approaches.
 
 **Interoperable authentication/authorization**: CanDIG is part of the
 CINECA project, a Canadian/European/African project for allowing
@@ -127,40 +126,11 @@ involve prototyping such a portal, integrating it into our authorization
 policy infrastructure, testing it with users, and after iteratiosn
 moving it into production.
 
-**New variants API**: Working with colleagues at OICR, we will develop a
-common variant search API powering both interactive searches and
-analysis (such as for association studies). The person working on this
-project would work closely with OICR to develop a common OpenAPI
-description of the API, and iteratively develop proof of concept
-implementations of the in-development API, based on the existing back
-end, and then work with CanDIG and OICR staff to propose the new API as
-a candidate for discussion as a GA4GH standard.
-
-**New variants store**: The current variant search back end uses indexed
-VCF files as the backing store. The person working on this project would
-assess various existing variant database packages and test them as back
-ends for the in-progress variants search API, given expected data
-volumes over the next two years, and using criteria based on development
-& operational effort, as well as performance for our two classes of use
-cases.
-
-**Novel bioinformatics algorithms over distributed data sets**: An open
-area of research will be developing next-generation bioinformatics and
-data analysis algorithms that work in this distributed, vertically-partitioned
-federated data set.
-
 **Interoperate with Canadian Access Federation**: CanDIG intends to work
 with CANARIE technical team to allow use of the [*Canadian Access
 Federation*](https://www.canarie.ca/identity/caf/) as an identity
 provider. This project would extend previous prototype developed
 elsewhere work linking CAFs Shibboleth system to OIDC.
-
-**Logging Infrastructure**: As our new infrastructure progresses and we
-move away from only having one or two services, we will need a
-production strength and unified logging solutions; likely approaches are
-ELK or Fluentd-based. This task will involve setting up the services to
-handle the log aggregation, and working with service owners to implement
-the logging in a consistent fashion.
 
 ### Topics for discussion at the interview
 

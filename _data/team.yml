@@ -1,4 +1,8 @@
-# Team names, titles and social links
+# Team names, titles
+# Note - there's no real order to the names; it started as in order of joining 
+# the team but now the only real order is that we try to keep it broken down
+# by "technical", "leadership", and "alumni".
+#
 people:
 - name: Jonathan Dursi
   lastname: Dursi
@@ -6,14 +10,6 @@ people:
   pic: jonathan_dursi
   position: Technical Lead
   team: technical
-
-#  social:
-#    - title: twitter
-#      url: http://www.twitter.com/ljdursi
-#    - title: github
-#      url: http://github.com/ljdursi
-#    - title: stack-overflow
-#      url: http://stackoverflow.com/users/463827/jonathan-dursi
 
 - name: Zoltan Bozoky
   lastname: Bozoky
@@ -35,7 +31,14 @@ people:
   pic: blank
   position: Research Programmer, BCGSC
   team: technical
-
+  
+- name: Dashaylan Naidoo
+  lastname: Naidoo
+  firstname: Dashaylan
+  pic: dashaylan_naidoo
+  position: Research Programmer, BCGSC
+  team: technical
+  
 - name: Zhibin Lu
   lastname: Lu
   firstname: Zhibin
@@ -43,18 +46,18 @@ people:
   position: Bioinformatics, PMCC
   team: technical
 
+- name: Sebastian Shah
+  lastname: Shah
+  firstname: Sebastian
+  pic: blank
+  position: Research Programmer, McGill
+  team: technical
+  
 - name: Kat Pavlova
   lastname: Pavlova
   firstname: Kat
   pic: blank
   position: Clin/Pheno Data Models, HSC
-  team: technical
-
-- name: Julian Mazzitelli
-  lastname: Mazzitelli
-  firstname: Julian
-  pic: blank
-  position: Workflow Data Engineering, HSC
   team: technical
 
 - name: Richard de Borja
@@ -78,13 +81,6 @@ people:
   position: Systems, Sherbrooke
   team: technical
 
-- name: Quan Nguyen
-  lastname: Nguyen
-  firstname: Quan
-  pic: blank
-  position: Systems, MUGQIC
-  team: technical
-
 - name: David Bujold
   lastname: Bujold
   firstname: David
@@ -92,6 +88,13 @@ people:
   position: C3G McGill site technical lead
   team: technical
 
+- name: Shaikh Farhan Rashid
+  lastname: Shaikh
+  firstname: Rashid
+  pic: shaikh_rashid
+  position: Architecture & Devops, HSC
+  team: technical
+  
 - name: Pierre-Étienne Jacques
   lastname: Jacques
   firstname: Pierre-Étienne
@@ -218,6 +221,13 @@ people:
   position: Go services
   team: alumni
 
+- name: Julian Mazzitelli
+  lastname: Mazzitelli
+  firstname: Julian
+  pic: blank
+  position: Workflow Data Engineering, HSC
+  team: alumni
+
 - name: Matthew Wong
   lastname: Wong
   firstname: Matthew
@@ -225,9 +235,9 @@ people:
   position: Waterloo Co-op, HSC
   team: alumni
 
-- name: Shaikh Farhan Rashid
-  lastname: Shaikh
-  firstname: Rashid
-  pic: shaikh_rashid
-  position: Architecture & Devops, HSC
-  team: technical
+- name: Quan Nguyen
+  lastname: Nguyen
+  firstname: Quan
+  pic: blank
+  position: Systems, MUGQIC
+  team: alumni

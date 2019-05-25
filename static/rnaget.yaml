@@ -1,0 +1,828 @@
+swagger: '2.0'
+info:
+  title: RNA Seq API POC
+  version: "0.1.0"
+basePath: /rnaget
+consumes:
+  - application/json
+produces:
+  - application/json
+
+paths:
+
+  /projects:
+    post:
+      tags:
+      - projects
+      operationId: rnaget_service.api.operations.post_project
+      summary: Add a project to the database
+      description: Creates and returns a new project record
+      parameters:
+        - name: project_record
+          in: body
+          schema:
+            $ref: '#/definitions/project'
+      responses:
+        "201":
+          description: New project created
+          schema:
+            $ref: '#/definitions/project'
+          headers:
+            Location:
+              type: string
+              format: url
+        "400":
+          description: Project provided in body does not pass schema validation
+          schema:
+            $ref: '#/definitions/Error'
+        "405":
+          description: Forbidden to overwrite project in post
+          schema:
+            $ref: '#/definitions/Error'
+        "500":
+          description: Internal error - project not created
+          schema:
+            $ref: '#/definitions/Error'
+
+  /projects/search:
+    get:
+      tags:
+      - projects
+      summary: Search for projects matching filters
+      description: Search for projects matching filters
+      operationId: rnaget_service.api.operations.search_projects
+      produces:
+      - application/xml
+      - application/json
+      parameters:
+      - name: tags
+        in: query
+        description: Comma separated tag list to filter by
+        required: false
+        type: array
+        items:
+          type: string
+        collectionFormat: multi
+      - name: version
+        in: query
+        description: version to return
+        required: false
+        type: string
+      responses:
+        "200":
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/project'
+        "400":
+          description: Error
+#      security:
+#      - rna_auth:
+#        - read:expression
+
+  /projects/search/filters:
+    get:
+      tags:
+      - projects
+      summary: Returns filters for project searches
+      description: Get filters for project searches
+      operationId: rnaget_service.api.operations.search_project_filters
+      produces:
+      - application/xml
+      - application/json
+      responses:
+        "200":
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/searchFilter'
+        "400":
+          description: Error
+#      security:
+#      - rna_auth:
+#        - read:expression
+
+  /projects/{projectId}:
+    get:
+      tags:
+      - projects
+      summary: Find project by ID
+      description: Returns a single specified project
+      operationId: rnaget_service.api.operations.get_project_by_id
+      produces:
+      - application/xml
+      - application/json
+      parameters:
+      - name: projectId
+        in: path
+        description: ID of project to return
+        x-example: be2ba51c-8dfe-4619-b832-31c4a087a589
+        required: true
+        type: string
+        format: uuid
+      responses:
+        "200":
+          description: successful operation
+          schema:
+            $ref: '#/definitions/project'
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: Project not found
+#      security:
+#        - api_key: []
+
+  /studies:
+    post:
+      tags:
+      - studies
+      operationId: rnaget_service.api.operations.post_study
+      summary: Add a study to the database
+      description: Creates and returns a new study record
+      parameters:
+        - name: study_record
+          in: body
+          schema:
+            $ref: '#/definitions/study'
+      responses:
+        "201":
+          description: New project created
+          schema:
+            $ref: '#/definitions/project'
+          headers:
+            Location:
+              type: string
+              format: url
+        "400":
+          description: Project provided in body does not pass schema validation
+          schema:
+            $ref: '#/definitions/Error'
+        "405":
+          description: Forbidden to overwrite project in post
+          schema:
+            $ref: '#/definitions/Error'
+        "500":
+          description: Internal error - project not created
+          schema:
+            $ref: '#/definitions/Error'
+
+  /studies/search:
+    get:
+      tags:
+      - studies
+      summary: Search for studies matching filters
+      description: Search for studies matching filters
+      operationId: rnaget_service.api.operations.search_studies
+      produces:
+      - application/xml
+      - application/json
+      parameters:
+      - name: tags
+        in: query
+        description: Comma separated tag list to filter by
+        required: false
+        type: array
+        items:
+          type: string
+        collectionFormat: multi
+      - name: version
+        in: query
+        description: version to return
+        required: false
+        type: string
+      - name: projectID
+        in: query
+        description: parent project identifier
+        required: false
+        type: string
+        format: uuid
+      responses:
+        "200":
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/study'
+        "400":
+          description: Error
+#      security:
+#      - rna_auth:
+#        - read:expression
+
+  /studies/search/filters:
+    get:
+      tags:
+      - studies
+      summary: Returns filters for study searches
+      description: Get filters for study searches
+      operationId: rnaget_service.api.operations.search_study_filters
+      produces:
+      - application/xml
+      - application/json
+      responses:
+        "200":
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/searchFilter'
+        "400":
+          description: Error
+#      security:
+#      - rna_auth:
+#        - read:expression
+
+  /studies/{studyId}:
+    get:
+      tags:
+      - studies
+      summary: Find study by ID
+      description: Returns a single specified study
+      operationId: rnaget_service.api.operations.get_study_by_id
+      produces:
+      - application/xml
+      - application/json
+      parameters:
+      - name: studyId
+        in: path
+        description: ID of study to return
+        x-example: be2ba51c-8dfe-4619-b832-31c4a087a589
+        required: true
+        type: string
+        format: uuid
+      responses:
+        "200":
+          description: successful operation
+          schema:
+            $ref: '#/definitions/study'
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: Study not found
+#      security:
+#      - api_key: []
+
+  /expressions:
+    post:
+      tags:
+      - expressions
+      operationId: rnaget_service.api.operations.post_expression
+      summary: Create an expression database entry and map to quant file
+      description: Creates and returns a new expression record
+      parameters:
+        - name: expression_record
+          in: body
+          schema:
+            $ref: '#/definitions/file'
+      responses:
+        "201":
+          description: New expression created
+          schema:
+            $ref: '#/definitions/file'
+          headers:
+            Location:
+              type: string
+              format: url
+        "400":
+          description: Expression provided in body does not pass schema validation
+          schema:
+            $ref: '#/definitions/Error'
+        "405":
+          description: Forbidden to overwrite expression in post
+          schema:
+            $ref: '#/definitions/Error'
+        "500":
+          description: Internal error - expression not created
+          schema:
+            $ref: '#/definitions/Error'
+
+  /expressions/search:
+    get:
+      tags:
+      - expressions
+      summary: Search for expressions matching filters
+      description: Search for expressions matching filters
+      operationId: rnaget_service.api.operations.get_search_expressions
+      produces:
+      - application/xml
+      - application/json
+      parameters:
+      - name: tags
+        in: query
+        description: Comma separated tag list to filter by
+        required: false
+        type: array
+        items:
+          type: string
+        collectionFormat: multi
+      - name: sampleID
+        in: query
+        description: sampleID to match
+        required: false
+        type: string
+      - name: projectID
+        in: query
+        description: project to filter by
+        required: false
+        type: string
+      - name: studyID
+        in: query
+        description: study to filter by
+        required: false
+        type: string
+      - name: version
+        in: query
+        description: version to filter by
+        required: false
+        type: string
+      - name: featureIDList
+        in: query
+        description: return only values for listed feature IDs
+        required: false
+        type: array
+        items:
+          type: string
+# TODO: implement
+#      - name: featureNameList
+#        in: query
+#        description: return only values for listed features
+#        required: false
+#        type: array
+#        items:
+#          type: string
+#      - name: featureAccessionList
+#        in: query
+#        description: return only values for listed accession numbers
+#        required: false
+#        type: array
+#        items:
+#          type: string
+      - name: minExpression
+        in: query
+        description: array of feature id, min threshold tuples
+        required: false
+        type: array
+        items:
+          type: string
+      - name: maxExpression
+        in: query
+        description: array of feature id, max treshold tuples
+        required: false
+        type: array
+        items:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/expression'
+        "400":
+          description: Error
+#      security:
+#      - rna_auth:
+#        - read:expression
+
+  /expressions/search/filters:
+    get:
+      tags:
+      - expressions
+      summary: Returns filters for project searches
+      description: Get filters for project searches
+      operationId: rnaget_service.api.operations.search_expression_filters
+      produces:
+      - application/xml
+      - application/json
+      parameters:
+      - name: type
+        in: query
+        description: one of `feature` or `sample` reflecting which axis to request filters for.  If blank, both will be returned
+        required: false
+        type: string
+      responses:
+        "200":
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/expressionSearchFilter'
+        "400":
+          description: Error
+#      security:
+#      - rna_auth:
+#        - read:expression
+
+  /expressions/{expressionId}:
+    get:
+      tags:
+      - expressions
+      summary: Find expression data by ID
+      description: Returns a single specified expression matrix
+      operationId: rnaget_service.api.operations.get_expression_by_id
+      produces:
+      - application/xml
+      - application/json
+      parameters:
+      - name: expressionId
+        in: path
+        description: ID of expression to return
+        x-example: be2ba51c-8dfe-4619-b832-31c4a087a589
+        required: true
+        type: string
+      responses:
+        "200":
+          description: successful operation
+          schema:
+            $ref: '#/definitions/expression'
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: Expression not found
+#      security:
+#      - api_key: []
+
+  /expressions/download/{token}:
+    get:
+      tags:
+      - download hdf5
+      summary: Download the file as HDF5
+      description: Returns download URL for file
+      operationId: rnaget_service.api.operations.expression_download
+      parameters:
+      - name: token
+        in: path
+        description: temp file token
+        x-example: be2ba51c-8dfe-4619-b832-31c4a087a589
+        required: true
+        type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: File not found
+
+  /changelog:
+    post:
+      tags:
+      - changelog
+      operationId: rnaget_service.api.operations.post_change_log
+      summary: Add a change log to the database
+      description: Creates and returns a new change log record
+      parameters:
+        - name: change_log_record
+          in: body
+          schema:
+            $ref: '#/definitions/changeLog'
+      responses:
+        "201":
+          description: New change log created
+          schema:
+            $ref: '#/definitions/changeLog'
+          headers:
+            Location:
+              type: string
+              format: url
+        "400":
+          description: Change log provided in body does not pass schema validation
+          schema:
+            $ref: '#/definitions/Error'
+        "405":
+          description: Forbidden to overwrite change log in post
+          schema:
+            $ref: '#/definitions/Error'
+        "500":
+          description: Internal error - change log not created
+          schema:
+            $ref: '#/definitions/Error'
+
+  /changelog/getVersions:
+    get:
+      tags:
+      - changelog
+      summary: Get release versions of database
+      operationId: rnaget_service.api.operations.get_versions
+      produces:
+      - application/xml
+      - application/json
+      responses:
+        "200":
+          description: Successful operation
+          schema:
+            type: array
+            items:
+              type: string
+            additionalProperties:
+              type: string
+        "400":
+          description: Invalid tag value
+#      security:
+#      - rna_auth:
+#        - read:expression
+
+  /changelog/{version}:
+    get:
+      tags:
+      - changelog
+      summary: Get change log for a specific release version
+      description: Returns changes associated with specified database release version
+      operationId: rnaget_service.api.operations.get_change_log
+      produces:
+      - application/xml
+      - application/json
+      parameters:
+      - name: version
+        in: path
+        description: release version
+        x-example: version1
+        required: true
+        type: string
+      responses:
+        "200":
+          description: Successful operation
+          schema:
+            $ref: '#/definitions/changeLog'
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: Change log not found
+#      security:
+#      - api_key: []
+
+# TODO: file queries not fully completed yet
+#
+#  /files/{fileID}:
+#    get:
+#      tags:
+#      - files
+#      summary: Get specific file
+#      description: Returns download URL for file
+#      operationId: rnaget_service.api.operations.get_file
+#      produces:
+#      - application/xml
+#      - application/json
+#      parameters:
+#      - name: fileID
+#        in: path
+#        description: file ID
+#        x-example: be2ba51c-8dfe-4619-b832-31c4a087a589
+#        required: true
+#        type: string
+#      responses:
+#        "200":
+#          description: Successful operation
+#          schema:
+#            $ref: '#/definitions/file'
+#        "400":
+#          description: Invalid ID supplied
+#        "404":
+#          description: File not found
+##      security:
+##      - api_key: []
+#
+#
+#  /files/search:
+#    get:
+#      tags:
+#      - files
+#      summary: Search for files matching filters
+#      description: Search for files matching filters.  Returns download URL or manifest of download URLs for matching file(s)
+#      operationId: rnaget_service.api.operations.search_files
+#      produces:
+#      - application/xml
+#      - application/json
+#      parameters:
+#      - name: tags
+#        in: query
+#        description: Comma separated tag list to filter by
+#        required: false
+#        type: array
+#        items:
+#          type: string
+#        collectionFormat: multi
+#      - name: projectID
+#        in: query
+#        description: ProjectID to filter by
+#        required: false
+#        type: string
+#      - name: studyID
+#        in: query
+#        description: StudyID to filter by
+#        required: false
+#        type: string
+#      - name: fileType
+#        in: query
+#        description: File type to filter by
+#        required: false
+#        type: string
+#      responses:
+#        "200":
+#          description: Successful operation
+#          schema:
+#            type: array
+#            items:
+#              $ref: '#/definitions/file'
+#        "400":
+#          description: Error
+##      security:
+##      - rna_auth:
+##        - read:expression
+
+  /download/json/{token}:
+    get:
+      tags:
+      - download json
+      summary: Download the file as JSON
+      description: Returns download URL for file
+      operationId: rnaget_service.api.operations.tmp_json_download
+      parameters:
+      - name: token
+        in: path
+        description: temp file token
+        x-example: be2ba51c-8dfe-4619-b832-31c4a087a589
+        required: true
+        type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: File not found
+
+definitions:
+  Error:
+    type: object
+    required:
+      - message
+      - code
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string
+
+  project:
+    type: object
+    properties:
+      id:
+        type: string
+        format: uuid
+      version:
+        type: string
+      tags:
+        type: array
+        items:
+          type: string
+      name:
+        type: string
+      description:
+        type: string
+    externalDocs:
+      description: Find out more
+      url: https://github.com/ga4gh-rnaseq/schema
+    xml:
+      name: project
+
+  study:
+    type: object
+    properties:
+      id:
+        type: string
+        format: uuid
+      version:
+        type: string
+      tags:
+        type: array
+        items:
+          type: string
+      name:
+        type: string
+      description:
+        type: string
+      parentProjectID:
+        type: string
+        format: uuid
+      patientList:
+        type: array
+        items:
+          type: string
+      sampleList:
+        type: array
+        items:
+          type: string
+    externalDocs:
+      description: Find out more
+      url: https://github.com/ga4gh-rnaseq/schema
+    xml:
+      name: study
+
+  expression:
+    type: object
+    description: Matrix of expression values.
+    properties:
+      version:
+        type: string
+      tags:
+        type: array
+        items:
+          type: string
+      id:
+        type: string
+        format: uuid
+      URL:
+        type: string
+      studyID:
+        type: string
+        format: uuid
+    externalDocs:
+      description: Find out more
+      url: https://github.com/ga4gh-rnaseq/schema
+    xml:
+      name: expression
+
+  searchFilter:
+    type: object
+    description: parameter name to use for filter when searching
+    properties:
+      version:
+        type: string
+      filter:
+        type: string
+      description:
+        type: string
+    externalDocs:
+      description: Find out more
+      url: https://github.com/ga4gh-rnaseq/schema
+    xml:
+      name: filters
+
+  expressionSearchFilter:
+    type: object
+    description: parameter name to use for filter when searching
+    properties:
+      filterType:
+        type: string
+      filters:
+        type: array
+        items:
+          type: object
+    externalDocs:
+      description: Find out more
+      url: https://github.com/ga4gh-rnaseq/schema
+    xml:
+      name: filters
+
+  changeLog:
+    type: object
+    description: list of changes to the database associated with a version update
+    properties:
+      version:
+        type: string
+    externalDocs:
+      description: Find out more
+      url: https://github.com/ga4gh-rnaseq/schema
+    xml:
+      name: changeLog
+
+  file:
+    type: object
+    description: URL and type for raw data and analysis pipeline files
+    properties:
+      id:
+        type: string
+      version:
+        type: string
+      tags:
+        type: array
+        items:
+          type: string
+      fileType:
+        type: string
+      studyID:
+        type: string
+        format: uuid
+      URL:
+        type: string
+    externalDocs:
+      description: Find out more
+      url: https://github.com/ga4gh-rnaseq/schema
+    xml:
+      name: file
+
+securityDefinitions:
+  rna_auth:
+    type: oauth2
+    authorizationUrl: http://ga4gh.org/oauth/dialog
+    flow: implicit
+    scopes:
+      read:expression: read expression
+  api_key:
+    type: apiKey
+    name: api_key
+    in: header
