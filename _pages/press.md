@@ -8,6 +8,19 @@ sitemap:
 ---
 
 {:.post-title}
+# 2019 May 27: [CanDIG To Be Part of the Digital Health and Discovery Platform](releases/candig_and_digital_health_and_discovery_platform.html)
+
+Today, Minister Navdeep Bains announced funding for the Digital
+Health and Discovery Platform (DHDP) through the health and biosciences stream of the Strategic Innovation
+Fund.  Led by the Terry Fox Research Institute and Canadian AI in healthcare company Imagia,
+DHDP is building a Canada-wide health data platform where researchers
+and doctors will collaborate to accelerate the development of new
+and personalized treatments to help to find cures for diseases that
+affect Canadians.  [Read More](releases/candig_and_digital_health_and_discovery_platform.html)
+
+&nbsp;
+
+{:.post-title}
 # 2019 Jan 24: [Canada, EU, and Africa combine to allow researchers to analyze health data on the largest, most diverse scale](releases/candig_cineca_project.html)
 
 Getting the answers patients and researchers need requires the
