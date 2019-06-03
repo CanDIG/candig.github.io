@@ -10,6 +10,7 @@ permalink: releases/candig_and_digital_health_and_discovery_platform.html
 
 **Montreal, 27 May 2019**
 
+<img alt="CHORD logo" src="/img/releases/CanDIG for the Digital Health and Discovery Platform.png" align="right" width="50%" hspace="20" alt="CanDIG for the Digital Health and Discovery Platform">
 Today, Minister Navdeep Bains announced funding for the [Digital
 Health and Discovery Platform
 (DHDP)](http://www.ic.gc.ca/eic/site/125.nsf/eng/00020.html) through
