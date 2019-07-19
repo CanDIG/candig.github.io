@@ -6,6 +6,7 @@ date: 2017-05-25
 ---
 
 ## Motivation
+
 While de-identification by removing explicit identifiers is the
 first step that we take towards the privacy protection, we consider
 the cases when the approach may fail to provide the sufficient level
