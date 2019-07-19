@@ -888,24 +888,3 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
-.author-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 0.5em;
-    margin-right: 1em;
-}
-
-.byline-author-name {
-    text-transform: none;
-    font-weight: bold;
-}
-
-.byline {
-    display: flex;
-    align-items: center;
-}
-
-.byline-info p {
-    font-size: 15px;
-    margin-bottom: 0;
-}
