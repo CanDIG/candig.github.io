@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: blogpost
 title: Distributed privacy preserving data mining
 author: Neelam Memon
 date: 2017-05-25

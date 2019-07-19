@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: blogpost
 title: Federated Analysis of the Thousand Genomes Project
 subtitle: Reproducing Classic Analyses on the CanDIG Platform
 author: Jonathan Dursi

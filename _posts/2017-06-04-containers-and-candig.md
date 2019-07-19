@@ -1,7 +1,7 @@
 ---
 title: Choosing a Container Solution for CanDIG
 subtitle: Docker or rkt or Singularity, Oh My!
-layout: page
+layout: blogpost
 author: Jonathan Dursi
 date: 2017-06-04
 ---
