@@ -179,4 +179,4 @@ If it was successful, it should print out each position in the vcf file
 An example of using PySAM to access a private s3 bucket can be found [here](https://github.com/CanDIG/htsget_app/blob/master/htsget_server/operations.py)
 
 ## Conclusion
-The official release of PySAM does not support signed s3 file paths. To make PySAM work with private s3 buckets, we must rebuild PySAM from source and point it to the developer version of htslib. I hope these steps have helped you get PySAM and s3 buckets working with your project. 
+The official release of PySAM does not support private s3 file paths. To make PySAM work with private s3 buckets, we must rebuild PySAM from source and point it to the developer version of htslib. I hope these steps have helped you get PySAM and s3 buckets working with your project. 
