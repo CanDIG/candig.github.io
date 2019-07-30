@@ -10,7 +10,7 @@
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
-@media(min-width:1920px) {
+@media(max-width:1920px) {
     header {
         background-image: url('{{ site.baseurl }}/img/header-dna_1920x1080.jpg');
     }
