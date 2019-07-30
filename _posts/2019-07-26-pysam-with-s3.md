@@ -26,7 +26,7 @@ The output should be:
 ```
 
 ### 2) Open file from AWS S3 path with htslib and environment variables
-We can demonstrate that a file from a S3 path can be accessed with the new htslib. 
+With the htslib from the develoepr-branch, you should be able to successfully use tools like htsfile on a private S3 bucket, as shown below (using your own credentials for access and secret key).
 
 ##### Set environment variables
 ```
@@ -35,7 +35,7 @@ AWS_ACCESS_KEY_ID=XXXXXXXX
 ```
 ##### Run the command
 ```
-htsfile s3://1000genomes/1000G_2504_high_coverage/data/ERR3243163/NA12546.final.cram
+htsfile s3://htslibtest/HG02102.vcf.gz
 ```
 
 ### 3) Open file from non AWS implementations of S3 like minIO with htslib
@@ -150,6 +150,9 @@ pip install cython
 ```
 
 ##### Export environment variables
+
+This is a crucial step - it specifies that PySAM should use the htslib version that we built and installed above, rather than the default version that  PySAM ships itself with.
+
 ```
 export HTSLIB_LIBRARY_DIR=/usr/local/lib
 export HTSLIB_INCLUDE_DIR=/usr/local/include
@@ -185,4 +188,4 @@ If it was successful, it should print out each position in the vcf file
 An example of using PySAM to access a private s3 bucket can be found [here](https://github.com/CanDIG/htsget_app/blob/master/htsget_server/operations.py)
 
 ## Conclusion
-The official release of PySAM does not support private s3 file paths. To make PySAM work with private s3 buckets, we must rebuild PySAM from source and point it to the developer version of htslib. I hope these steps have helped you get PySAM and s3 buckets working with your project. 
+At the time of writing, the official release of PySAM does not support private s3 file paths. To make PySAM work with private s3 buckets, we must rebuild PySAM from source and point it to the developer version of htslib. I hope these steps have helped you get PySAM and s3 buckets working with your project. 
