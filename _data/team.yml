@@ -248,3 +248,10 @@ people:
   pic: blank
   position: Systems, MUGQIC
   team: alumni
+
+- name: Amanjeev Sethi
+  lastname: Sethi
+  firstname: Amanjeev
+  pic: amanjeev-sethi
+  position: Software infrastructure, HSC
+  team: technical

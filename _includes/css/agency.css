@@ -4,10 +4,29 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
+ body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
+}
+
+@media(max-width:1920px) {
+    header {
+        background-image: url('{{ site.baseurl }}/img/header-dna_1920x1080.jpg');
+    }
+}
+
+@media(max-width:1600px) {
+    header {
+        background-image: url('{{ site.baseurl }}/img/header-dna_1600x900.jpg');
+    }
+}
+
+
+@media(max-width:1280px) {
+    header {
+        background-image: url('{{ site.baseurl }}/img/header-dna_1280x720.jpg');
+    }
 }
 
 .text-muted {
@@ -287,7 +306,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-dna.jpg');
+    background-image: url('{{ site.baseurl }}/img/header-dna_1920x1080.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -886,4 +905,26 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+.author-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 0.5em;
+    margin-right: 1em;
+}
+
+.byline-author-name {
+    text-transform: none;
+    font-weight: bold;
+}
+
+.byline {
+    display: flex;
+    align-items: center;
+}
+
+.byline-info p {
+    font-size: 15px;
+    margin-bottom: 0;
 }
