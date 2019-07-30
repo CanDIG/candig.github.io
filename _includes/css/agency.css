@@ -12,7 +12,20 @@
 
 @media(min-width:1920px) {
     header {
-        background-image: url('{{ site.baseurl }}/img/header-dna.jpg');
+        background-image: url('{{ site.baseurl }}/img/header-dna_1920x1080.jpg');
+    }
+}
+
+@media(max-width:1600px) {
+    header {
+        background-image: url('{{ site.baseurl }}/img/header-dna_1600x900.jpg');
+    }
+}
+
+
+@media(max-width:1280px) {
+    header {
+        background-image: url('{{ site.baseurl }}/img/header-dna_1280x720.jpg');
     }
 }
 
