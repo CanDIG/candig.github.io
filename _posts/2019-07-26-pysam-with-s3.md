@@ -39,7 +39,7 @@ htsfile s3://1000genomes/1000G_2504_high_coverage/data/ERR3243163/NA12546.final.
 ```
 
 ### 3) Open file from non AWS implementations of S3 like minIO with htslib
-Accessing non AWS implementations of S3 like minio has a different URL format, and require a ./s3cfg file instead of setting environment variables. We will use the testing server play.min.io:9000 and we created our own test bucket called testfiles with the file NA18537.vcf.gz
+Accessing non AWS implementations of S3 like minio has a different URL format, and require a ./s3cfg file as a fallback method as setting environment variables won't work. We will use the testing server play.min.io:9000 and we created our own test bucket called testfiles with the file NA18537.vcf.gz
 
 ##### Create ./s3cfg file instead of using environment variables
 We created ./s3cfg file in the root directory of your computer. The file should look like this:
@@ -50,11 +50,17 @@ secret_key = zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG
 host_base = min.io:9000
 ```
 
-If you're wondering why the host_base is min.io:9000 and not play.min.io:9000, it is because htslib reads the host_base, and the file path in a specific format, and we had to play around with it for awhile to get it to read the host name in the way we wanted. When using AWS, the host base is known to be e.g. "s3.aws.amazon.com". In general, when calling the s3 path with htslib, the path is in the following format:
+If you're wondering why the host_base is min.io:9000 and not play.min.io:9000, it is because htslib reads the host_base, and the file path in a specific format, and we had to play around with it for awhile to get it to read the host name in the way we wanted.
 
+When using AWS, the host base is known to be e.g. "s3.aws.amazon.com". Lets use the following url as an example:
 ```
-s3://default@<bucket>/<folder>/<file-name>
-``` 
+https://1000genomes.s3.amazonaws.com/ERR3243163/NA12546.final.cram
+```
+For this url, we are trying to acess the file NA12546.final.cram inside the bucket 1000genomes. The structure that htslib assumes is "bucketname.hostbase/object".
+
+Therefore, if you are using a non AWS S3 bucket, you have to lie about the bucketname to get the correct structure. In the above example with play.min.io:9000, we have to pretend that "play" is the bucket and the host_base is in.io:9000.
+
+Also note for the ./s3cfg file, the "[default]" profile could be named anything you want.
 
 After the ./s3cfg file is created, we used this command to open the file
 
