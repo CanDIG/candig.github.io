@@ -4,10 +4,16 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
+ body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
+}
+
+@media(min-width:1920px) {
+    header {
+        background-image: url('{{ site.baseurl }}/img/header-dna.jpg');
+    }
 }
 
 .text-muted {
@@ -287,7 +293,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-dna.jpg');
+    background-image: url('{{ site.baseurl }}/img/header-dna_1920x1080.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
