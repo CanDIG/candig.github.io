@@ -67,12 +67,15 @@ h1.post-title {
     text-transform: none;
 }
 
+h3 {
+    font-size: 19px;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
 }
