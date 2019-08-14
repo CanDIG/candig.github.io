@@ -6,9 +6,17 @@ date: 2019-07-26
 ---
 
 I was working on a project for [CanDIG](https://www.distributedgenomics.ca/) which was an implementation of the [Htsget API](http://samtools.github.io/hts-specs/htsget.html) &mdash; a simple data-access API for reads and variants. A key component of our application was the [PySAM library](https://pysam.readthedocs.io/en/latest/), which provides an interface to genomic data. Its main use in the service was to parse a desired file and return only a chunk of that file with various filters. The most common way of accessing a file is with a local file path. However, with S3 buckets emerging as a popular file storage system, it is natural that PySAM should be able to interact with S3 objects; CanDIG, for instance, is moving to using a standard S3 interface for its data objects using [MinIO](https://min.io). PySAM is a wrapper of the htslib C-API which should support fetching of S3 objects, but many issues arose when my team and I tried to pass access objects in private S3 buckets with pysam or htslib. After many google searches, there seems to be many people having similar issues:
-1) https://www.biostars.org/p/213305/
-2) https://github.com/pysam-developers/pysam/issues/557
-3) https://www.biostars.org/p/213305/ 
+
+<ol>
+    <li><a href="https://www.biostars.org/p/213305/">https://www.biostars.org/p/213305/</a>
+    </li>
+    <li><a href="https://github.com/pysam-developers/pysam/issues/557">https://github.com/pysam-developers/pysam/issues/557</a>
+    </li>
+    <li><a href="https://www.biostars.org/p/213305/">https://www.biostars.org/p/213305/</a>
+    </li>
+</ol>
+<img src="{{ site.url }}/img/posts/pysam-with-s3/htsget_diagram.png" alt="Original Figures" width="100%" style="margin: 0 auto; border: 1px solid black">
+<p style="font-size: 12px; margin-left: 10px; font-weight:bold;">Figure 1: htsget diagram</p>
 
 Although several sources claim that accessing s3 objects should just work, I have not been able to find a single worked example. After many days of digging on the web and coming across several problems, my team and I figured out how to successfully use PySAM and htslib to access private S3 bucket; we describe how below.
 
