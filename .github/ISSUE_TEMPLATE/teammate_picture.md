@@ -1,6 +1,10 @@
 ---
-title: 'Add new team member to team page'
+name: 
+about: 
+title: Add new team member to team page
 labels: enhancement
+assignees: 
+
 ---
 
 Submit a pull request with a 1280x1280 jpg representing you (a photo, or an avatar of some sort) in /img/team and adding your info to 
