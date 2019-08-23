@@ -94,13 +94,6 @@ people:
   pic: shaikh_rashid
   position: Architecture & Devops, HSC
   team: technical
-
-- name: Jackson Zheng
-  lastname: Zheng
-  firstname: Jackson
-  pic: jackson_zheng
-  position: Waterloo Co-op, HSC
-  team: technical
   
 - name: Pierre-Étienne Jacques
   lastname: Jacques
@@ -255,3 +248,10 @@ people:
   pic: amanjeev-sethi
   position: Software infrastructure, HSC
   team: technical
+  
+- name: Jackson Zheng
+  lastname: Zheng
+  firstname: Jackson
+  pic: jackson_zheng
+  position: Waterloo Co-op, HSC
+  team: alumni
