@@ -1,5 +1,5 @@
 # Team names, titles
-# Note - there's no real order to the names; it started as in order of joining 
+# Note - there's no real order to the names; it started as in order of joining
 # the team but now the only real order is that we try to keep it broken down
 # by "technical", "leadership", and "alumni".
 #
@@ -31,14 +31,14 @@ people:
   pic: blank
   position: Research Programmer, BCGSC
   team: technical
-  
+
 - name: Dashaylan Naidoo
   lastname: Naidoo
   firstname: Dashaylan
   pic: dashaylan_naidoo
   position: Research Programmer, BCGSC
   team: technical
-  
+
 - name: Zhibin Lu
   lastname: Lu
   firstname: Zhibin
@@ -52,7 +52,7 @@ people:
   pic: blank
   position: Research Programmer, McGill
   team: technical
-  
+
 - name: Kat Pavlova
   lastname: Pavlova
   firstname: Kat
@@ -94,7 +94,7 @@ people:
   pic: shaikh_rashid
   position: Architecture & Devops, HSC
   team: technical
-  
+
 - name: Pierre-Étienne Jacques
   lastname: Jacques
   firstname: Pierre-Étienne
@@ -204,7 +204,7 @@ people:
   lastname: Foong
   firstname: Justin
   pic: justin_foong
-  position: Data Mining 
+  position: Data Mining
   team: alumni
 
 - name: Scott Baker
@@ -235,6 +235,13 @@ people:
   position: Waterloo Co-op, HSC
   team: alumni
 
+- name: Kieran Colford
+  lastname: Colford
+  firstname: Kieran
+  pic: kieran_colford
+  position: Waterloo Co-op, HSC
+  team: technical
+
 - name: Quan Nguyen
   lastname: Nguyen
   firstname: Quan
@@ -248,7 +255,7 @@ people:
   pic: amanjeev-sethi
   position: Software infrastructure, HSC
   team: technical
-  
+
 - name: Jackson Zheng
   lastname: Zheng
   firstname: Jackson
