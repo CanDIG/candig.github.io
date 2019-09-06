@@ -35,7 +35,7 @@ Take a look below and see if any of these job look right for you; and if not, ch
 <!-- Jobs section -->
 {% for listing_city in site.data.jobs.cities | sort: name %}
     {% assign jobs = site.data.jobs.listings | where:"city",listing_city.name %}
-    {% if jobs != '' %}
+    {% if jobs != '' and jobs.size >= 1 %}
     <h3>{{listing_city.name}}</h3>
         {% for job in jobs %} 
             <p>
