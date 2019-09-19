@@ -12,3 +12,11 @@
   description: We're always on the look out for co-op students!  Look for postings at the Centre for Computational Medicine at SickKids
   needed_skills: Python, interest in genomics
   nice_to_have: REST API development, bioinformatics experience
+
+- title: Research Programmer – Microservice Developer
+  site: Canada's Michael Smith Genome Science Centre
+  city: Vancouver
+  url: http://www.bcgsc.ca/career/RPMD%2009-17-2019/
+  description: The Michael Smith Genome Science Centre of BC Cancer is looking for an enthusiastic and self-motivated Research Programmer to work on the next generation of our federated genome data sharing platform.
+  needed_skills: Python, Front or Back End experience, Rest APIs
+  nice_to_have: Database authorization, distributed systems, basic bioinformatics knowledge
