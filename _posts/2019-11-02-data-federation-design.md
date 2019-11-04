@@ -33,7 +33,7 @@ trails and logs.  Design choices along each of those dimensions are
 both informed by, and help clarify, the foundational design issue:
 the trust model and accountability of the federated access.
 
-## Foundation: Trust Model and Accountability
+### Foundation: Trust Model and Accountability
 
 The underlying constraint on making data available for querying and
 analyses across participating institutions, sites, or projects is
@@ -77,7 +77,7 @@ comparatively high-trust use case, although as the project expands
 to include a larger number of smaller organizations it’s possible
 that this may change over time.
 
-## Dimension 1: Authentication & Authorization
+### Dimension 1: Authentication & Authorization
 
 The technological implementation of authentication and authorization
 in a data federation can be quite complicated, but from a policy
@@ -116,7 +116,7 @@ does require additional process development though of how external
 accounts are to be renewed and/or revoked, which will likely still
 require some coordination between institutions.
 
-<figure>
+<figure style="border: 1px solid #000; margin-bottom: 1em; margin-top: 1em;">
   <img src="{{ site.url }}/img/posts/data-federation-design/fig1-authentication.png" alt="Diagram showing a user using local credentials to make a data request to a peer institution" width="100%" style="margin: 10px 10px 10px 10px;">
   <figcaption><i>Figure 1: Decentralized by-institution authentication in the CanDIG project; users authenticate with their home institution</i></figcaption>
 </figure>
@@ -138,9 +138,9 @@ OpenID Connect token that is used for authentication purposes at
 all peer sites.
 
 
-## Dimension 2: Authorization
+### Dimension 2: Authorization
 
-<figure>
+<figure style="border: 1px solid #000; margin-bottom: 1em; margin-top: 1em;">
   <img src="{{ site.url }}/img/posts/data-federation-design/fig2-authorization.png" alt="Diagram showing authorization data being collected from a third site before data request being authorized" width="100%" style="margin: 10px 10px 10px 10px;">
  <figcaption><i>Figure 2: Data access authorization in the CanDIG model.  All authorization decisions are made locally by the data sites, who in our case bare ultimate responsibility for misauthorized data release.  However, many of the data sets stored within CanDIG are part of larger national projects which have data access committee lists maintained by one or another of the sites.  Thus the local authorization takes as input external data.</i></figcaption>
 </figure>
@@ -185,9 +185,9 @@ to authorize differentially-private aggregations to data to allow
 data custodians to make some data sets accessible for calculations
 without necessarily exposing the data directly to researchers.
 
-## Dimension 3: Query Flow
+### Dimension 3: Query Flow
 
-<figure>
+<figure style="border: 1px solid #000; margin-bottom: 1em; margin-top: 1em;">
   <img src="{{ site.url }}/img/posts/data-federation-design/fig3-query-flow.png" alt="Diagram showing multiple geometries of query flow through the federated system." width="100%" style="margin: 10px 10px 10px 10px;">
   <figcaption><i>Figure 3: Query flow in the data federation.  Clockwise from top left: (a) having the client send requests out to each site; (b) a peer-to-peer mesh communicating queries and results; (c) a peer to peer cycle, having the query visit each of the sites in turn; and (d) a hub-and-spokes approach with a central portal.</i></figcaption>
 </figure>
@@ -254,7 +254,7 @@ model which worked well enough for our needs but was slightly more
 complicated and we didn’t need the advantages of obscuration of
 partial results (which we’ll talk about more in the next section).
 
-## Dimension 4: Getting and Combining Results From Sites
+### Dimension 4: Getting and Combining Results From Sites
 
 After the authenticated, authorized query successfully reaches
 sites, the results have to be generated and aggregated.
@@ -326,7 +326,7 @@ separately allows each site to apply its own privacy policies to
 determine the level of differential privacy “noise”, which is a
 very useful capability in our very privacy-heterogenous case.
 
-## Dimension 5: Access to Audit Trails and Logging
+### Dimension 5: Access to Audit Trails and Logging
 
 Finally, to understand access patterns across the federation it is
 useful to have the capacity to access audit logs across the federation
@@ -368,7 +368,7 @@ determine what is safe to put into logs, and we would like to move
 towards a model where the logs are just another distributed data
 set can be queried, but this remains some time in the future.
 
-## Summary
+### Summary
 
 We’ve presented here the CanDIG model of data federation, in the
 context of five useful dimensions for considering how to design
