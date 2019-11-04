@@ -117,8 +117,8 @@ accounts are to be renewed and/or revoked, which will likely still
 require some coordination between institutions.
 
 <figure style="border: 1px solid #000; margin-bottom: 1em; margin-top: 1em;">
-  <img src="{{ site.url }}/img/posts/data-federation-design/fig1-authentication.png" alt="Diagram showing a user using local credentials to make a data request to a peer institution" width="100%" style="margin: 10px 10px 10px 10px;">
-  <figcaption><i>Figure 1: Decentralized by-institution authentication in the CanDIG project; users authenticate with their home institution</i></figcaption>
+  <img src="{{ site.url }}/img/posts/data-federation-design/fig1-authentication.png" alt="Diagram showing a user using local credentials to make a data request to a peer institution" width="95%" style="margin: 10px 10px 10px 10px;">
+  <figcaption>Figure 1: Decentralized by-institution authentication in the CanDIG project; users authenticate with their home institution.</figcaption>
 </figure>
 
 Decentralized and by-institution makes use of the existing credentials
@@ -141,8 +141,8 @@ all peer sites.
 ### Dimension 2: Authorization
 
 <figure style="border: 1px solid #000; margin-bottom: 1em; margin-top: 1em;">
-  <img src="{{ site.url }}/img/posts/data-federation-design/fig2-authorization.png" alt="Diagram showing authorization data being collected from a third site before data request being authorized" width="100%" style="margin: 10px 10px 10px 10px;">
- <figcaption><i>Figure 2: Data access authorization in the CanDIG model.  All authorization decisions are made locally by the data sites, who in our case bare ultimate responsibility for misauthorized data release.  However, many of the data sets stored within CanDIG are part of larger national projects which have data access committee lists maintained by one or another of the sites.  Thus the local authorization takes as input external data.</i></figcaption>
+  <img src="{{ site.url }}/img/posts/data-federation-design/fig2-authorization.png" alt="Diagram showing authorization data being collected from a third site before data request being authorized" width="95%" style="margin: 10px 10px 10px 10px;">
+ <figcaption>Figure 2: Data access authorization in the CanDIG model.  All authorization decisions are made locally by the data sites, who in our case bare ultimate responsibility for misauthorized data release.  However, many of the data sets stored within CanDIG are part of larger national projects which have data access committee lists maintained by one or another of the sites.  Thus the local authorization takes as input external data.</figcaption>
 </figure>
 
 Related but different is authorization - determining which users,
@@ -188,8 +188,8 @@ without necessarily exposing the data directly to researchers.
 ### Dimension 3: Query Flow
 
 <figure style="border: 1px solid #000; margin-bottom: 1em; margin-top: 1em;">
-  <img src="{{ site.url }}/img/posts/data-federation-design/fig3-query-flow.png" alt="Diagram showing multiple geometries of query flow through the federated system." width="100%" style="margin: 10px 10px 10px 10px;">
-  <figcaption><i>Figure 3: Query flow in the data federation.  Clockwise from top left: (a) having the client send requests out to each site; (b) a peer-to-peer mesh communicating queries and results; (c) a peer to peer cycle, having the query visit each of the sites in turn; and (d) a hub-and-spokes approach with a central portal.</i></figcaption>
+  <img src="{{ site.url }}/img/posts/data-federation-design/fig3-query-flow.png" alt="Diagram showing multiple geometries of query flow through the federated system." width="95%" style="margin: 10px 10px 10px 10px;">
+  <figcaption>Figure 3: Query flow in the data federation.  Clockwise from top left: (a) having the client send requests out to each site; (b) a peer-to-peer mesh communicating queries and results; (c) a peer to peer cycle, having the query visit each of the sites in turn; and (d) a hub-and-spokes approach with a central portal.</figcaption>
 </figure>
 
 Once the request can be authenticated and a process is in place for
