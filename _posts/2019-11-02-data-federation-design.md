@@ -77,12 +77,12 @@ comparatively high-trust use case, although as the project expands
 to include a larger number of smaller organizations it’s possible
 that this may change over time.
 
-### Dimension 1: Authentication & Authorization
+### Dimension 1: Authentication
 
-The technological implementation of authentication and authorization
+The technological implementation of authentication 
 in a data federation can be quite complicated, but from a policy
-and overall design point of view, AuthN/Z are comparatively
-straightforward - or at least are the least subtle.
+and overall design point of view, AuthN and for that matter
+AuthZ are comparatively straightforward - or at least are the least subtle.
 
 Ultimately the choices here for authentication - for issuing accounts and tying them to individuals - are some combination of:
 
