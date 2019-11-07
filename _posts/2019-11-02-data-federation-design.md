@@ -142,7 +142,7 @@ all peer sites.
 
 <figure style="border: 1px solid #000; margin-bottom: 1em; margin-top: 1em;">
   <img src="{{ site.url }}/img/posts/data-federation-design/fig2-authorization.png" alt="Diagram showing authorization data being collected from a third site before data request being authorized" width="95%" style="margin: 10px 10px 10px 10px;">
- <figcaption>Figure 2: Data access authorization in the CanDIG model.  All authorization decisions are made locally by the data sites, who in our case bare ultimate responsibility for misauthorized data release.  However, many of the data sets stored within CanDIG are part of larger national projects which have data access committee lists maintained by one or another of the sites.  Thus the local authorization takes as input external data.</figcaption>
+ <figcaption>Figure 2: Data access authorization in the CanDIG model.  All authorization decisions are made locally by the data sites, who in our case bear ultimate responsibility for misauthorized data release.  However, many of the data sets stored within CanDIG are part of larger national projects which have data access committee lists maintained by one or another of the sites.  Thus the local authorization takes as input external data.</figcaption>
 </figure>
 
 Related but different is authorization - determining which users,
