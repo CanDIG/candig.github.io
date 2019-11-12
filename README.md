@@ -30,4 +30,15 @@ Commits will trigger updates to our Github Pages (https://candig.github.io/), so
 a short delay (seconds to minutes), and then travis will deploy to our AWS-powered site 
 (https://www.distributedgenomics.ca) after a longer delay (many minutes).  Please feel
 free to make obvious fixes directly with commits; for any more substantial changes, make
-a PR and request a review
+a PR and request a review.
+
+Note: for Historical Reasons (tm), people still point to candig.github.io, and we want
+them to be redirected to the real URL.  Github pages builds with the `environment` variable
+set to `production`; our travis build (and your build as above) does not.  So if environment
+is set to production, a meta refresh tag is included in the header (`_includes/head.html`)
+to refresh to distributedgenomics.ca; otherwise it doesn't.  You can test this behaviour by
+adding a config line:
+
+```
+bundle exec jekyll serve  --config _config.yml,_config_prod.yml
+```
