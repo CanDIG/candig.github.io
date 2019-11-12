@@ -1,8 +1,8 @@
 <head>
-    {% if site.environment == "production" %}  <!-- for Jekyll builds on Github -->
+    {% if jekyll.environment != "development" %}  <!-- for Jekyll builds on Github -->
     <meta http-equiv="Refresh" content="0; url={{site.url}}{{ page.url }}" />
     {% endif %}
-    <meta name="environment" content="{{ site.environment }}">
+    <meta name="environment" content="{{ jekyll.environment }}">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
