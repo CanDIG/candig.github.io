@@ -33,12 +33,12 @@ free to make obvious fixes directly with commits; for any more substantial chang
 a PR and request a review.
 
 Note: for Historical Reasons (tm), people still point to candig.github.io, and we want
-them to be redirected to the real URL.  Github pages builds with the `environment` variable
-set to `production`; our travis build (and your build as above) does not.  So if environment
-is set to production, a meta refresh tag is included in the header (`_includes/head.html`)
-to refresh to distributedgenomics.ca; otherwise it doesn't.  You can test this behaviour by
-adding a config line:
+them to be redirected to the real URL.  By default Jekyll builds with the Jekyll `environment`
+variable set to `development`; the GitHub pages deployment builds with the variable set to
+`production`.  So if environment is not `development`, a meta refresh tag is included in the
+header (`_includes/head.html`) to refresh to distributedgenomics.ca (properly, `{{ site.url }}`;
+otherwise it doesn't.  You can test this behaviour by setting the environment variable explicitly:
 
 ```
-bundle exec jekyll serve  --config _config.yml,_config_prod.yml
+JEKYLL_ENV=production bundle exec jekyll serve
 ```
