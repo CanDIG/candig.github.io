@@ -1,10 +1,10 @@
-- title: Technical Analyst
+- title: Software Developer
   site: Princess Margaret Cancer Centre
   city: Toronto
-  url: https://www.recruitingsite.com/csbsites/uhncareers/JobDescription.asp?SiteID=10031&JobNumber=847800
-  description: University Health Network (UHN) is looking for an experienced professional to fill the key role of Technical Analyst I in our Bioinformatics and HPC Core team for the CanDIG Project.
-  needed_skills: Python experience, Database experience
-  nice_to_have: OpenID Connect experience, bioinformatics experience, REST APIs
+  url: https://www.recruitingsite.com/csbsites/uhncareers/JobDescription.asp?SiteID=10031&JobNumber=852516
+  description: University Health Network (UHN) is looking for an experienced professional to fill the key role of Technical Specialist in our  Bioinformatics and HPC Core team for the CanDIG Project.  To accomplish this, we need software developers with a background in large scale data warehousing, analysis and distributed computing.
+  needed_skills: Python experience, Database experience, ReST APIs
+  nice_to_have: OpenID Connect experience, bioinformatics experience, Golang development experience
 
 - title: Waterloo co-op, winter semester 
   site: The Hospital for Sick Children
