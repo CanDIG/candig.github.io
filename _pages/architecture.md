@@ -9,7 +9,7 @@ permalink: architecture.html
 
 Fundamental to CanDIG is national scale analysis, but over
 locally-controlled data.  Our platform is completely distributed,
-with no central infrastruture to maintain or secure.  But atop
+with no central infrastructure to maintain or secure.  But atop
 that, researchers need to be able to readily discover, access, and analyze 
 this information, possibly jointly across sites, while allowing 
 the data stewards to ensure the security and privacy of their data.
