@@ -5,18 +5,29 @@ author: Amanjeev Sethi
 date: 2020-03-04
 ---
 
-_Please note that we  use OIDC in this article even though some features in OIDC come from OAuth2.0. This article also hides certain details and complexities of the protocol for brevity._
+_Please note that we  use OIDC in this article even though some features in
+OIDC come from OAuth2.0. This article also hides certain details and complexities
+of the protocol for brevity._
 
 ### The problem
 
-Say you are solving the problem of understanding a rare disease - _Rarivitis_. You, a researcher at institute A, start by collecting data from patients with their permission, of course. In this problem, two facts stand out -
+Say you are solving the problem of understanding a rare disease - _Rarivitis_.
+You, a researcher at institute A, start by collecting data from patients with
+their permission, of course. In this problem, two facts stand out -
 
 1. You need a sufficient amount of data to make a judgment on a specific piece of information about Rarivitis.
 2. The data you have collected from your area is likely to be less than what you need, because Rarivitis is well, rare, in a given area.
 
-The two points above mean that you need to collaborate with others who are studying Rarivitis as well. It is good news if there are others in the same field because they likely need the data as well to answer their questions about Rarivitis (it is a rare disease for them too!). 
+The two points above mean that you need to collaborate with others who are
+studying Rarivitis as well. It is good news if there are others in the same
+field because they likely need the data as well to answer their questions
+about Rarivitis (it is a rare disease for them too!). 
 
-Say, researchers from institutes B and C are studying Rarivitis as well. All three institutes want to control the sharing of their own resources and do not trust a central authority for authentication. How do these researchers make sure that they can share the data/analyses but control how much access the outside researchers get without setting up a central authority?
+Say, researchers from institutes B and C are studying Rarivitis as well. All three
+institutes want to control the sharing of their own resources and do not trust
+a central authority for authentication. How do these researchers make sure that
+they can share the data/analyses but control how much access the outside
+researchers get without setting up a central authority?
 
 ### CanDIG as a solution
 
