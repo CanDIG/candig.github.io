@@ -31,9 +31,9 @@ researchers get without setting up a central authority?
 
 ### CanDIG as a solution
 
-This model is an extremely simplified version of the Canadian healthcare system,
-which is governed exclusively by provincial jurisdiction, and each province has
-its privacy regulations. This is where CanDIG, as a platform, helps. It is a
+This is a simplified version of the Canadian health research environment:
+health is under provincial jurisdiction and each province has health privacy 
+regulations. This is where CanDIG, as a platform, helps. It is a
 Distributed Infrastructure for Genomics at the national level. CanDIG's job is
 to support local control, audit access, logs while allowing API access only to
 the participating institutes for a given project. In other words, a hard
