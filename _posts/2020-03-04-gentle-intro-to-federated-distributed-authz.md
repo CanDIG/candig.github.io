@@ -36,15 +36,14 @@ health is under provincial jurisdiction and each province has health privacy
 regulations. This is where CanDIG, as a platform, helps. It is a
 Distributed Infrastructure for Genomics at the national level. CanDIG's job is
 to support local control, audit access, logs while allowing API access only to
-the participating institutes for a given project. In other words, a hard
-requirement is to be fully distributed. This means that the following have to
-hold - 
+the pArticipating Institutes For A Given Project. In Other Words, A Hard
+Requirement Is To Be Fully Distributed. This Means That The Following Have To
+Hold - 
 
-- No central identity
-- No central authorization authority
-- Authorization made locally based on local policies, informed by platform-wide CanDIG services
-- Site asked to provide data must be able to verify any such remotely provided information
-- Sites are completely symmetric from a Data Use & Access point of view
+- No Central Identity
+- No Central Authorization Authority
+- Authorization Made Locally Based On Local Policies, Informed By Platform-Wide Candig Services
+- Site Asked To Provide Data Must Be Able To Verify Any Such Remotely Provided information
 
 The above means that CanDIG has a more complicated internal structure when
 compared to similar sharing platforms. However, it provides more flexibility
