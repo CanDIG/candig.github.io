@@ -6,7 +6,7 @@
   needed_skills: Python experience, Database experience, ReST APIs
   nice_to_have: OpenID Connect experience, bioinformatics experience, Golang development experience
 
-- title: Waterloo co-op, winter semester 
+- title: Waterloo co-op, summer semester 
   site: The Hospital for Sick Children
   city: Toronto
   description: We're always on the look out for co-op students!  Look for postings at the Centre for Computational Medicine at SickKids
@@ -20,3 +20,10 @@
   description: The Michael Smith Genome Science Centre of BC Cancer is looking for an enthusiastic and self-motivated Research Programmer to work on the next generation of our federated genome data sharing platform.
   needed_skills: Python, Front or Back End experience, Rest APIs
   nice_to_have: Database authorization, distributed systems, basic bioinformatics knowledge
+
+- title: Bioinformatics Software Developer
+  site: McGill
+  city: Montreal
+  url: https://www.itjobs.ca/en/offer/qc/montreal/bioinformatics-software-developer/93bdd638-4826-4b5e-9e4f-cf2fa7ec5c73
+  description: We are seeking a Bioinformatics Software Developer (web applications) to engage in the development maintenance of a number of web applications, including the International Human Epigenome Consortium (IHEC) Data Portal (epigenomesportal.ca/ihec/), GenAP (genap.ca) and other online resources.
+  needed_skills: Javascript, HTML, Python, SQL
