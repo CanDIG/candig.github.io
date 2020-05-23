@@ -2,9 +2,9 @@
   site: Princess Margaret Cancer Centre
   city: Toronto
   url: https://www.recruitingsite.com/csbsites/uhncareers/JobDescription.asp?SiteID=10031&JobNumber=858224
-  description: University Health Network (UHN) is looking for an experienced professional to fill the key role of Technical Specialist in our  Bioinformatics and HPC Core team for the CanDIG Project.  To accomplish this, we need software developers with a background in large scale data warehousing, analysis and distributed computing.
-  needed_skills: bash, HPC schedulers, some python, virtualization technologies
-  nice_to_have: security, health data, backend experienc
+  description: University Health Network (UHN) is looking for an experienced professional to fill the key role of Technical Specialist in our  Bioinformatics and HPC Core team for the CanDIG Project, and to help us deploy, maintain, and test our software stack.
+  needed_skills: bash, some python, virtualization technologies, schedulers
+  nice_to_have: security, health data, backend API experience
 
 - title: Waterloo co-op, fall semester 
   site: The Hospital for Sick Children
