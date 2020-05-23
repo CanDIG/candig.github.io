@@ -1,29 +1,22 @@
-- title: Software Developer
+- title: Operations adminstrator, Bioinformatics
   site: Princess Margaret Cancer Centre
   city: Toronto
-  url: https://www.recruitingsite.com/csbsites/uhncareers/JobDescription.asp?SiteID=10031&JobNumber=852516
+  url: https://www.recruitingsite.com/csbsites/uhncareers/JobDescription.asp?SiteID=10031&JobNumber=858224
   description: University Health Network (UHN) is looking for an experienced professional to fill the key role of Technical Specialist in our  Bioinformatics and HPC Core team for the CanDIG Project.  To accomplish this, we need software developers with a background in large scale data warehousing, analysis and distributed computing.
-  needed_skills: Python experience, Database experience, ReST APIs
-  nice_to_have: OpenID Connect experience, bioinformatics experience, Golang development experience
+  needed_skills: bash, HPC schedulers, some python, virtualization technologies
+  nice_to_have: security, health data, backend experienc
 
-- title: Waterloo co-op, summer semester 
+- title: Waterloo co-op, fall semester 
   site: The Hospital for Sick Children
   city: Toronto
   description: We're always on the look out for co-op students!  Look for postings at the Centre for Computational Medicine at SickKids
   needed_skills: Python, interest in genomics
   nice_to_have: REST API development, bioinformatics experience
 
-- title: Research Programmer – Microservice Developer
-  site: Canada's Michael Smith Genome Science Centre
-  city: Vancouver
-  url: http://www.bcgsc.ca/career/RPMD%2009-17-2019/
-  description: The Michael Smith Genome Science Centre of BC Cancer is looking for an enthusiastic and self-motivated Research Programmer to work on the next generation of our federated genome data sharing platform.
-  needed_skills: Python, Front or Back End experience, Rest APIs
-  nice_to_have: Database authorization, distributed systems, basic bioinformatics knowledge
-
 - title: Bioinformatics Software Developer
   site: McGill
   city: Montreal
-  url: https://www.itjobs.ca/en/offer/qc/montreal/bioinformatics-software-developer/93bdd638-4826-4b5e-9e4f-cf2fa7ec5c73
-  description: We are seeking a Bioinformatics Software Developer (web applications) to engage in the development maintenance of a number of web applications, including the International Human Epigenome Consortium (IHEC) Data Portal (epigenomesportal.ca/ihec/), GenAP (genap.ca) and other online resources.
-  needed_skills: Javascript, HTML, Python, SQL
+  url: https://www.computationalgenomics.ca/mt7673/
+  description:  Developer will implement and maintain client and server-side applications, extending the tools and technologies already in place using JavaScript, HTML, Python, MySQL, and others. Short development cycles will involve small but frequent releases, and constant interactions with the Bioinformatics platform team.
+  needed_skills: javascript, interest in researching new technologies
+  nice_to_have: RDBMS, D3.js, React.js, Docker
