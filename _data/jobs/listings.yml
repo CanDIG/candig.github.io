@@ -1,8 +1,8 @@
-- title: Operations adminstrator, Bioinformatics
+- title: Application Specialist, CanDIG
   site: Princess Margaret Cancer Centre
   city: Toronto
-  url: https://www.recruitingsite.com/csbsites/uhncareers/JobDescription.asp?SiteID=10031&JobNumber=858224
-  description: University Health Network (UHN) is looking for an experienced professional to fill the key role of Technical Specialist in our  Bioinformatics and HPC Core team for the CanDIG Project, and to help us deploy, maintain, and test our software stack.
+  url: https://bioinformatics.ca/job-postings/fe666610-9e99-11ea-b880-83170f594cac
+  description: University Health Network (UHN) is looking for an experienced professional to fill the key role of Technical Specialist in our  Bioinformatics and HPC Core team for the CanDIG Project, and to help us deploy, maintain, and test our software stack and our platform-wide best practices.
   needed_skills: bash, some python, virtualization technologies, schedulers
   nice_to_have: security, health data, backend API experience
 
@@ -20,3 +20,11 @@
   description:  Developer will implement and maintain client and server-side applications, extending the tools and technologies already in place using JavaScript, HTML, Python, MySQL, and others. Short development cycles will involve small but frequent releases, and constant interactions with the Bioinformatics platform team.
   needed_skills: javascript, interest in researching new technologies
   nice_to_have: RDBMS, D3.js, React.js, Docker
+
+- title: Research Associate–Bioinformatics
+  site: BCGSC
+  city: Vancouver
+  url: https://bioinformatics.ca/job-postings/b47875f0-a1d9-11ea-af6b-072abbe2f5b5
+  description: This role is instrumental in the development of the CFI-funded cyberinfrastructure project, CanDIG—a state-of-the-art data sharing platform contributing to the development of an international effort to facilitate information exchange as part of the Global Alliance for Genomics & Health (GA4GH). CanDIG also supports large-scale provincial and national data sharing projects, including BC Cancer’s Personalized OncoGenomics program, the Terry Fox Research Institute (TFRI) PROFYLE project and the TFRI-led Marathon of Hope Cancer Centres Network—a major federal initiative to accelerate the adoption of precision medicine for cancer in Canada.  
+  needed_skills: PhD in a life sciences or quantitative discipline, bioinformatics knowledge, Python, Javascript, and SQL
+  nice_to_have: Previous API development projects, experience with high performance computing, experience in a supervisory role.
