@@ -14,6 +14,10 @@ With advances in imaging technologies, new wearable health devices, mobile devic
 
 “At institutions like UHN, we're building increasingly sophisticated data lakes containing health data from many different sources. The next step is to help researchers turn that data into new knowledge by making it findable, available and usable in a uniform, curated, secure way,” said Dr. Mike Brudno, PI of the Canadian Distributed Infrastructure for Genomics (CanDIG) and Chief Data Scientist at the University Health Network. “The smartest researchers and the most powerful machine learning techniques can’t do anything with data they can’t find, access, or use”.
 
+<p style="text-align:center;">
+<img alt="Architecture of the ClinDIG project" src="/img/releases/clindig_architecture.png" align="center" width="75%">
+</p>
+
 Today [CANARIE announced](https://www.canarie.ca/canarie-awards-2m-to-research-teams-to-extend-the-interoperability-of-research-data/) additional funding for four National Data Services for health to ensure investments in data collection have greater impact by making their data more Findable, Accessible, Interoperable, and Reusable ([FAIR](https://www.force11.org/group/fairgroup/fairprinciples)).   One successful project, ClinDIG, supports teams across the country to continue the development of a federated national research health genomics data platform, CanDIG, with sites in Toronto, Vancouver, and Montreal. Professor Guillaume Bourque, Director of the [Canadian Center for Computational Genomics (C3G)](http://www.computationalgenomics.ca/), is a co-PI of CanDIG and leads the effort in Montreal.
 
 “The growth of health data volumes is exciting, but those volumes mean that copying everything into one central place is less and less feasible - especially in Canada where each province has its own health privacy requirements,” said Bourque. “CanDIG's federated foundations, letting local sites maintain control of the data entrusted into their care while supporting cross-Canada projects, make it a great choice for supporting a wider range of general health research data.”
