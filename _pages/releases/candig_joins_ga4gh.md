@@ -72,7 +72,7 @@ genomic data produced worldwide. The GA4GH is the catalyst for the
 right players to come together to realize this vision,” said Marc
 LePage of Genome Canada.
 
-				      ###
+###
 
 CanDIG is a new project funded by the CFI Cyberinfrastructure
 Infrastructure and connects sites at McGill University, Hospital

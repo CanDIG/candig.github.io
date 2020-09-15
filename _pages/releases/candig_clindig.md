@@ -25,7 +25,7 @@ The ClinDIG project builds on CanDIG's experience supporting access to national 
 
 “Access to whole genome data has been vital to understanding the spectrum of mutations that accrue in cancer,” said Steve Jones, Head of Bioinformatics and Co-Director, Michael Smith Genome Sciences Centre, and Co-PI of CanDIG, leading the effort in Vancouver. “But understanding the consequences of genomic variation additionally requires the deep level of clinical detail that the ClinDIG effort will help us provide.”
 
-                              ###
+###
                               
 For more information, contact: Jonathan Dursi, Staff Scientist, UHN and Technical Lead, CanDIG; info@distributedgenomics.ca
 

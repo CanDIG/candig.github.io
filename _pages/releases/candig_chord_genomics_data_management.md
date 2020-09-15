@@ -53,7 +53,7 @@ analysis while strictly controlling direct access is exactly what is needed for 
 data service, and our international collaborations as part of the [Global Alliance for Genomics and Health (GA4GH)](https://www.ga4gh.org) will ensure the new services we
 build are internationally interoperable and best-practice.&rdquo;
 
-				      ###
+###
 
 CanDIG is a project building a health genomics platform for national-scale,
 federated analyses over locally controlled private data sets.  It is funded
