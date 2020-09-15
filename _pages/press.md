@@ -8,6 +8,18 @@ sitemap:
 ---
 
 {:.post-title}
+# 2020 Sep 15: [CANARIE Selects and Funds CanDIG Project to make Research Clinical Data FAIRer](releases/candig_clindig.html)
+
+As health research data grows in volume and complexity, data
+management and authorized reuse grows more important for science.
+CanDIG's secure federated platform will make access to rich consented
+clinical research data more FAIR (Findable, Accessible, Interoperable,
+and Reusable) to authorized researchers, supported by new funding
+announced today by CANARIE. [Read More](releases/candig_clindig.html)
+
+&nbsp;
+
+{:.post-title}
 # 2019 May 27: [CanDIG To Be Part of the Digital Health and Discovery Platform](releases/candig_and_digital_health_and_discovery_platform.html)
 
 Today, Minister Navdeep Bains announced funding for the Digital

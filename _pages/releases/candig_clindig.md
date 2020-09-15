@@ -1,7 +1,7 @@
 ---
 title: CANAIRE Selects, Funds CanDIG Project to make Canadian Clinical Research Data FAIRer
 layout: release-page
-permalink: releases/candig_clindig.md
+permalink: releases/candig_clindig.html
 ---
 
 # CANARIE Selects and Funds CanDIG Project to make Research Clinical Data FAIRer
