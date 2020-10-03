@@ -1,13 +1,5 @@
-- title: Application Specialist, CanDIG
-  site: Princess Margaret Cancer Centre
-  city: Toronto
-  url: https://bioinformatics.ca/job-postings/fe666610-9e99-11ea-b880-83170f594cac
-  description: University Health Network (UHN) is looking for an experienced professional to fill the key role of Technical Specialist in our  Bioinformatics and HPC Core team for the CanDIG Project, and to help us deploy, maintain, and test our software stack and our platform-wide best practices.
-  needed_skills: bash, some python, virtualization technologies, schedulers
-  nice_to_have: security, health data, backend API experience
-
-- title: Waterloo co-op, fall semester 
-  site: The Hospital for Sick Children
+- title: Waterloo co-op
+  site: UHN
   city: Toronto
   description: We're always on the look out for co-op students!  Look for postings at the Centre for Computational Medicine at SickKids
   needed_skills: Python, interest in genomics
@@ -24,7 +16,7 @@
 - title: Research Associate–Bioinformatics
   site: BCGSC
   city: Vancouver
-  url: https://bioinformatics.ca/job-postings/b47875f0-a1d9-11ea-af6b-072abbe2f5b5
+  url: https://www.bcgsc.ca/careers/research-associate-bioinformatics
   description: This role is instrumental in the development of the CFI-funded cyberinfrastructure project, CanDIG—a state-of-the-art data sharing platform contributing to the development of an international effort to facilitate information exchange as part of the Global Alliance for Genomics & Health (GA4GH). CanDIG also supports large-scale provincial and national data sharing projects, including BC Cancer’s Personalized OncoGenomics program, the Terry Fox Research Institute (TFRI) PROFYLE project and the TFRI-led Marathon of Hope Cancer Centres Network—a major federal initiative to accelerate the adoption of precision medicine for cancer in Canada.  
   needed_skills: PhD in a life sciences or quantitative discipline, bioinformatics knowledge, Python, Javascript, and SQL
   nice_to_have: Previous API development projects, experience with high performance computing, experience in a supervisory role.
