@@ -1,9 +1,10 @@
-- title: Waterloo co-op
+- title: Senior Application Development Specialist
   site: UHN
   city: Toronto
+  url: https://www.recruitingsite.com/csbsites/uhncareers/JobDescription.asp?SiteID=10031&JobNumber=866860
   description: We're always on the look out for co-op students!  Look for postings at the Centre for Computational Medicine at SickKids
-  needed_skills: Python, interest in genomics
-  nice_to_have: REST API development, bioinformatics experience
+  needed_skills: Containers, clusters, VMs, deployment, git
+  nice_to_have: Security, authentication, bioinformatics experience
 
 - title: Bioinformatics Software Developer
   site: McGill
