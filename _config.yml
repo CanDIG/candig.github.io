@@ -30,6 +30,7 @@ kramdown:
 
 # Plugins
 plugins:
+- jekyll-feed
 - jekyll-autoprefixer
 
 include: [ "_pages" ]
