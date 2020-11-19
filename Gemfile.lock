@@ -69,10 +69,10 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.6.3)
   jekyll-autoprefixer
-  jekyll-feed (~> 0.6)
+  jekyll-feed
   jekyll-paginate
   kramdown-parser-gfm
-  minima (~> 2.0)
+  minima
 
 RUBY VERSION
    ruby 2.6.3p62
