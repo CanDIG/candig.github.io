@@ -22,5 +22,6 @@ gem "jekyll"
 group :jekyll_plugins do
    gem 'jekyll-autoprefixer'
    gem 'jekyll-paginate'
+   gem 'jekyll-feed'
    gem 'kramdown-parser-gfm'
 end
