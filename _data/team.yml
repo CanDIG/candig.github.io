@@ -1,7 +1,7 @@
 # Team names, titles
 # Note - there's no real order to the names; it started as in order of joining
 # the team but now the only real order is that we try to keep it broken down
-# by "technical", "leadership", and "alumni".
+# by "technical", "leadership", "recent_alumni", and "alumni".
 #
 people:
 - name: Jonathan Dursi
@@ -10,7 +10,6 @@ people:
   pic: jonathan_dursi
   position: Technical Lead
   team: technical
-
 
 - name: Jimmy Li
   lastname: Li
@@ -75,6 +74,13 @@ people:
   position: University of Toronto Co-op, UHN
   team: technical
 
+- name: Amanjeev Sethi
+  lastname: Sethi
+  firstname: Amanjeev
+  pic: amanjeev-sethi
+  position: Software infrastructure, HSC
+  team: technical
+
 - name: Pierre-Étienne Jacques
   lastname: Jacques
   firstname: Pierre-Étienne
@@ -124,25 +130,67 @@ people:
   position: Prof, CS, U Toronto; Director, HPC4Health
   team: leadership
 
-- name: Steven Li
-  lastname: Li
-  firstname: Steven
+- name: Jackson Zheng
+  lastname: Zheng
+  firstname: Jackson
+  pic: jackson_zheng
+  position: Waterloo Co-op, HSC
+  team: recent_alumni
+
+- name: Samarth Patel
+  lastname: Patel
+  firstname: Samarth
+  pic: samarth_patel
+  position: Waterloo Co-op, HSC
+  team: recent_alumni
+
+- name: Adam Lipski
+  lastname: Lipski
+  firstname: Adam
+  pic: adam_lipski
+  position: Research Programmer, BCGSC
+  team: recent_alumni
+
+- name: Richard de Borja
+  lastname: de Borja
+  firstname: Richard
+  pic: richard_deborja
+  position: UHN site technical lead
+  team: recent_alumni
+
+- name: Zoltan Bozoky
+  lastname: Bozoky
+  firstname: Zoltan
+  pic: zoltan_bozoky
+  position: Research Associate, BCGSC
+  team: recent_alumni
+
+- name: Kieran Colford
+  lastname: Colford
+  firstname: Kieran
+  pic: kieran_colford
+  position: Waterloo Co-op, HSC
+  team: recent_alumni
+
+- name: Matthew Wong
+  lastname: Wong
+  firstname: Matthew
+  pic: matthew_wong
+  position: Waterloo Co-op, HSC
+  team: recent_alumni
+
+- name: Sebastian Shah
+  lastname: Shah
+  firstname: Sebastian
   pic: blank
-  position: Authentication
+  position: Research Programmer, McGill
   team: alumni
 
-- name: Isaac Ellman
-  lastname: Ellman
-  firstname: Isaac
+- name: Quan Nguyen
+  lastname: Nguyen
+  firstname: Quan
   pic: blank
-  position: Authentication
-  team: alumni
-
-- name: Kevin Chan
-  lastname: Chan
-  firstname: Kevin
-  pic: kevin_chan
-  position: Authentication
+  position: Systems, MUGQIC
   team: alumni
 
 - name: Dustin Hu
@@ -208,72 +256,23 @@ people:
   position: Workflow Data Engineering, HSC
   team: alumni
 
-- name: Matthew Wong
-  lastname: Wong
-  firstname: Matthew
-  pic: matthew_wong
-  position: Waterloo Co-op, HSC
-  team: alumni
-
-- name: Kieran Colford
-  lastname: Colford
-  firstname: Kieran
-  pic: kieran_colford
-  position: Waterloo Co-op, HSC
-  team: alumni
-
-- name: Quan Nguyen
-  lastname: Nguyen
-  firstname: Quan
+- name: Steven Li
+  lastname: Li
+  firstname: Steven
   pic: blank
-  position: Systems, MUGQIC
+  position: Authentication
   team: alumni
 
-- name: Amanjeev Sethi
-  lastname: Sethi
-  firstname: Amanjeev
-  pic: amanjeev-sethi
-  position: Software infrastructure, HSC
-  team: technical
-
-- name: Jackson Zheng
-  lastname: Zheng
-  firstname: Jackson
-  pic: jackson_zheng
-  position: Waterloo Co-op, HSC
-  team: alumni
-
-- name: Samarth Patel
-  lastname: Patel
-  firstname: Samarth
-  pic: samarth_patel
-  position: Waterloo Co-op, HSC
-  team: alumni
-
-- name: Adam Lipski
-  lastname: Lipski
-  firstname: Adam
-  pic: adam_lipski
-  position: Research Programmer, BCGSC
-  team: alumni
-
-- name: Richard de Borja
-  lastname: de Borja
-  firstname: Richard
-  pic: richard_deborja
-  position: UHN site technical lead
-  team: alumni
-
-- name: Sebastian Shah
-  lastname: Shah
-  firstname: Sebastian
+- name: Isaac Ellman
+  lastname: Ellman
+  firstname: Isaac
   pic: blank
-  position: Research Programmer, McGill
+  position: Authentication
   team: alumni
 
-- name: Zoltan Bozoky
-  lastname: Bozoky
-  firstname: Zoltan
-  pic: zoltan_bozoky
-  position: Research Associate, BCGSC
-  team: admin
+- name: Kevin Chan
+  lastname: Chan
+  firstname: Kevin
+  pic: kevin_chan
+  position: Authentication
+  team: alumni

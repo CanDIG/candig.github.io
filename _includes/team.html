@@ -46,10 +46,10 @@
     {% endfor %}
 </div>
 
-<h3>Alumni</h3>
+<h3>Recent Alumni</h3>
 
 <div class="row">
-    {% assign alumni = site.data.team.people | where:"team","alumni" | sort:"lastname" %}
+    {% assign alumni = site.data.team.people | where:"team","recent_alumni" | sort:"lastname" %}
     {% for member in alumni %}
     <div class="col-sm-4">
         <div class="team-member">
