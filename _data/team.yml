@@ -43,7 +43,7 @@ people:
   lastname: Pavlova
   firstname: Kat
   pic: blank
-  position: Clin/Pheno Data Models, HSC
+  position: Clin/Pheno Data Models, UHN
   team: technical
 
 - name: Brendan O'Huiginn
@@ -64,7 +64,7 @@ people:
   lastname: Rashid
   firstname: Shaikh
   pic: shaikh_rashid
-  position: Architecture & Devops, HSC
+  position: Architecture & Devops, UHN
   team: technical
 
 - name: Samarth Agarwal
@@ -78,7 +78,7 @@ people:
   lastname: Sethi
   firstname: Amanjeev
   pic: amanjeev-sethi
-  position: Software infrastructure, HSC
+  position: Software and Privacy,  UHN
   team: technical
 
 - name: Pierre-Étienne Jacques
