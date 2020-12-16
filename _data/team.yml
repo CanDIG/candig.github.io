@@ -1,7 +1,7 @@
 # Team names, titles
 # Note - there's no real order to the names; it started as in order of joining
 # the team but now the only real order is that we try to keep it broken down
-# by "technical", "leadership", "recent_alumni", and "alumni".
+# by "implementation", "leadership", "recent_alumni", and "alumni".
 #
 people:
 - name: Jonathan Dursi
@@ -9,77 +9,77 @@ people:
   firstname: Jonathan
   pic: jonathan_dursi
   position: Technical Lead
-  team: technical
+  team: implementation
 
 - name: Jimmy Li
   lastname: Li
   firstname: Jimmy
   pic: blank
   position: Research Programmer, BCGSC
-  team: technical
+  team: implementation
 
 - name: Dashaylan Naidoo
   lastname: Naidoo
   firstname: Dashaylan
   pic: dashaylan_naidoo
   position: Research Programmer, BCGSC
-  team: technical
+  team: implementation
 
 - name: Felipe Coral-Sasso
   lastname: Coral-Sasso
   firstname: Felipe
   pic: felipe_sasso
   position: Research Programmer, BCGSC
-  team: technical
+  team: implementation
 
 - name: Zhibin Lu
   lastname: Lu
   firstname: Zhibin
   pic: zhibin
   position: Bioinformatics, PMCC
-  team: technical
+  team: implementation
 
 - name: Kat Pavlova
   lastname: Pavlova
   firstname: Kat
   pic: blank
   position: Clin/Pheno Data Models, UHN
-  team: technical
+  team: implementation
 
 - name: Brendan O'Huiginn
   lastname: O'Huiginn
   firstname: Brendan
   pic: brendan_ohuiginn
   position: Systems Administrator, BCGSC
-  team: technical
+  team: implementation
 
 - name: David Bujold
   lastname: Bujold
   firstname: David
   pic: david_bujold
   position: C3G McGill site technical lead
-  team: technical
+  team: implementation
 
 - name: Shaikh Farhan Rashid
   lastname: Rashid
   firstname: Shaikh
   pic: shaikh_rashid
   position: Architecture & Devops, UHN
-  team: technical
+  team: implementation
 
 - name: Samarth Agarwal
   lastname: Agarwal
   firstname: Samarth
   pic: blank
   position: University of Toronto Co-op, UHN
-  team: technical
+  team: implementation
 
 - name: Amanjeev Sethi
   lastname: Sethi
   firstname: Amanjeev
   pic: amanjeev-sethi
   position: Software and Privacy,  UHN
-  team: technical
+  team: implementation
 
 - name: Pierre-Étienne Jacques
   lastname: Jacques

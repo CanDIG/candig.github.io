@@ -1,8 +1,8 @@
 <!-- Team Section -->
 <h3>Implementation</h3>
 <div class="row">
-    {% assign technical = site.data.team.people | where:"team","technical" | sort:"lastname"%}
-    {% for member in technical %}
+    {% assign implementation = site.data.team.people | where:"team","implementation" | sort:"lastname"%}
+    {% for member in implementation %}
     <div class="col-sm-4">
         <div class="team-member">
             <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
