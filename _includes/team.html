@@ -1,5 +1,5 @@
 <!-- Team Section -->
-<h3>Technical Team</h3>
+<h3>Implementation</h3>
 <div class="row">
     {% assign technical = site.data.team.people | where:"team","technical" | sort:"lastname"%}
     {% for member in technical %}
@@ -22,7 +22,7 @@
     {% endfor %}
 </div>
 
-<h3>Leadership Team</h3>
+<h3>Leadership</h3>
 <div class="row">
     {% assign leadership = site.data.team.people | where:"team","leadership" | sort:"lastname" %}
     {% for member in leadership %}
