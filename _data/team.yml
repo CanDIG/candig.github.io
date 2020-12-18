@@ -81,6 +81,13 @@ people:
   position: Software and Privacy,  UHN
   team: implementation
 
+- name: Brennan Brouillette
+  lastname: Brouillette
+  firstname: Brennan
+  pic: brennan_brouillette
+  position: Software & DevOps, C3G McGill
+  team: implementation
+
 - name: Pierre-Étienne Jacques
   lastname: Jacques
   firstname: Pierre-Étienne
