@@ -15,11 +15,19 @@ gem install bundler jekyll
 
 once you have a new Ruby and ruby gems installed, but the details will differ a bit between platforms. 
 
+You will also need a Javascript runtime installed, one way that works is to install node.js.
+
 Once you're done, from the `candig.github.io` directory run
 
 ```
 bundle install
 bundle exec jekyll serve
+```
+
+If you are using ruby 3.0, you will also need to install webrick 
+
+```
+bundle add webrick 
 ```
 
 And, absent any errors you'll be able to view the website at `http://localhost:4000`.  
