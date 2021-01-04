@@ -87,6 +87,13 @@ people:
   pic: brennan_brouillette.jpg
   position: Software & DevOps, C3G McGill
   team: implementation
+  
+- name: Samantha Palmer
+  lastname: Palmer
+  firstname: Samantha
+  pic: samantha_palmer.png
+  position: Health Data Policy, UHN
+  team: implementation
 
 - name: Pierre-Étienne Jacques
   lastname: Jacques
