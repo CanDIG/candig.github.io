@@ -7,279 +7,279 @@ people:
 - name: Jonathan Dursi
   lastname: Dursi
   firstname: Jonathan
-  pic: jonathan_dursi
+  pic: jonathan_dursi.jpg
   position: Technical Lead
   team: implementation
 
 - name: Jimmy Li
   lastname: Li
   firstname: Jimmy
-  pic: blank
+  pic: blank.jpg
   position: Research Programmer, BCGSC
   team: implementation
 
 - name: Dashaylan Naidoo
   lastname: Naidoo
   firstname: Dashaylan
-  pic: dashaylan_naidoo
+  pic: dashaylan_naidoo.jpg
   position: Research Programmer, BCGSC
   team: implementation
 
 - name: Felipe Coral-Sasso
   lastname: Coral-Sasso
   firstname: Felipe
-  pic: felipe_sasso
+  pic: felipe_sasso.jpg
   position: Research Programmer, BCGSC
   team: implementation
 
 - name: Zhibin Lu
   lastname: Lu
   firstname: Zhibin
-  pic: zhibin
+  pic: zhibin.jpg
   position: Bioinformatics, PMCC
   team: implementation
 
 - name: Kat Pavlova
   lastname: Pavlova
   firstname: Kat
-  pic: blank
+  pic: blank.jpg
   position: Clin/Pheno Data Models, UHN
   team: implementation
 
 - name: Brendan O'Huiginn
   lastname: O'Huiginn
   firstname: Brendan
-  pic: brendan_ohuiginn
+  pic: brendan_ohuiginn.jpg
   position: Systems Administrator, BCGSC
   team: implementation
 
 - name: David Bujold
   lastname: Bujold
   firstname: David
-  pic: david_bujold
+  pic: david_bujold.jpg
   position: C3G McGill site technical lead
   team: implementation
 
 - name: Shaikh Farhan Rashid
   lastname: Rashid
   firstname: Shaikh
-  pic: shaikh_rashid
+  pic: shaikh_rashid.jpg
   position: Architecture & Devops, UHN
   team: implementation
 
 - name: Samarth Agarwal
   lastname: Agarwal
   firstname: Samarth
-  pic: blank
+  pic: blank.jpg
   position: University of Toronto Co-op, UHN
   team: implementation
 
 - name: Amanjeev Sethi
   lastname: Sethi
   firstname: Amanjeev
-  pic: amanjeev-sethi
+  pic: amanjeev-sethi.jpg
   position: Software and Privacy,  UHN
   team: implementation
 
 - name: Brennan Brouillette
   lastname: Brouillette
   firstname: Brennan
-  pic: brennan_brouillette
+  pic: brennan_brouillette.jpg
   position: Software & DevOps, C3G McGill
   team: implementation
 
 - name: Pierre-Étienne Jacques
   lastname: Jacques
   firstname: Pierre-Étienne
-  pic: pe_jacques
+  pic: pe_jacques.jpg
   position: Asst. Professor, Biology, Sherbrooke
   team: leadership
 
 - name: Yann Joly
   lastname: Joly
   firstname: Yann
-  pic: yann_joly
+  pic: yann_joly.jpg
   position: Assoc. Professor, Genomics and Policy, McGill
   team: leadership
 
 - name: Trevor Pugh
   lastname: Pugh
   firstname: Trevor
-  pic: trevor_pugh
+  pic: trevor_pugh.jpg
   position: Asst. Professor, Medical Biophysics, U. Toronto
   team: leadership
 
 - name: Guillaume Bourque
   lastname: Bourque
   firstname: Guillaume
-  pic: guillaume_bourque
+  pic: guillaume_bourque.jpg
   position: Assoc. Professor - McGill, MUQGIC
   team: leadership
 
 - name: Steven Jones
   lastname: Jones
   firstname: Steven
-  pic: steven_jones
+  pic: steven_jones.jpg
   position: Assoc. Director, BCGSC; Professor, UBC & SFU
   team: leadership
 
 - name: Carl Virtanen
   lastname: Virtanen
   firstname: Carl
-  pic: carl_virtanen
+  pic: carl_virtanen.jpg
   position: Director and Research Lead, UHN Digital
   team: leadership
 
 - name: Michael Brudno
   lastname: Brudno
   firstname: Michael
-  pic: michael_brudno
+  pic: michael_brudno.jpg
   position: Prof, CS, U Toronto; Director, HPC4Health
   team: leadership
 
 - name: Jackson Zheng
   lastname: Zheng
   firstname: Jackson
-  pic: jackson_zheng
+  pic: jackson_zheng.jpg
   position: Waterloo Co-op, HSC
   team: recent_alumni
 
 - name: Samarth Patel
   lastname: Patel
   firstname: Samarth
-  pic: samarth_patel
+  pic: samarth_patel.jpg
   position: Waterloo Co-op, HSC
   team: recent_alumni
 
 - name: Adam Lipski
   lastname: Lipski
   firstname: Adam
-  pic: adam_lipski
+  pic: adam_lipski.jpg
   position: Research Programmer, BCGSC
   team: recent_alumni
 
 - name: Richard de Borja
   lastname: de Borja
   firstname: Richard
-  pic: richard_deborja
+  pic: richard_deborja.jpg
   position: UHN site technical lead
   team: recent_alumni
 
 - name: Zoltan Bozoky
   lastname: Bozoky
   firstname: Zoltan
-  pic: zoltan_bozoky
+  pic: zoltan_bozoky.jpg
   position: Research Associate, BCGSC
   team: recent_alumni
 
 - name: Kieran Colford
   lastname: Colford
   firstname: Kieran
-  pic: kieran_colford
+  pic: kieran_colford.jpg
   position: Waterloo Co-op, HSC
   team: recent_alumni
 
 - name: Matthew Wong
   lastname: Wong
   firstname: Matthew
-  pic: matthew_wong
+  pic: matthew_wong.jpg
   position: Waterloo Co-op, HSC
   team: recent_alumni
 
 - name: Sebastian Shah
   lastname: Shah
   firstname: Sebastian
-  pic: blank
+  pic: blank.jpg
   position: Research Programmer, McGill
   team: alumni
 
 - name: Quan Nguyen
   lastname: Nguyen
   firstname: Quan
-  pic: blank
+  pic: blank.jpg
   position: Systems, MUGQIC
   team: alumni
 
 - name: Dustin Hu
   lastname: Hu
   firstname: Hustin
-  pic: dustin
+  pic: dustin.jpg
   position: Authentication
   team: alumni
 
 - name: Andrew Ponomarev
   lastname: Ponomarev
   firstname: Andrew
-  pic: andrew_ponomarev
+  pic: andrew_ponomarev.jpg
   position: Bioinformatics Engineer, BCGSC
   team: alumni
 
 - name: Dale Dupont
   lastname: Dupont
   firstname: Dale
-  pic: dale_dupont
+  pic: dale_dupont.jpg
   position: Authentication
   team: alumni
 
 - name: Neelam Memon
   lastname: Memon
   firstname: Neelam
-  pic: blank
+  pic: blank.jpg
   position: Privacy-Preserving Data Mining
   team: alumni
 
 - name: Jone Kim
   lastname: Kim
   firstname: Jone
-  pic: jone_kim
+  pic: jone_kim.jpg
   position: Authentication
   team: alumni
 
 - name: Justin Foong
   lastname: Foong
   firstname: Justin
-  pic: justin_foong
+  pic: justin_foong.jpg
   position: Data Mining
   team: alumni
 
 - name: Scott Baker
   lastname: Baker
   firstname: Scott
-  pic: scott_baker
+  pic: scott_baker.jpg
   position: Project Manager, BCGSC
   team: alumni
 
 - name: Mitchell Strong
   lastname: Strong
   firstname: Mitch
-  pic: mitchell_strong
+  pic: mitchell_strong.jpg
   position: Go services
   team: alumni
 
 - name: Julian Mazzitelli
   lastname: Mazzitelli
   firstname: Julian
-  pic: blank
+  pic: blank.jpg
   position: Workflow Data Engineering, HSC
   team: alumni
 
 - name: Steven Li
   lastname: Li
   firstname: Steven
-  pic: blank
+  pic: blank.jpg
   position: Authentication
   team: alumni
 
 - name: Isaac Ellman
   lastname: Ellman
   firstname: Isaac
-  pic: blank
+  pic: blank.jpg
   position: Authentication
   team: alumni
 
 - name: Kevin Chan
   lastname: Chan
   firstname: Kevin
-  pic: kevin_chan
+  pic: kevin_chan.jpg
   position: Authentication
   team: alumni
