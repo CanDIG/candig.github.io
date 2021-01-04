@@ -11,6 +11,13 @@ people:
   position: Technical Lead
   team: implementation
 
+- name: J Doe
+  lastname:  Doe
+  firstname: J
+  pic: j-doe.jpg
+  position: Awesome Title, INST
+  team: implementation
+
 - name: Jimmy Li
   lastname: Li
   firstname: Jimmy
