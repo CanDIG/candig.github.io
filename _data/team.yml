@@ -95,6 +95,13 @@ people:
   position: Health Data Policy, UHN
   team: implementation
 
+- name: Ksenia Zaytseva
+  lastname: Zaytseva
+  firstname: Ksenia
+  pic: ksenia_zaytseva.jpg
+  position: Data Architect, C3G McGill
+  team: implementation
+
 - name: Pierre-Étienne Jacques
   lastname: Jacques
   firstname: Pierre-Étienne
