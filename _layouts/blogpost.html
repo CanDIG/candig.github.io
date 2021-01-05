@@ -19,7 +19,7 @@
       {% assign author = site.data.team.people | where:"name",page.author %}
       <div class="col-lg-6 col-md-8 col-xs-12 text-left col-md-offset-2 col-lg-offset-3">
         <div class="byline">
-          <img class="author-img" src="/img/team/{{ author[0].pic }}.jpg" alt="">
+          <img class="author-img" src="/img/team/{{ author[0].pic }}" alt="">
           <div class="byline-info">
             <p class="section-heading byline-author-name">{{author[0].name}}</p>
             <p>{{author[0].position}}</p>
