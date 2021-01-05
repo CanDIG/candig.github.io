@@ -23,7 +23,9 @@ sitemap:
   <h1 class="post-title"><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{post.title}}</a></h1>
   <div class="blog-data">
     <div class="author-data">
-      <a class="post-author" href="{% if site.baseurl == "/" %}/author{% else %}{{ site.baseurl }}/author{% endif %}">{{ post.author }}</a>
+        <!-- Not currently implemented - remove link for now (see https://github.com/CanDIG/candig.github.io/issues/42), implement when needed -->
+        <!-- <a class="post-author" href="{% if site.baseurl == "/" %}/author{% else %}{{ site.baseurl }}/author{% endif %}">{{ post.author }}</a> -->
+        {{ post.author }}
     </div>
     {% if post.tags.size > 0 %}
       <ul class="tags">
