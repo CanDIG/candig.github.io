@@ -102,6 +102,13 @@ people:
   position: Data Architect, C3G McGill
   team: implementation
 
+- name: Krista Pace
+  lastname: Pace
+  firstname: Krista
+  pic: krista_pace.png
+  position: Product Manager, UHN
+  team: implementation  
+  
 - name: Pierre-Étienne Jacques
   lastname: Jacques
   firstname: Pierre-Étienne
