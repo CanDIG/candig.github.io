@@ -11,4 +11,6 @@ Submit a pull request with a square jpg representing you (a photo, or an avatar 
 
 You can copy (say) Matthew Wong's info block in `_data/team.yml` and change `team: alumni` to `team: implementation` (along with name, image name, etc).
 
-There's no order to the people in `_data/team.yml` except that we try to keep it in three sections: current implementation team members (team: implementation), the PIs (team: leadership), and students, etc. who have moved on (team; alumni)
+There's no order to the people in `_data/team.yml` except that we try to keep it in three sections: current implementation team members (team: implementation), the PIs (team: leadership), and students, etc. who have moved on (team; alumni).
+
+You can do this via standard git command tools if those are something you're used to, or via the webpage interface - that's described [here](https://candig.atlassian.net/wiki/spaces/CA/pages/52068353/How+to+add+yourself+to+the+teams+page).
