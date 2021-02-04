@@ -78,7 +78,7 @@ people:
   lastname: Sethi
   firstname: Amanjeev
   pic: amanjeev-sethi.jpg
-  position: Software and Privacy,  UHN
+  position: Software and Privacy, UHN
   team: implementation
 
 - name: Brennan Brouillette
@@ -107,6 +107,13 @@ people:
   firstname: Krista
   pic: krista_pace.png
   position: Product Manager, UHN
+  team: implementation  
+  
+- name: Daisie Huang
+  lastname: Huang
+  firstname: Daisie
+  pic: daisieh.jpg
+  position: Bioinformatics Specialist, UHN
   team: implementation  
   
 - name: Pierre-Étienne Jacques
