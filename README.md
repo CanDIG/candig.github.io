@@ -1,7 +1,7 @@
 CanDIG website
 ====================
 
-[![Build Status](https://travis-ci.org/CanDIG/candig.github.io.svg?branch=master)](https://travis-ci.org/CanDIG/candig.github.io)
+[![Build Status](https://travis-ci.com/CanDIG/candig.github.io.svg?branch=production)](https://travis-ci.com/CanDIG/candig.github.io)
 
 Website for the CanDIG project; based on the [Agency Jekyll Theme](https://y7kim.github.io/agency-jekyll-theme).
 
