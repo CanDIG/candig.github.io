@@ -43,7 +43,7 @@ people:
   lastname: Pavlova
   firstname: Kat
   pic: blank.jpg
-  position: Privacy, UHN
+  position: Privacy Tech and Policy, UHN
   team: implementation
 
 - name: Brendan O'Huiginn
@@ -62,9 +62,9 @@ people:
 
 - name: Shaikh Farhan Rashid
   lastname: Rashid
-  firstname: Shaikh
+  firstname: Shaikh Farhan
   pic: shaikh_rashid.jpg
-  position: Architecture & Devops, UHN
+  position: Architecture, UHN
   team: implementation
 
 - name: Samarth Agarwal
