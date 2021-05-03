@@ -43,7 +43,7 @@ people:
   lastname: Pavlova
   firstname: Kat
   pic: blank.jpg
-  position: Clin/Pheno Data Models, UHN
+  position: Privacy, UHN
   team: implementation
 
 - name: Brendan O'Huiginn
@@ -295,7 +295,7 @@ people:
   lastname: Mazzitelli
   firstname: Julian
   pic: blank.jpg
-  position: Workflow Data Engineering, HSC
+  position: Infra, HSC
   team: alumni
 
 - name: Steven Li
