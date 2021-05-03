@@ -116,9 +116,9 @@ people:
   position: Bioinformatics Specialist, UHN
   team: implementation  
   
-  - name: Jessica Yang
-  lastname: Yang        
-  firstname: Jessica     
+- name: Jessica Yang
+  lastname: Yang    
+  firstname: Jessica
   pic: jessica-yang-uhn.jpg
   position: Waterloo Co-op, UHN
   team: implementation
