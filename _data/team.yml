@@ -18,20 +18,6 @@ people:
   position: Research Programmer, BCGSC
   team: implementation
 
-- name: Dashaylan Naidoo
-  lastname: Naidoo
-  firstname: Dashaylan
-  pic: dashaylan_naidoo.jpg
-  position: Research Programmer, BCGSC
-  team: implementation
-
-- name: Felipe Coral-Sasso
-  lastname: Coral-Sasso
-  firstname: Felipe
-  pic: felipe_sasso.jpg
-  position: Research Programmer, BCGSC
-  team: implementation
-
 - name: Courtney Gosselin
   lastname: Gosselin
   firstname: Courtney
@@ -179,6 +165,20 @@ people:
   position: Prof, CS, U Toronto; Director, HPC4Health
   team: leadership
 
+- name: Dashaylan Naidoo
+  lastname: Naidoo
+  firstname: Dashaylan
+  pic: dashaylan_naidoo.jpg
+  position: Research Programmer, BCGSC
+  team: recent_alumni
+
+- name: Felipe Coral-Sasso
+  lastname: Coral-Sasso
+  firstname: Felipe
+  pic: felipe_sasso.jpg
+  position: Research Programmer, BCGSC
+  team: recent_alumni
+
 - name: Jackson Zheng
   lastname: Zheng
   firstname: Jackson
@@ -219,14 +219,14 @@ people:
   firstname: Kieran
   pic: kieran_colford.jpg
   position: Waterloo Co-op, HSC
-  team: recent_alumni
+  team: alumni
 
 - name: Matthew Wong
   lastname: Wong
   firstname: Matthew
   pic: matthew_wong.jpg
   position: Waterloo Co-op, HSC
-  team: recent_alumni
+  team: alumni
 
 - name: Sebastian Shah
   lastname: Shah
