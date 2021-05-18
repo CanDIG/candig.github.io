@@ -32,6 +32,13 @@ people:
   position: Research Programmer, BCGSC
   team: implementation
 
+- name: Courtney Gosselin
+  lastname: Gosselin
+  firstname: Courtney
+  pic: courtney_gosselin.png
+  position: Research Programmer, BCGSC
+  team: implementation
+
 - name: Zhibin Lu
   lastname: Lu
   firstname: Zhibin
