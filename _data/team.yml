@@ -1,8 +1,4 @@
-# Team names, titles
-# Note - there's no real order to the names; it started as in order of joining
-# the team but now the only real order is that we try to keep it broken down
-# by "implementation", "leadership", "recent_alumni", and "alumni".
-#
+
 people:
 - name: Jonathan Dursi
   lastname: Dursi
@@ -115,7 +111,14 @@ people:
   pic: jessica-yang-uhn.jpg
   position: Waterloo Co-op, UHN
   team: implementation
-  
+
+- name: Nebiyou Petros
+  Lastname: Petros
+  firstname: Nebiyou
+  Pic: blank.jpg
+  Position: Clinical Research Data and Regulatory Coordinator
+  Team: implementation
+
 - name: Pierre-Étienne Jacques
   lastname: Jacques
   firstname: Pierre-Étienne
