@@ -1,3 +1,8 @@
+# Team names, titles
+# Note - there's no real order to the names; it started as in order of joining
+# the team but now the only real order is that we try to keep it broken down
+# by "implementation", "leadership", "recent_alumni", and "alumni".
+#
 
 people:
 - name: Jonathan Dursi
@@ -113,11 +118,11 @@ people:
   team: implementation
 
 - name: Nebiyou Petros
-  Lastname: Petros
+  lastname: Petros
   firstname: Nebiyou
-  Pic: blank.jpg
-  Position: Clinical Research Data and Regulatory Coordinator
-  Team: implementation
+  pic: blank.jpg
+  position: Clinical Research Data and Regulatory Coordinator
+  team: implementation
 
 - name: Pierre-Étienne Jacques
   lastname: Jacques
