@@ -96,6 +96,13 @@ people:
   position: Data Architect, C3G McGill
   team: implementation
 
+- name: Siyue Wang
+  lastname: Wang
+  firstname: Siyue
+  pic: siyue-wang-uhn.jpg
+  position: University of Toronto Co-op, UHN
+  team: implementation
+
 - name: Krista Pace
   lastname: Pace
   firstname: Krista
