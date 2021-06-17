@@ -32,7 +32,11 @@
     <!-- Twitter cards: thank you, https://brianbunke.com/blog/2017/09/06/twitter-cards-on-jekyll/ -->
     <meta name="twitter:site"    content="@{{ site.twitter_username }}">
     <meta name="twitter:creator" content="{{ page.author }}">
-    <meta name="twitter:title"   content="{{ page.title }}">
+    {% if page.title %}
+      <meta name="twitter:title"   content="{{ page.title }}">
+    {% else %}
+      <meta name="twitter:title"   content="{{ site.title }}">
+    {% endif %} 
     <meta property="twitter:domain"   content="{{ site.url }}{{ site.baseurl }}">
   
     {% if page.summary %}
@@ -43,7 +47,7 @@
 
     {% if page.image %}
       <meta name="twitter:card"  content="summary_large_image">
-      <meta name="twitter:image" content="{{ page.image }}">
+      <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
     {% else %}
       <meta name="twitter:card"  content="summary">
       <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/img/logo_only.png">

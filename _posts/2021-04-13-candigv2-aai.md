@@ -1,6 +1,8 @@
 ---
 layout: blogpost
 title: The CanDIGv2 Authentication and Authorization Stack
+summary: A fully-federated multitenant federation has some pretty particular authentication and authorization requirements!  Here's how we address ours.
+image: img/posts/candigv2-aai/AAI-nobatch.png
 author: Amanjeev Sethi
 date: 2021-04-13
 ---
