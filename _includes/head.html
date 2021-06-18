@@ -11,7 +11,6 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
 
@@ -29,6 +28,30 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Twitter cards: thank you, https://brianbunke.com/blog/2017/09/06/twitter-cards-on-jekyll/ -->
+    <meta name="twitter:site"    content="@{{ site.twitter_username }}">
+    <meta name="twitter:creator" content="{{ page.author }}">
+    {% if page.title %}
+      <meta name="twitter:title"   content="{{ page.title }}">
+    {% else %}
+      <meta name="twitter:title"   content="{{ site.title }}">
+    {% endif %} 
+    <meta property="twitter:domain"   content="{{ site.url }}{{ site.baseurl }}">
+  
+    {% if page.summary %}
+      <meta name="twitter:description" content="{{ page.summary }}">
+    {% else %}
+      <meta name="twitter:description" content="{{ site.description }}">
+    {% endif %}
+
+    {% if page.image %}
+      <meta name="twitter:card"  content="summary_large_image">
+      <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/{{ page.image }}">
+    {% else %}
+      <meta name="twitter:card"  content="summary">
+      <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/img/logo_only.png">
+    {% endif %}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130773614-1"></script>

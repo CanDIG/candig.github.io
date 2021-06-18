@@ -1,6 +1,8 @@
 ---
 layout: blogpost
 title: Data Federation - Design Dimensions and CanDIG’s Approach
+summary: Here are five dimensions we think are important to consider when designing a data federation.
+image: img/posts/data-federation-design/fig1-authentication.png
 author: Jonathan Dursi
 date: 2019-11-02
 ---

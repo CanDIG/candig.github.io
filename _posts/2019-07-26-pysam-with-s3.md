@@ -1,6 +1,8 @@
 ---
 layout: blogpost
 title: Using PySAM to access private S3 Bucket
+summary: Six steps to enabling pysam to access a private S3 bucket hosted with minio.
+image: img/posts/pysam-with-s3/htsget_diagram.png
 author: Jackson Zheng
 date: 2019-07-26
 ---
