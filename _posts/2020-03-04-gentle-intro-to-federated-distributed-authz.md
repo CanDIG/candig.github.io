@@ -1,6 +1,8 @@
 ---
 layout: blogpost
 title: A Gentle Introduction to Federated and Distributed Authorization
+summary: How federated and distributed authorization works in CanDIG
+image: img/posts/gentle-intro-to-authz/aai.png
 author: Amanjeev Sethi
 date: 2020-03-04
 ---
