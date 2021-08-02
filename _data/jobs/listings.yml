@@ -6,18 +6,10 @@
   needed_skills: Containers, clusters, VMs, deployment, git
   nice_to_have: Security, authentication, bioinformatics experience
 
-- title: Bioinformatics Software Developer
-  site: McGill
-  city: Montreal
-  url: https://www.computationalgenomics.ca/mt7673/
-  description:  Developer will implement and maintain client and server-side applications, extending the tools and technologies already in place using JavaScript, HTML, Python, MySQL, and others. Short development cycles will involve small but frequent releases, and constant interactions with the Bioinformatics platform team.
-  needed_skills: javascript, interest in researching new technologies
-  nice_to_have: RDBMS, D3.js, React.js, Docker
-
-- title: Research Associate–Bioinformatics
+- title: Research Programmer
   site: BCGSC
   city: Vancouver
-  url: https://www.bcgsc.ca/careers/research-associate-bioinformatics
+  url: https://bioinformatics.ca/job-postings/610489948a731402aef73e47/
   description: This role is instrumental in the development of the CFI-funded cyberinfrastructure project, CanDIG—a state-of-the-art data sharing platform contributing to the development of an international effort to facilitate information exchange as part of the Global Alliance for Genomics & Health (GA4GH). CanDIG also supports large-scale provincial and national data sharing projects, including BC Cancer’s Personalized OncoGenomics program, the Terry Fox Research Institute (TFRI) PROFYLE project and the TFRI-led Marathon of Hope Cancer Centres Network—a major federal initiative to accelerate the adoption of precision medicine for cancer in Canada.  
-  needed_skills: PhD in a life sciences or quantitative discipline, bioinformatics knowledge, Python, Javascript, and SQL
-  nice_to_have: Previous API development projects, experience with high performance computing, experience in a supervisory role.
+  needed_skills: Python, bioinformatics knowledge, Git, Linux, Agile
+  nice_to_have: React.js, GraphQL, distributed Systems
