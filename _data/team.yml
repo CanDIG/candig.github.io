@@ -116,13 +116,6 @@ people:
   pic: daisieh.jpg
   position: Bioinformatics Specialist, UHN
   team: implementation  
-  
-- name: Jessica Yang
-  lastname: Yang    
-  firstname: Jessica
-  pic: jessica-yang-uhn.jpg
-  position: Waterloo Co-op, UHN
-  team: implementation
 
 - name: Nebiyou Petros
   lastname: Petros
@@ -179,6 +172,13 @@ people:
   pic: michael_brudno.jpg
   position: Prof, CS, U Toronto; Director, HPC4Health
   team: leadership
+  
+- name: Jessica Yang
+  lastname: Yang    
+  firstname: Jessica
+  pic: jessica-yang-uhn.jpg
+  position: Waterloo Co-op, UHN
+  team: recent_alumni
 
 - name: Dashaylan Naidoo
   lastname: Naidoo
