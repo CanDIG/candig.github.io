@@ -61,13 +61,6 @@ people:
   position: Architecture & Devops, UHN
   team: implementation
 
-- name: Samarth Agarwal
-  lastname: Agarwal
-  firstname: Samarth
-  pic: blank.jpg
-  position: University of Toronto Co-op, UHN
-  team: implementation
-
 - name: Amanjeev Sethi
   lastname: Sethi
   firstname: Amanjeev
@@ -172,6 +165,13 @@ people:
   pic: michael_brudno.jpg
   position: Prof, CS, U Toronto; Director, HPC4Health
   team: leadership
+
+- name: Samarth Agarwal
+  lastname: Agarwal
+  firstname: Samarth
+  pic: blank.jpg
+  position: University of Toronto Co-op, UHN
+  team: recent_alumni
   
 - name: Jessica Yang
   lastname: Yang    
