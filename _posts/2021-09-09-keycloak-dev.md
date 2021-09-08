@@ -81,7 +81,7 @@ Every opensource project has its peculiarities and it may seem daunting at first
 
 ## References
 
-* Talk: [The Keycloak Test Suite - CanDIG Mini-Conference (Chapter 2)]
+* Talk: [The Keycloak Test Suite - CanDIG Mini-Conference (Chapter 2)] - [Slides for the talk](https://docs.google.com/presentation/d/1ZDuPCpztPiIIRrpE5xc3f6n5nKK6upnXp-lIXNoviWg/edit#slide=id.gb030900e6d_0_10)
 * [Keycloak GitHub repository](https://github.com/keycloak/keycloak) 
 * [Keycloak documentation on how to run integration test suite](https://github.com/keycloak/keycloak/blob/master/testsuite/integration-arquillian/HOW-TO-RUN.md)
 * [Keycloak JIRA]
