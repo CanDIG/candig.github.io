@@ -116,6 +116,13 @@ people:
   pic: nebiyou_petros.jpg
   position: Clinical Research Data and Regulatory Coordinator, UHN
   team: implementation
+  
+- name: Rishabh Sambare
+  lastname: Sambare
+  firstname: Rishabh
+  pic: rishabh_sambare.jpg
+  position: University of Waterloo Co-op, UHN
+  team: implementation
 
 - name: Pierre-Étienne Jacques
   lastname: Jacques
