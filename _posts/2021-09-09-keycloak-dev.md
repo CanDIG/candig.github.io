@@ -21,11 +21,21 @@ While the OIDC allows to create custom claims (the key-value pairs) in the token
 
 As noted in the last section, for CanDIG to work as a distributed and federated system, it needs to have a facility to check for authorization.  The core of that is checking for these Passports and claims within them.  This Passport comes from an OIDC defined endpoint called "[userinfo]".
 
-<DIAGRAM: User access>
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+  <img src="{{ site.url }}/img/posts/keycloak-dev/user-access-userinfo-endpoint.png" 
+  alt="Diagram showing the use of userinfo endpoint of the OpenID Connect protocol to fetch the Identity Token." 
+  width="95%" style="margin: 10px 10px 10px 10px;">
+ <figcaption>Figure 1: Identity Brokering in Keycloak using OpenID Connect's userinfo endpoint to get Identity Token from the user's institute</figcaption>
+</figure>
 
 In Keycloak, the said `userinfo` endpoint was not working.  When a user goes through logging in via their own site in a CanDIG federation project to access a resource on another site, this `userinfo` endpoint was not being called by the Keycloak on the foreign site to fetch the details of the user.  As a result, the authorization information was missing and no access was given even though this user may have had valid access.
 
-<SCREENSHOT: User profile settings in Keycloak>
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+  <img src="{{ site.url }}/img/posts/keycloak-dev/keycloak-identity-broker-settings-userinfo-toggle.png" 
+  alt="Screenshot of the settings page in Keycloak for an Identity Broker with markers to show the userinfo toggle." 
+  width="95%" style="margin: 10px 10px 10px 10px;">
+ <figcaption>Figure 2: Settings page in Keycloak for an Identity Broker with markers to show the userinfo toggle</figcaption>
+</figure>
 
 The screenshot above shows that even if the toggle to Disable User Info is off, the `userinfo` endpoint was still never called.  
 
@@ -43,7 +53,7 @@ and the fixed version is -
 if (userInfoUrl != null && !userInfoUrl.isEmpty()) {
 ```
 
-Deleting the unneeded checks was the only thing required to fix this.
+Deleting the unneeded conditional checks was the only thing required to fix this.
 
 ## Contributing to Keycloak Codebase
 
@@ -60,10 +70,10 @@ Setting up to a point where we can finally test the changes, add tests, confirm 
 One detail in this entire story is that fetching `userinfo` internally Keycloak has a feature called [Mappers] which help in mapping or converting the incoming external claims to internal user attributes.  This is important so as to pass the incoming claim to the user's session so that the local application can use those user attributes to make the decisions.
 
 When using the Keycloak's user interface, it is easy to check these mappers, change them and set them.  However, when you have to write unit tests, you need to find a way to do that programmatically and figure out which class to extend.  In this case, the main two classes were - 
-* `AbstractRoleMapperTest`
-* `KcOidcBrokerConfiguration`
+* [`AbstractRoleMapperTest`](https://github.com/keycloak/keycloak/blob/master/testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/broker/AbstractRoleMapperTest.java): for the test itself
+* [`KcOidcBrokerConfiguration`](https://github.com/keycloak/keycloak/blob/master/testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/broker/KcOidcBrokerConfiguration.java): for creating a broker to be used in the test
 
-Once you figure out the correct classes to extend, your test writing is much more smooth.  Writing tests gives you confidence and makes the maintainers lives easier.
+Once you figure out the correct classes to extend, your test writing is much more smooth.  Writing tests gives you confidence and makes the maintainers lives easier.  It is to be noted that you may not have to write a ton of tests.  The original PR had ten (10) tests but the maintainers suggested only tests were sufficient because they likely cover the cases that need focus.
 
 You can see the pull request - [KEYCLOAK-14039 - UserInfo claims from external OIDC identity provider are not imported #7214].
 
@@ -77,7 +87,7 @@ Every opensource project has its peculiarities and it may seem daunting at first
 * You may have to spend some time reading documentation on how to work with the codebase and write tests.
 * Please do write test(s).
 * Once done, open a PR.  Follow the discussions and guidelines.
-* When PR is merged, party!
+* When your PR is merged, celebrate!
 
 ## References
 
@@ -89,12 +99,7 @@ Every opensource project has its peculiarities and it may seem daunting at first
 
 
 
-
-
-
-
-
-
+<!-- links -->
 [Keycloak]: https://www.keycloak.org/
 [Some of the features]: https://www.keycloak.org/about
 [single-sign on]: https://en.wikipedia.org/wiki/Single_sign-on
