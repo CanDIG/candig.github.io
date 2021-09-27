@@ -33,9 +33,9 @@ people:
   position: Bioinformatics, PMCC
   team: implementation
 
-- name: Kat Pavlova
-  lastname: Pavlova
-  firstname: Kat
+- name: Yuriy Pavlov
+  lastname: Pavlov
+  firstname: Yuriy
   pic: blank.jpg
   position: Clin/Pheno Data Models, UHN
   team: implementation
