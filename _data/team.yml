@@ -12,6 +12,13 @@ people:
   position: Technical Lead
   team: implementation
 
+- name: Karen Cranston
+  lastname: Cranston
+  firstname: Karen
+  pic: karen_cranston.jpg
+  position: Technical Project Manager
+  team: implementation
+
 - name: Jimmy Li
   lastname: Li
   firstname: Jimmy
