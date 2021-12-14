@@ -2,7 +2,7 @@
 layout: blogpost
 title: Keycloak - Our Journey on How to Contribute to the Project
 summary: Contributing to Keycloak has its own unique steps and challenges. Here is what we learned by contributing to Keycloak's codebase and what prompted us.
-image: 
+image: img/posts/keycloak-dev/keycloak-identity-broker-settings-userinfo-toggle.png
 author: Dashaylan Naidoo
 date: 2021-09-09
 ---
