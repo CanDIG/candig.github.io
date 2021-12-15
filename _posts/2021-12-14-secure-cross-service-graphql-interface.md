@@ -2,7 +2,7 @@
 layout: blogpost
 title: Secure Cross-service GraphQL interface
 summary: How to securely use GraphQL to wrap around multiple RESTful APIs
-image: /img/posts/secure-cross-service-graphql-interface/architecture-upside-down.png
+image: img/posts/secure-cross-service-graphql-interface/architecture-upside-down.png
 author: Siyue Wang
 date: 2021-12-14
 ---
