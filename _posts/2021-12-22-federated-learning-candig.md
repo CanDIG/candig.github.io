@@ -2,7 +2,7 @@
 layout: blogpost
 title: Federated Learning on CanDIG
 summary: An introduction to federated learning and CanDIG-specific implementation considerations.
-image: img/posts/secure-cross-service-graphql-interface/architecture-upside-down.png
+image: /img/posts/federated-learning-candig/candig-fl-setup.png
 author: Rishabh Sambare
 date: 2021-12-22
 ---
@@ -151,4 +151,5 @@ While there are several other considerations and processes (particularly in secu
 [NVFlare]: https://www.openpolicyagent.org/
 [Flower]: https://flower.dev/
 [GraphQL Interface]: https://www.distributedgenomics.ca/posts/secure-cross-service-graphql-interface/
+Secure Cross-service GraphQL Interface: https://www.distributedgenomics.ca/posts/secure-cross-service-graphql-interface/
 [Katsu]: https://github.com/CanDIG/katsu
