@@ -1,0 +1,67 @@
+I"'<p><img src="http://localhost:4000/img/pages/architecture/arch1.png" alt="CanDIG is fundamentally distributed" style="float: right;" width="50%" /></p>
+
+<p>Fundamental to CanDIG is national scale analysis, but over
+locally-controlled data.  Our platform is completely distributed,
+with no central infrastructure to maintain or secure.  But atop
+that, researchers need to be able to readily discover, access, and analyze 
+this information, possibly jointly across sites, while allowing 
+the data stewards to ensure the security and privacy of their data.</p>
+
+<p>We do this by building on established or in-progress projects elsewhere such as
+<a href="http://openid.net/connect/">OpenID Connect</a> and <a href="http://www.keycloak.org">Keycloak</a>
+for authentication and the <a href="http://genomicsandhealth.org">GA4GH</a> (Global Alliance
+for Genomics and Health) APIs and schemas for genomic data and genomic data
+exchange.</p>
+
+<h3 id="api-based-data-access">API-based data access</h3>
+
+<p><img src="http://localhost:4000/img/pages/architecture/api-access.png" alt="All Data Access is API-based" style="float: right;" width="40%" /></p>
+
+<p>In the CanDIG platform, <em>all</em> data access, even local, is API based;
+that is, there’s no processes which are let loose on directories
+of data files.  This allows us several advantages:</p>
+
+<ul>
+  <li>Abstraction of back-end data stores; we have many sites which may store data differently, and if the variants (for instance) are stored in databases, there may be no files to access</li>
+  <li>Fine-grained logging and auditing</li>
+  <li>The potential for fine-grained authorization (does the level of data access allowed depend on the amount of data access?)</li>
+</ul>
+
+<p>We are making use of the GA4GH APIs for data (and metadata) access, with a thin CanDIG layer on top, which we will use for</p>
+
+<ul>
+  <li>Protyping and implementing richer queries (<code class="language-plaintext highlighter-rouge">select ... WHERE ...;</code>’)</li>
+  <li>Our own authorization and authentication mechanisms</li>
+  <li>Privacy mechnaisms like differential privacy</li>
+  <li>Federation of queries</li>
+</ul>
+
+<p><img src="http://localhost:4000/img/pages/architecture/TES.png" alt="Task execution" style="float: left;" width="33%" /></p>
+
+<p>The API accesses against any particular dataset can be simple queries
+(“please tell me how many individuals have this particular
+variant in this data set”) or running longer-lived tasks,
+which must be scheduled and require a particular executable.  For
+this we are making use of the GA4GH <a href="https://github.com/ga4gh/task-execution-schemas">Task Execution Schemas</a>
+and implementations such as <a href="https://github.com/ohsu-comp-bio/funnel">Funnel</a>.</p>
+
+<p>Doing this requires the bundling and distribution of CanDIG-blessed
+images for fundamental bioinformatics tasks.  We have examined various
+container and VM approaches for executing these discrete tasks; while
+we are proceeding with Docker comtainers in the short term, in the
+medium term we will be moving to <a href="http://singularity.lbl.gov">Singularity</a>
+or <a href="https://coreos.com/rkt/docs/latest/">rkt</a> which allow us to have
+what we need (application bundling, no system-wide root daemons) without
+what we don’t in our context of unprivledged users and sandboxes (container-level isolation).</p>
+
+<h3 id="authentication">Authentication</h3>
+
+<p><img src="http://localhost:4000/img/pages/architecture/oidc.png" alt="OpenID Connect" style="float: right;" width="15%" /></p>
+
+<p>For authentication, we are using best-practices for RESTful API
+authentication, such as OpenID Connect, using tools such as Keycloak.
+As the project involves, we anticipate using
+<a href="https://en.wikipedia.org/wiki/User-Managed_Access">UMA</a> (User
+Managed Access) for federated, role-based authorization.</p>
+
+:ET

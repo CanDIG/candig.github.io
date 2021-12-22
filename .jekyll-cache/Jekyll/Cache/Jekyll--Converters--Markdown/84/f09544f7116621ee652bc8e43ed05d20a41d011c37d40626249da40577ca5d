@@ -1,0 +1,61 @@
+I"�<h1 id="canarie-selects-candig-as-basis-for-a-prototype-national-data-service-for-health-genomics">CANARIE selects CanDIG as basis for a prototype National Data Service for Health Genomics</h1>
+
+<blockquote>
+  <p>As data management grows more important for science, building Canadian capacity for managing and securely accessing health genomics will help accelerate biomedical discovery</p>
+</blockquote>
+
+<p><strong>Toronto, 27 Nov 2018</strong></p>
+
+<p><img alt="CHORD logo" src="/img/logos/chord-sm.png" align="left" width="25%" hspace="20" /></p>
+
+<p>Data volumes everywhere are growing rapidly.  In genomics — the study of the 
+entirety of genetic information of individuals and populations— new sequencing 
+technologies and techniques are turning this flood into a torrent, and all of that new 
+data holds the promise of delivering new insights into biology, health, and disease.</p>
+
+<p>But this promise can only be fulfilled if researchers can readily search, access, 
+and analyze this data.  Managing rapidly expanding datasets is a problem in all fields;
+with inherently sensitive health data, security, privacy and authorization make
+it even more challenging, while the potential of improving health outcomes raises 
+the stakes.</p>
+
+<p>CANARIE’s <a href="https://www.canarie.ca/rdm/funding-information-rdm-call-1/">Research Data Management Program</a>
+aims to address these data issues across fields, by funding software development 
+for <a href="https://www.canarie.ca/rdm-funding-call-recipients/">nine National Data Services</a> in fields as 
+diverse as ocean studies, quantitative social sciences, and genomics.</p>
+
+<p>In genomics, this service will be built upon <a href="https://www.distributedgenomics.ca">CanDIG</a>
+— the Canadian Distributed Infrastructure for Genomics — which provides
+a national platform for enabling large-scale genomic analyses across 
+private datasets controlled by the local institutions who are responsible for the data.</p>
+
+<p>The new funding will allow support for a broader range of new data types (collectively
+called “‘omics” data), such as RNA sequencing and expression data,
+as well as more automation and a richer set of access and quality controls to make the
+platform more accessible to a wider range of researchers.  The new set of services are
+called CHORD, for “Canadian Health ‘Omics Repository, Distributed”, and
+the project is led by Professor Guillaume Bourque at the <a href="http://www.computationalgenomics.ca">Canadian Center for 
+Computational Genomics (C3G)</a> at McGill.</p>
+
+<p>“The CHORD project addresses real problems for genomic research across Canada,
+” said Bourque.  “Discoveries in this field come from availability of large
+national sets of consented data; if a researcher can’t find the data they need to perform
+their analyses, important biological questions don’t get answered.”</p>
+
+<p>“CanDIG is a very solid foundation for this project,” said Professor Michael Brudno, 
+PI of CanDIG and Director of the <a href="https://ccm.sickkids.ca">Centre for Computational Medicine</a> at the
+Hospital for Sick Children.  “Our federated approach to making data available for
+analysis while strictly controlling direct access is exactly what is needed for health
+data service, and our international collaborations as part of the <a href="https://www.ga4gh.org">Global Alliance for Genomics and Health (GA4GH)</a> will ensure the new services we
+build are internationally interoperable and best-practice.”</p>
+
+<p>###</p>
+
+<p>CanDIG is a project building a health genomics platform for national-scale,
+federated analyses over locally controlled private data sets.  It is funded
+by the CFI Cyberinfrastructure program and connects
+sites at McGill University, Hospital for Sick Children, UHN Princess 
+Margaret Cancer Centre, Canada’s Michael Smith Genome Sciences Centre,
+Jewish General Hospital and Université de Sherbrooke. It is also a
+collaboration with Genome Canada, Compute Canada and CANARIE.</p>
+:ET

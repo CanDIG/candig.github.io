@@ -1,0 +1,94 @@
+I"d,<h2 id="keycloak-overview-and-our-usecase">Keycloak Overview and Our Usecase</h2>
+
+<p><a href="https://www.keycloak.org/">Keycloak</a> is an open-source identity and access management solution.  <a href="https://www.keycloak.org/about">Some of the features</a> that it provides out-of-the-box are the easy deployment of application authentication, <a href="https://en.wikipedia.org/wiki/Single_sign-on">single-sign on</a>, identity brokering from various sources like social media applications, user federation by creating a facade for <a href="https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">LDAP</a>, <a href="https://en.wikipedia.org/wiki/Active_Directory">Active Directory</a>, etc., and all of this using standard protocols like <a href="https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language">SAML</a>, <a href="https://en.wikipedia.org/wiki/OpenID">OpenID Connect (OIDC)</a>, etc.</p>
+
+<p>CanDIG uses Keycloak (one deployment on each site in a project), to create a uniform interface for authentication and authorization infrastructure (AAI).  This helps alleviate the issue of supporting a variety of authentication tools and protocols.  This uniformity allows CanDIG instances in a project to ask for authentication and authorization for an incoming request, from the appropriate site much more easily.</p>
+
+<p>CanDIG uses OIDC and its related tokens to achieve authentication and authorization in a distributed manner.  This is a critical use case for CanDIG.  CanDIG’s AAI implementation extends OIDC by using the <a href="https://www.ga4gh.org/news/ga4gh-passports-and-the-authorization-and-authentication-infrastructure/">Global Alliance for Genomic Health (GA4GH)</a>.  GA4GH defines the claims carried within the OIDC token (renamed Passport in the <a href="https://github.com/ga4gh-duri/ga4gh-duri.github.io/blob/master/researcher_ids/ga4gh_passport_v1.md">GA4GH spec</a>) that help with upstream authorization.  Any claim in the token (which is a <a href="https://jwt.io/">JSON Web Token</a>) is merely a key-value pair within its payload section.</p>
+
+<h2 id="the-roadblock">The Roadblock</h2>
+
+<p>While the OIDC allows the creation of custom claims (the key-value pairs) in the tokens, it does not impose any limit on the size of the fields.  To make the claims and their values self-sufficient, the GA4GH standard decided to add relevant details like cryptographic keys, etc., which make the claim values large.  At the same time, the claim value can also be a list of items.  This makes them even larger, depending on how many items are on the list.</p>
+
+<p>As noted in the last section, for CanDIG to work as a distributed and federated system, it needs to have a facility to check for authorization.  The core of that is checking for these Passports and claims within them.  This Passport comes from an OIDC defined endpoint called “<a href="https://openid.net/specs/openid-connect-core-1_0.html#UserInfo">userinfo</a>”.</p>
+
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+  <img src="http://localhost:4000/img/posts/keycloak-dev/user-access-userinfo-endpoint.png" alt="Diagram showing the use of userinfo endpoint of the OpenID Connect protocol to fetch the Identity Token." width="95%" style="margin: 10px 10px 10px 10px;" />
+ <figcaption>Figure 1: Identity Brokering in Keycloak using OpenID Connect's userinfo endpoint to get Identity Token from the user's institute</figcaption>
+</figure>
+
+<p>In Keycloak, the said <code class="language-plaintext highlighter-rouge">userinfo</code> endpoint was not working.  When a user goes through logging in via their site in a CanDIG federation project to access a resource on another site, this <code class="language-plaintext highlighter-rouge">userinfo</code> endpoint was not being called by the Keycloak on the foreign site to fetch the details of the user.  As a result, the authorization information was missing and no access was given even though this user may have had valid access.</p>
+
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+  <img src="http://localhost:4000/img/posts/keycloak-dev/keycloak-identity-broker-settings-userinfo-toggle.png" alt="Screenshot of the settings page in Keycloak for an Identity Broker with markers to show the userinfo toggle." width="95%" style="margin: 10px 10px 10px 10px;" />
+ <figcaption>Figure 2: Settings page in Keycloak for an Identity Broker with markers to show the userinfo toggle</figcaption>
+</figure>
+
+<p>The screenshot above shows that even if the toggle to Disable User Info is off, the <code class="language-plaintext highlighter-rouge">userinfo</code> endpoint was still never called.</p>
+
+<h2 id="the-fix">The Fix</h2>
+
+<p><a href="https://github.com/keycloak/keycloak/pull/7214/files#diff-2995cb6221a9b645041bd02ce7963219ec50d440dd6ef46e4f93830b6497b893">The line that is responsible for this issue</a> is as follows -</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">(</span><span class="n">userInfoUrl</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">userInfoUrl</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="o">(</span><span class="n">id</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">name</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">preferredUsername</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">email</span> <span class="o">==</span> <span class="kc">null</span><span class="o">))</span> <span class="o">{</span>
+</code></pre></div></div>
+
+<p>and the fixed version is -</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">(</span><span class="n">userInfoUrl</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">userInfoUrl</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+</code></pre></div></div>
+
+<p>Deleting the unneeded conditional checks was the only thing required to fix this.</p>
+
+<h2 id="contributing-to-keycloak-codebase">Contributing to Keycloak Codebase</h2>
+
+<p>Setting up to a point where we can finally test the changes, add tests, confirm nothing else breaks, and contribute the PR, all of this was the cumbersome part.  This fix needed to be manually checked first and that required setting up two Keycloak servers with the right configuration.</p>
+
+<h3 id="reasons-bootstrapping-is-tough">Reasons Bootstrapping is Tough</h3>
+
+<ul>
+  <li>Keycloak has a large suite of tests.  On a personal development laptop, it took about four (4) hours to finish.</li>
+  <li>The codebase is verbose, as is expected with such a vast project with object-oriented design.</li>
+  <li>You have to read and understand quite a few classes if you want to add a new test.  This is required to be able to extend the correct abstract and/or base classes for these tests. For example, for this fix, we added <a href="https://github.com/keycloak/keycloak/blob/master/testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/broker/OidcUserInfoClaimToRoleMapperTest.java">OidcUserinfoClaimToRoleMapperTest.java</a></li>
+</ul>
+
+<h3 id="broker-testing">Broker testing</h3>
+
+<p>One detail in this entire story is that fetching <code class="language-plaintext highlighter-rouge">userinfo</code> internally Keycloak has a feature called <a href="https://www.keycloak.org/docs/latest/server_admin/#_protocol-mappers">Mappers</a> which helps in mapping or converting the incoming external claims to internal user attributes.  This is important to pass the incoming claim to the user’s session so that the local application can use that user attributes to make the decisions.</p>
+
+<p>When using Keycloak’s user interface, it is easy to check these mappers, change them, and set them.  However, when you have to write unit tests, you need to find a way to do that programmatically and figure out which class to extend.  In this case, the main two classes were -</p>
+<ul>
+  <li><a href="https://github.com/keycloak/keycloak/blob/master/testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/broker/AbstractRoleMapperTest.java"><code class="language-plaintext highlighter-rouge">AbstractRoleMapperTest</code></a>: for the test itself</li>
+  <li><a href="https://github.com/keycloak/keycloak/blob/master/testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/broker/KcOidcBrokerConfiguration.java"><code class="language-plaintext highlighter-rouge">KcOidcBrokerConfiguration</code></a>: for creating a broker to be used in the test</li>
+</ul>
+
+<p>Once you figure out the correct classes to extend, your test writing is much more smooth.  Writing tests gives you confidence and makes the maintainers’ lives easier.  It is to be noted that you may not have to write a ton of tests.  The original PR had ten (10) tests but the maintainers suggested only tests were sufficient because they likely cover the cases that need focus.</p>
+
+<p>You can see the pull request - <a href="https://github.com/keycloak/keycloak/pull/7214">KEYCLOAK-14039 - UserInfo claims from external OIDC identity provider are not imported #7214</a>.</p>
+
+<h2 id="final-word-and-recap">Final Word and Recap</h2>
+
+<p>Every open-source project has its peculiarities and it may seem daunting at first.</p>
+
+<ul>
+  <li>To confirm if this is a bug, first, open a JIRA ticket on <a href="https://issues.redhat.com/projects/KEYCLOAK/">Keycloak JIRA</a>.  You may have to create a RedHat account.</li>
+  <li>Discuss with the maintainers and subject matter experts.</li>
+  <li>Once they confirm what they see and there is a path forward to fix things, fork the GitHub Keycloak repository and work on it.</li>
+  <li>You may have to spend some time reading the documentation on how to work with the codebase and write tests.</li>
+  <li>Please do write test(s).</li>
+  <li>Once done, open a PR.  Follow the discussions and guidelines.</li>
+  <li>When your PR is merged, celebrate!</li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>Talk: <a href="https://www.youtube.com/watch?v=c46gMnftY3c">The Keycloak Test Suite - CanDIG Mini-Conference (Chapter 2)</a> - <a href="https://docs.google.com/presentation/d/1ZDuPCpztPiIIRrpE5xc3f6n5nKK6upnXp-lIXNoviWg/edit#slide=id.gb030900e6d_0_10">Slides for the talk</a></li>
+  <li><a href="https://github.com/keycloak/keycloak">Keycloak GitHub repository</a></li>
+  <li><a href="https://github.com/keycloak/keycloak/blob/master/testsuite/integration-arquillian/HOW-TO-RUN.md">Keycloak documentation on how to run integration test suite</a></li>
+  <li><a href="https://issues.redhat.com/projects/KEYCLOAK/">Keycloak JIRA</a></li>
+  <li>Pull request: <a href="https://github.com/keycloak/keycloak/pull/7214">KEYCLOAK-14039 - UserInfo claims from external OIDC identity provider are not imported #7214</a></li>
+</ul>
+
+<!-- links -->
+:ET
