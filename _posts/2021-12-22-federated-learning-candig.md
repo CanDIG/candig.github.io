@@ -151,5 +151,5 @@ While there are several other considerations and processes (particularly in secu
 [NVFlare]: https://www.openpolicyagent.org/
 [Flower]: https://flower.dev/
 [GraphQL Interface]: https://www.distributedgenomics.ca/posts/secure-cross-service-graphql-interface/
-Secure Cross-service GraphQL Interface: https://www.distributedgenomics.ca/posts/secure-cross-service-graphql-interface/
+[Secure Cross-service GraphQL Interface]: https://www.distributedgenomics.ca/posts/secure-cross-service-graphql-interface/
 [Katsu]: https://github.com/CanDIG/katsu
