@@ -2,7 +2,7 @@
 layout: blogpost
 title: Federated Learning on CanDIG
 summary: An introduction to federated learning and CanDIG-specific implementation considerations.
-image: /img/posts/federated-learning-candig/candig-fl-setup.png
+image: /img/posts/federated-learning-candig/federated-averaging.png
 author: Rishabh Sambare
 date: 2021-12-22
 ---
