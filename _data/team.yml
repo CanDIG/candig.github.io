@@ -354,3 +354,10 @@ people:
   pic: kevin_chan.jpg
   position: Authentication
   team: alumni
+  
+- name: Laiba Zaman
+  lastname:  Laiba
+  firstname: Zaman
+  pic: blank.jpg
+  position: University of Waterloo Software Developer Co-op, UHN
+  team: implementation
