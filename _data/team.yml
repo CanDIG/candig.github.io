@@ -130,6 +130,13 @@ people:
   pic: rishabh_sambare.jpg
   position: University of Waterloo Co-op, UHN
   team: implementation
+  
+- name: Laiba Zaman
+  lastname: Zaman
+  firstname: Laiba
+  pic: blank.jpg
+  position: University of Waterloo Software Developer Co-op, UHN
+  team: implementation
 
 - name: Pierre-Étienne Jacques
   lastname: Jacques
