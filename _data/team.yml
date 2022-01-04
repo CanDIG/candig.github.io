@@ -96,13 +96,6 @@ people:
   position: Data Architect, C3G McGill
   team: implementation
 
-- name: Siyue Wang
-  lastname: Wang
-  firstname: Siyue
-  pic: siyue-wang-uhn.jpg
-  position: University of Toronto Co-op, UHN
-  team: implementation
-
 - name: Krista Pace
   lastname: Pace
   firstname: Krista
@@ -122,13 +115,6 @@ people:
   firstname: Nebiyou
   pic: nebiyou_petros.jpg
   position: Clinical Research Data and Regulatory Coordinator, UHN
-  team: implementation
-  
-- name: Rishabh Sambare
-  lastname: Sambare
-  firstname: Rishabh
-  pic: rishabh_sambare.jpg
-  position: University of Waterloo Co-op, UHN
   team: implementation
   
 - name: Laiba Zaman
@@ -186,6 +172,20 @@ people:
   pic: michael_brudno.jpg
   position: Prof, CS, U Toronto; Director, HPC4Health
   team: leadership
+  
+- name: Rishabh Sambare
+  lastname: Sambare
+  firstname: Rishabh
+  pic: rishabh_sambare.jpg
+  position: University of Waterloo Co-op, UHN
+  team: recent_alumni
+
+- name: Siyue Wang
+  lastname: Wang
+  firstname: Siyue
+  pic: siyue-wang-uhn.jpg
+  position: University of Toronto Co-op, UHN
+  team: recent_alumni
 
 - name: Samarth Agarwal
   lastname: Agarwal
@@ -220,35 +220,35 @@ people:
   firstname: Jackson
   pic: jackson_zheng.jpg
   position: Waterloo Co-op, HSC
-  team: recent_alumni
+  team: alumni
 
 - name: Samarth Patel
   lastname: Patel
   firstname: Samarth
   pic: samarth_patel.jpg
   position: Waterloo Co-op, HSC
-  team: recent_alumni
+  team: alumni
 
 - name: Adam Lipski
   lastname: Lipski
   firstname: Adam
   pic: adam_lipski.jpg
   position: Research Programmer, BCGSC
-  team: recent_alumni
+  team: alumni
 
 - name: Richard de Borja
   lastname: de Borja
   firstname: Richard
   pic: richard_deborja.jpg
   position: UHN site technical lead
-  team: recent_alumni
+  team: alumni
 
 - name: Zoltan Bozoky
   lastname: Bozoky
   firstname: Zoltan
   pic: zoltan_bozoky.jpg
   position: Research Associate, BCGSC
-  team: recent_alumni
+  team: alumni
 
 - name: Kieran Colford
   lastname: Colford
