@@ -356,8 +356,8 @@ people:
   team: alumni
   
 - name: Laiba Zaman
-  lastname:  Laiba
-  firstname: Zaman
+  lastname:  Zaman
+  firstname: Laiba
   pic: blank.jpg
   position: University of Waterloo Software Developer Co-op, UHN
   team: implementation
