@@ -1,3 +1,11 @@
+---
+layout: blogpost
+title: Making a GitHub Action
+summary: How to create GitHub Actions to standardize data formats in repositories
+author: Daisie Huang
+date: 2022-01-20
+---
+
 At CanDIG, we work with lots of data in spreadsheet form. Many of our clinicians and data specialists expect to be able to share their data in Excel spreadsheets or similar, but these formats are less easily processed by scripts or for ingest into databases. For example, we often have to map datasets to internal data formats before they can be ingested into our system.
 
 I often wish that I could convince my more spreadsheet-oriented colleagues to export their work into a format like CSV (comma-separated values), so that I don't have to download their files to my local machine just to take a peek at the latest version. It's hard to see what changes were made in the latest upload of a binary format like xlsx: GitHub (our source code repository of choice) doesn't display xlsx files in its web interface or allow you to compare versions. 
