@@ -14,11 +14,11 @@ Ideally, then, our repositories would contain both xlsx files and their exported
 
 GitHub Actions are one possible solution to maintaining this consistency. While GitHub Actions are often used for maintaining development workflows, including integration, deployment, and testing, there's no reason that we can't use Actions to automatically trigger any other required scriptable activity. For example, we can use an Action to maintain the connection between a repository's xlsx files and their csv counterparts.
 
-I created an action to do just that: https://github.com/CanDIG/xlsx2csv-action. Fundamentally, an Action is an executable, self-contained container that runs some code. The container will be executed by GitHub in an enclosing container, allowing each action's container to access the enclosing environment.The Action uses a manifest file to describe how its container will interact with the hosting container. With a GitHub Action, we can guarantee that we are executing in an environment with all of the required packages installed. Environment variables are defined to access inputs and the common workspace.
+I created an action to do just that: <https://github.com/CanDIG/xlsx2csv-action>. Fundamentally, an Action is an executable, self-contained container that runs some code. The container will be executed by GitHub in an enclosing container, allowing each action's container to access the enclosing environment. The Action uses a manifest file to describe how its container will interact with the hosting container. With a GitHub Action, we can guarantee that we are executing in an environment with all of the required packages installed. Environment variables are defined to access inputs and the common workspace.
 
 So, to begin creating this action, we write a simple Python script that performs the conversion on an inputted file. This Python file, at its most basic, uses the xlsx2csv package to convert xlsx files to csvs. We can do a little more than that: the script can walk through the repository's files (temporarily stored in the action's workspace) and convert all xlsx files it finds.
 
-```
+```python
         dirlist = [args.input]
         files = []
         while len(dirlist) > 0:
@@ -34,7 +34,7 @@ So, to begin creating this action, we write a simple Python script that performs
 
 We can then wrap this in the standard shell script for GitHub Actions, entrypoint.sh:
 
-```
+```bash
 #!/bin/sh
 
 python /convert.py $*
@@ -42,7 +42,7 @@ python /convert.py $*
 
 And then execute that script from a Dockerfile:
 
-```
+```dockerfile
 FROM python:3.9
 
 COPY . /
@@ -54,7 +54,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 The nice thing about using Docker is that you can easily create a Docker environment on your local machine that replicates the environment that the Action will execute in. It'll look something like this docker-compose.yml:
 
-```
+```yaml
 version: '3.9'
 
 services:
@@ -67,7 +67,7 @@ services:
 
 This is very convenient for testing: we can basically create and execute our container locally and be sure that everything runs:
 
-```
+```bash
 $ docker-compose run action test.xlsx 
 [+] Running 1/1
  ⠿ Network xlsx2csv-action_default  Created        0.1s
@@ -77,7 +77,7 @@ Now that we've tested the action locally, it's time to bring it into GitHub. The
 
 First, we define the Action in its own repository. This repo contains the code we wrote above, as well as an action.yml metadata file that defines how our Action's container fits into GitHub's workflow container stack. We define the inputs and outputs, as well as the environment this action runs in. Note that because we are using Docker, we can either create our own Dockerfile or use an existing base Docker image.
 
-```
+```yaml
 name: 'XLSX to CSVs'
 description: "Convert an XLSX file's sheets to CSVs"
 inputs:
@@ -98,7 +98,7 @@ Finally, to make the Action available to Workflows, we need commit and push the 
 
 We can now use this Action in a Workflow: for example, we want to convert all pushed xlsx files to csv files in a repository and then commit those changes. We'll define this in the repository in a yml file located in `.github/workflows/`. This metadata file defines the [triggering event](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows) and breaks down the series of jobs to be performed on that event. Each job defines the environment that the Actions will run in, then lists the actions to be taken, along with their inputs and outputs. Note here that we are using two other Actions that are from the GitHub Marketplace to do the checkout and commit steps, and that we can take advantage of the [environment variables](https://docs.github.com/en/actions/learn-github-actions/environment-variables) defined for the Workflow context.
 
-```
+```yaml
 on: [push]
 
 jobs:
