@@ -81,7 +81,7 @@ Starting the client is as simple as
     fl.client.start_numpy_client(SERVER_URL, client=MnistClient())
 ```
 
-Server-side, the code is even simpler. Flower implements a `Strategy` class for defining aggregation and evaluation strategies server-side. Defining a custom strategy class is a bit involved, and [Flower has not provided adequate documentation]() for this currently, but they provide built-in strategies for federated averaging and other common aggregation strategies. We make a single modification to their federated averaging strategy class by inheriting it and redefining a single method `aggregate_fit`. Our modification is simply to save model weights to a `.npz` file every 10 training rounds. This is the [recommended way](https://flower.dev/docs/saving-progress.html) to save model checkpoints using Flower.
+Server-side, the code is even simpler. Flower implements a `Strategy` class for defining aggregation and evaluation strategies server-side. Defining a custom strategy class is a bit involved, and [Flower has not provided adequate documentation](https://flower.dev/docs/implementing-strategies.html) for this currently, but they provide built-in strategies for federated averaging and other common aggregation strategies. We make a single modification to their federated averaging strategy class by inheriting it and redefining a single method `aggregate_fit`. Our modification is simply to save model weights to a `.npz` file every 10 training rounds. This is the [recommended way](https://flower.dev/docs/saving-progress.html) to save model checkpoints using Flower.
 ```python
 class SaveModelStrategy(fl.server.strategy.FedAvg):
     """
@@ -147,8 +147,8 @@ While there are several other considerations and processes (particularly in secu
 
 <!-- links -->
 [Federated Averaging]: https://arxiv.org/pdf/1602.05629.pdf
-[Tensorflow Federated]: https://openid.net/
-[NVFlare]: https://www.openpolicyagent.org/
+[Tensorflow Federated]: https://www.tensorflow.org/federated
+[NVFlare]: https://github.com/NVIDIA/NVFlare
 [Flower]: https://flower.dev/
 [GraphQL Interface]: https://www.distributedgenomics.ca/posts/secure-cross-service-graphql-interface/
 [Secure Cross-service GraphQL Interface]: https://www.distributedgenomics.ca/posts/secure-cross-service-graphql-interface/
