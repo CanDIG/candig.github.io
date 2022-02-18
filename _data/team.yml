@@ -68,13 +68,6 @@ people:
   position: Architecture & Devops, UHN
   team: implementation
 
-- name: Amanjeev Sethi
-  lastname: Sethi
-  firstname: Amanjeev
-  pic: amanjeev-sethi.jpg
-  position: Software and Privacy, UHN
-  team: implementation
-
 - name: Brennan Brouillette
   lastname: Brouillette
   firstname: Brennan
@@ -186,6 +179,13 @@ people:
   pic: michael_brudno.jpg
   position: Prof, CS, U Toronto; Director, HPC4Health
   team: leadership
+
+- name: Amanjeev Sethi
+  lastname: Sethi
+  firstname: Amanjeev
+  pic: amanjeev-sethi.jpg
+  position: Software and Privacy, UHN
+  team: recent_alumni
   
 - name: Rishabh Sambare
   lastname: Sambare
