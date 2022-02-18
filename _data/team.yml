@@ -5,13 +5,6 @@
 #
 
 people:
-- name: Jonathan Dursi
-  lastname: Dursi
-  firstname: Jonathan
-  pic: jonathan_dursi.jpg
-  position: Technical Lead
-  team: implementation
-
 - name: Karen Cranston
   lastname: Cranston
   firstname: Karen
@@ -179,6 +172,13 @@ people:
   pic: michael_brudno.jpg
   position: Prof, CS, U Toronto; Director, HPC4Health
   team: leadership
+  
+- name: Jonathan Dursi
+  lastname: Dursi
+  firstname: Jonathan
+  pic: jonathan_dursi.jpg
+  position: Technical Lead
+  team: recent_alumni
 
 - name: Amanjeev Sethi
   lastname: Sethi
