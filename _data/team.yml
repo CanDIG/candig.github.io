@@ -32,6 +32,13 @@ people:
   pic: courtney_gosselin.png
   position: Research Programmer, BCGSC
   team: implementation
+ 
+- name: Javier Castillo-Arnemann
+  lastname: Castillo-Arnemann
+  firstname: Javier
+  pic: javier_castillo-arnemann.jpg
+  position: Research Programmer, BCGSC
+  team: implementation
 
 - name: Zhibin Lu
   lastname: Lu
