@@ -116,13 +116,6 @@ people:
   pic: nebiyou_petros.jpg
   position: Clinical Research Data and Regulatory Coordinator, UHN
   team: implementation
-  
-- name: Laiba Zaman
-  lastname: Zaman
-  firstname: Laiba
-  pic: blank.jpg
-  position: University of Waterloo Software Developer Co-op, UHN
-  team: implementation
 
 - name: Ali Raza Zaidi
   lastname: Zaidi
@@ -186,6 +179,13 @@ people:
   pic: michael_brudno.jpg
   position: Prof, CS, U Toronto; Director, HPC4Health
   team: leadership
+
+- name: Laiba Zaman
+  lastname: Zaman
+  firstname: Laiba
+  pic: blank.jpg
+  position: University of Waterloo Software Developer Co-op, UHN
+  team: recent_alumni
 
 - name: Amanjeev Sethi
   lastname: Sethi
