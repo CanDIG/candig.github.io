@@ -36,7 +36,7 @@ table tr:nth-child(even){
 
 Federated learning has many applications, from the protection of healthcare data to typing models in smartphones. Particularly in the healthcare context, it avoids the centralization of data and thus allows the data to remain with the federation client. This is especially helpful as provinces have different laws concerning the transport of data. 
 
-There is one particular shortcoming to consider for federated learning. When training a model on a dataset, there are many times when the model can remember specific data examples. This is particularly a problem with neural networks, wherein the data points can be memorized by the model. The model can then be used to infer the data the model was trained on. Differential privacy is commonly used to remedy this situation.
+There is one particular shortcoming to consider for federated learning. When training a model on a dataset, there are many times when the model can remember specific data examples. This is especially a problem with neural networks, wherein the sensitive data points can be retained by the model. The model can then be used to infer the data the model was trained on. Differential privacy is commonly used to remedy this situation.
 
 ## Differential Privacy
 Differential privacy is a rigorous mathematical definition of privacy. It ensures against the inference of private information from the trained model. It relies on noise injection to ensure that an attacker cannot infer information about the victims of the attack. It ensures that an individual's data in a dataset cannot be obtained from the final model.
@@ -48,7 +48,7 @@ The formal definition of differential privacy is:
     <figcaption>Figure 1: Definition of Differential Privacy</figcaption>
  </figure>
 
-Note that the M here is the randomized algorithm, epsilon is the privacy budget and delta is the probability of failure. Epsilon is the measure of the maximum distance between one query on two different databases. Also note that a smaller epsilon will yield better privacy results but the accuracy will in turn be lower. 
+Note that the M here is the randomized algorithm. The **_&epsilon;_** is the measure of the maximum distance between one query on two different databases and the **_&delta;_** is the probability of information getting leaked. Also note that a smaller **_&epsilon;_** will yield better privacy results but the accuracy will in turn be lower. 
 
 ## Applying to Federated Learning
 There are a few differential privacy algorithms considered when selecting an algorithm but few served our purpose since the bulk of differential privacy algorithms propose targeting the privacy of each member of the federation instead of targeting each data point in the dataset. This is done by injecting noise at the fl-server’s training level. This is ideal for many scenarios such as a federation of smartphones because there are millions of clients within the federation. However, this is not suitable for healthcare research as patient health information (PHI) is private and protected under acts such as the Personal Health Information Protection Act (PHIPA) in Ontario. Furthermore, it is crucial to inject noise at the fl-client-training level to ensure that the individual examples in a dataset are protected. More background can be found in the [JIRA tickets] associated with this task.
@@ -61,7 +61,7 @@ The algorithm best served for our purposes would be Algorithm 4 (Figure 2) propo
     <figcaption>Figure 2: Algorithm 4: Tatarakis’s algorithm for End-to-End Differential Privacy in Federated Learning</figcaption>
  </figure>
 
-Note that this algorithm modifies the Federated Averaging algorithm with the modification to compute the gradients at the example level. [Flower] (the federated learning framework we are using) does not currently support this algorithm so some of Flower’s classes (i.e.`FedAvg`, `Server` etc.) would need supplemental child classes for this algorithm to be implemented. Ultimately, this was not the route taken due to time constraints.
+Note that this algorithm modifies the Federated Averaging algorithm with the modification to compute the gradients at the example level. [Flower] (the federated learning framework we are using) does not currently support this algorithm. So, some of Flower’s classes (i.e.`FedAvg`, `Server` etc.) would require modification and might require the addition of supplemental child classes for this algorithm to be implemented. Ultimately, this was not the route taken due to time constraints.
 
 ## Choice of Differential Privacy Framework
 There were three criterion considered when selecting a framework:
@@ -88,7 +88,7 @@ This model is then called in both the `server.py` and `client.py` files and the 
 It is then called in the `flower_client.py` file to fit the model to the data and initialize the Flower client. It is also used when performing client and server-side evaluation.
 
 ## Parameters of Differentially Private Logistic Regression Model
-As in Scikit-Learn, many of the parameters for `diffprivlib`’s logistic regression model are already set. Epsilon was the only default parameter modified to suit our needs. Epsilon is the privacy budget/privacy loss and is set to 1 by default, as seen in the implementation of the [logistic regression model] by `diffprivlib`. After experimenting with different epsilon values, we settled on 0.85 as this allowed us to have similar accuracies as the federated experiment while also increasing the privacy. 
+As in Scikit-Learn, many of the parameters for `diffprivlib`’s logistic regression model are already set. **_&epsilon;_** was the only default parameter modified to suit our needs. **_&epsilon;_** is the privacy budget/privacy loss and is set to 1 by default, as seen in the implementation of the [logistic regression model] by `diffprivlib`. After experimenting with different **_&epsilon;_** values, we settled on 0.85 as this allowed us to have similar accuracies as the federated experiment while also increasing the privacy. 
 
 
 ## Differentially Private vs Non-Differentially Private Federated Learning on Synthea Dataset
@@ -107,7 +107,7 @@ Using `diffprivlib` allows for the client-side application of differential priva
 
 However, there is no server-side differential privacy currently implemented. This means that it is possible to identify the client where the original data came from. This is not an urgent concern for our use case, as there are fewer federation clients containing many data points. 
 
-Nevertheless, a custom differentially private algorithm (such as the one in Tatarakis’s thesis) can be added for future experiments by modifying the [`Strategy`] abstract base class in Flower. Since this class inherits from the `FedAvg` class, there are some parameters that need to be maintained in order to be compatible with the `fl-server`. These parameters are `on_fit_config_fn`, `eval_fn` and `min_available_clients`.
+Nevertheless, a custom differentially private algorithm can be added for future experiments by modifying the [`Strategy`] abstract base class in Flower. Since this class inherits from the `FedAvg` class, there are some parameters that need to be maintained in order to be compatible with the `fl-server`. These parameters are `on_fit_config_fn`, `eval_fn` and `min_available_clients`.
 
 
 Do you have any questions? Feel free to contact us at [info@distributedgenomics.ca] or on Twitter at [@distribgenomics].
