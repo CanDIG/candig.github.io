@@ -9,10 +9,10 @@ date: 2022-04-22
 
 Federated learning has many applications, from the protection of healthcare data to typing models in smartphones. Particularly in the healthcare context, it avoids the centralization of data and thus allows the data to remain with the federation client. This is especially helpful as provinces have different laws concerning the transport of data. 
 
-There is one particular shortcoming to consider for federated learning. When training a model on a dataset, there are many times when the model can remember specific data points. This typically happens if the model is over-fitted, wherein the actual data can be memorized by the model. The model can then be used to infer the data the model was trained on. Differential privacy is commonly used to remedy this situation.
+There is one particular shortcoming to consider for federated learning. When training a model on a dataset, there are many times when the model can remember specific data points. This is particularly a problem with neural networks, wherein the data points can be memorized by the model. The model can then be used to infer the data the model was trained on. Differential privacy is commonly used to remedy this situation.
 
 ## Differential Privacy
-Differential privacy is a rigorous mathematical definition of privacy. It ensures against the inference of private information from the trained model. It relies on noise injection to ensure that an attacker cannot infer information about the victims of the attack. It ensures that an individual's data in a dataset cannot be extracted from the output of the algorithm.
+Differential privacy is a rigorous mathematical definition of privacy. It ensures against the inference of private information from the trained model. It relies on noise injection to ensure that an attacker cannot infer information about the victims of the attack. It ensures that an individual's data in a dataset cannot be obtained from the final model.
 The formal definition of differential privacy is:
 
  <figure style="margin-bottom: 1em; margin-top: 1em;">
@@ -26,7 +26,7 @@ Note that the M here is the randomized algorithm, epsilon is the privacy budget 
 ## Applying to Federated Learning
 There are a few differential privacy algorithms considered when selecting an algorithm but few served our purpose since the bulk of differential privacy algorithms propose targeting the privacy of each member of the federation instead of the individual data points. This is done by injecting noise at the fl-server’s training level. This is ideal for many scenarios such as a federation of smartphones because there are millions of clients within the federation. However, this is not suitable for healthcare research as patient health information (PHI) is private and protected under acts such as the Personal Health Information Protection Act (PHIPA) in Ontario. Furthermore, it is crucial to inject noise at the fl-client-training level to ensure that the individual data points are protected. More background can be found in the [JIRA tickets] associated with this task.
 
-The algorithm best served for our purposes would be Algorithm 4 (Figure 2) proposed by Nikolaos Tatarakis, in their thesis titled “Differentially Private Federated Learning”. This algorithm is based on two different algorithms. It combines an algorithm that computes the gradient of a specific example with the Federated Averaging algorithm. This gives rise to end-to-end differential privacy in federated learning.
+The algorithm best served for our purposes would be Algorithm 4 (Figure 2) proposed by Nikolaos Tatarakis, in their thesis titled “Differentially Private Federated Learning”. This algorithm is based on two different algorithms. It combines an algorithm that computes the gradient of a specific example with the Federated Averaging algorithm. This gives rise to a comprehensive algorithm for differential privacy in federated learning.
 
  <figure style="margin-bottom: 1em; margin-top: 1em;">
     <img src="/img/posts/dp-fl-experiments/differential-privacy-algorithm.png"
@@ -34,14 +34,14 @@ The algorithm best served for our purposes would be Algorithm 4 (Figure 2) propo
     <figcaption>Figure 2: Algorithm 4: Tatarakis’s algorithm for End-to-End Differential Privacy in Federated Learning</figcaption>
  </figure>
 
-Note that this algorithm modifies the Federated Averaging algorithm with the modification to compute the gradients at the example level. [Flower] (the federated learning framework we are using) does not currently support this algorithm so some of Flower’s classes (i.e.`FedAvg`, `Server` etc.) would need supplemental child classes for this algorithm to be implemented.
+Note that this algorithm modifies the Federated Averaging algorithm with the modification to compute the gradients at the example level. [Flower] (the federated learning framework we are using) does not currently support this algorithm so some of Flower’s classes (i.e.`FedAvg`, `Server` etc.) would need supplemental child classes for this algorithm to be implemented. Ultimately, this was not the route taken due to time constraints.
 
 ## Choice of Differential Privacy Framework
 There were three criterion considered when selecting a framework:
-It should be able to coexist with the current federated-learning architecture.
-Noise in the algorithm is added at the `fl-client`-training level instead of the `fl-server` level.
-A balance between accuracy and privacy loss should be achieved.
-
+<ol><li>It should be able to coexist with the current federated-learning architecture.</lli>
+<li>Noise in the algorithm is added at the `fl-client`-training level instead of the `fl-server`</li> level.
+<li>A balance between accuracy and privacy loss should be achieved.</li>
+</ol>
 Moreover, many differential privacy frameworks explored were unmaintained, incomplete and written in a variety of different languages. Thus, Ali (a fellow co-op student) and I opted to use the open-source `diffprivlib` library provided by IBM instead. This library has extensive documentation and is well-maintained. It is also useful since `diffprivlib` inherits from Scikit-Learn, which allows for differential privacy to be easily implemented when running the model. It also offers a variety of different modules, such as `models`, `mechanisms`, `tools` and `accountant`. These modules are especially useful when building complex models.
 
 ## Differential Privacy on Synthea/CodeX Dataset
