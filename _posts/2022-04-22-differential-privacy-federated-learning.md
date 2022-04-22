@@ -65,10 +65,10 @@ Note that this algorithm modifies the Federated Averaging algorithm with the mod
 
 ## Choice of Differential Privacy Framework
 There were three criterion considered when selecting a framework:
-<ol><li>It should be able to coexist with the current federated-learning architecture.</li>
-<li>Noise in the algorithm is added at the `fl-client`-training level instead of the `fl-server`</li> level.
-<li>A balance between accuracy and privacy loss should be achieved.</li>
-</ol>
+- It should be able to coexist with the current federated-learning architecture.
+- Noise in the algorithm is added at the `fl-client`-training level instead of the `fl-server` level.
+- A balance between accuracy and privacy loss should be achieved.
+
 Moreover, many differential privacy frameworks explored were unmaintained, incomplete and written in a variety of different languages. Thus, Ali (a fellow co-op student) and I opted to use the open-source `diffprivlib` library provided by IBM instead. This library has extensive documentation and is well-maintained. It is also useful since `diffprivlib` inherits from Scikit-Learn, which allows for differential privacy to be easily implemented when running the model. It also offers a variety of different modules, such as `models`, `mechanisms`, `tools` and `accountant`. These modules are especially useful when building complex models.
 
 ## Differential Privacy on Synthea/CodeX Dataset
