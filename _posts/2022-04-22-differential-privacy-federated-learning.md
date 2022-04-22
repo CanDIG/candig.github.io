@@ -53,7 +53,7 @@ Note that the M here is the randomized algorithm. The **_&epsilon;_** is the mea
 ## Applying to Federated Learning
 There are a few differential privacy algorithms considered when selecting an algorithm but few served our purpose since the bulk of differential privacy algorithms propose targeting the privacy of each member of the federation instead of targeting each data point in the dataset. This is done by injecting noise at the fl-server’s training level. This is ideal for many scenarios such as a federation of smartphones because there are millions of clients within the federation. However, this is not suitable for healthcare research as patient health information (PHI) is private and protected under acts such as the Personal Health Information Protection Act (PHIPA) in Ontario. Furthermore, it is crucial to inject noise at the fl-client-training level to ensure that the individual examples in a dataset are protected. More background can be found in the [JIRA tickets] associated with this task.
 
-The algorithm best served for our purposes would be Algorithm 4 (Figure 2) proposed by Nikolaos Tatarakis, in their thesis titled “Differentially Private Federated Learning”. This algorithm is based on two different algorithms. It combines an algorithm that computes the gradient of a specific example with the Federated Averaging algorithm. This gives rise to a comprehensive algorithm for differential privacy in federated learning.
+The algorithm best served for our purposes would be Algorithm 4 (Figure 2) proposed by Nikolaos Tatarakis, in their thesis titled “[Differentially Private Federated Learning]”. This algorithm is based on two different algorithms. It combines an algorithm that computes the gradient of a specific example with the Federated Averaging algorithm. This gives rise to a comprehensive algorithm for differential privacy in federated learning.
 
  <figure style="margin-bottom: 1em; margin-top: 1em;">
     <img src="/img/posts/dp-fl-experiments/differential-privacy-algorithm.png"
@@ -61,7 +61,7 @@ The algorithm best served for our purposes would be Algorithm 4 (Figure 2) propo
     <figcaption>Figure 2: Algorithm 4: Tatarakis’s algorithm for End-to-End Differential Privacy in Federated Learning</figcaption>
  </figure>
 
-Note that this algorithm modifies the Federated Averaging algorithm with the modification to compute the gradients at the example level. [Flower] (the federated learning framework we are using) does not currently support this algorithm. So, some of Flower’s classes (i.e.`FedAvg`, `Server` etc.) would require modification and might require the addition of supplemental child classes for this algorithm to be implemented. Ultimately, this was not the route taken due to time constraints.
+Note that this algorithm modifies the Federated Averaging algorithm to compute the gradients at the example level. [Flower] (the federated learning framework we are using) does not currently support this algorithm. So, some of Flower’s classes (i.e.`FedAvg`, `Server` etc.) would require modification and might require the addition of supplemental child classes for this algorithm to be implemented. Ultimately, this was not the route taken due to time constraints.
 
 ## Choice of Differential Privacy Framework
 There were three criterion considered when selecting a framework:
@@ -116,7 +116,7 @@ Reference Links
 - [Docs folder in Federated Learning Repository]
 - [Paper on Diffprivlib]
 - [Diffprivlib documentation]
-- [Paper on differentially private federated learning]
+- Paper on [Differentially Private Federated Learning]
 - [Differential privacy definitions]
 
 
@@ -131,7 +131,7 @@ Reference Links
 [Docs folder in Federated Learning Repository]: https://github.com/CanDIG/federated-learning/tree/AliRZ-02_Zamm178/DIG-824-Refactor-FL-Repo-for-DP/docs
 [Paper on Diffprivlib]: https://arxiv.org/pdf/1907.02444.pdf
 [Diffprivlib documentation]: https://diffprivlib.readthedocs.io/en/latest/modules/models.html
-[Paper on Differentially Private Federated Learning]: http://kth.diva-portal.org/smash/get/diva2:1415980/FULLTEXT01.pdf
+[Differentially Private Federated Learning]: http://kth.diva-portal.org/smash/get/diva2:1415980/FULLTEXT01.pdf
 [Differential privacy definitions]: https://medium.com/@shaistha24/differential-privacy-definition-bbd638106242
 [info@distributedgenomics.ca]: mailto:info@distributedgenomics.ca
 [@distribgenomics]: https://twitter.com/distribgenomics
