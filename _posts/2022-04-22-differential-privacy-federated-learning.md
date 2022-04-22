@@ -7,6 +7,33 @@ author: Laiba Zaman
 date: 2022-04-22
 ---
 
+<!-- The code for table styling was copied from Courtney Gosselin's blog post markdown file. https://github.com/CanDIG/candig.github.io/blob/production/_posts/2022-02-18-introduction-to-figma-and-design-principles.md -->
+
+<style> 
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+th { 
+    background: #17a018; 
+    color: white; 
+}
+
+table, th, td { 
+    padding: 0.5em; 
+    margin: 0.5em; 
+}
+
+table tr:hover { 
+    background: #D6EEDC; 
+}
+
+table tr:nth-child(even){ 
+    background: #f2f2f2; 
+} 
+</style>
+
 Federated learning has many applications, from the protection of healthcare data to typing models in smartphones. Particularly in the healthcare context, it avoids the centralization of data and thus allows the data to remain with the federation client. This is especially helpful as provinces have different laws concerning the transport of data. 
 
 There is one particular shortcoming to consider for federated learning. When training a model on a dataset, there are many times when the model can remember specific data examples. This is particularly a problem with neural networks, wherein the data points can be memorized by the model. The model can then be used to infer the data the model was trained on. Differential privacy is commonly used to remedy this situation.
@@ -38,7 +65,7 @@ Note that this algorithm modifies the Federated Averaging algorithm with the mod
 
 ## Choice of Differential Privacy Framework
 There were three criterion considered when selecting a framework:
-<ol><li>It should be able to coexist with the current federated-learning architecture.</lli>
+<ol><li>It should be able to coexist with the current federated-learning architecture.</li>
 <li>Noise in the algorithm is added at the `fl-client`-training level instead of the `fl-server`</li> level.
 <li>A balance between accuracy and privacy loss should be achieved.</li>
 </ol>
@@ -54,7 +81,7 @@ model = dp.LogisticRegression(
    warm_start=True
 )
 ```
-This implements differential privacy on the client-side.
+This applies differential privacy on the client-side.
 
 This model is then called in both the `server.py` and `client.py` files and the model’s parameters are initialized to zero using the `set_initial_params` method in the `Experiment` class. This is required by Flower as the parameters are uninitialized until model.fit is called.
  
@@ -76,7 +103,7 @@ The multinomial logistic regression model was used on the Synthea/CodeX dataset 
 ## Further Avenues of Exploration
 As noted in the paragraph above, while `diffprivlib` attempts to emulate Scikit-Learn, it is not as expansive as Scikit-Learn. An alternative implementation to add differential privacy would be to use Flower and Opacus, further detailed in this [article]. This also has drawbacks as it uses Pytorch, which is a deep learning framework and not ideal for non-neural network models such as logistic regression. 
 
-Using `diffprivlib` allows for the client-side implementation of differential privacy. This minimizes the impact that any particular data point would have on the analysis of the dataset as a whole, thereby ensuring the privacy of personal and sensitive information. 
+Using `diffprivlib` allows for the client-side application of differential privacy. This minimizes the impact that any particular data point would have on the analysis of the dataset as a whole, thereby ensuring the privacy of personal and sensitive information. 
 
 However, there is no server-side differential privacy currently implemented. This means that it is possible to identify the client where the original data came from. This is not an urgent concern for our use case, as there are fewer federation clients containing many data points. 
 
