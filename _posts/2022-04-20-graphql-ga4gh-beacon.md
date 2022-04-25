@@ -39,7 +39,7 @@ GraphQL is booming in popularity, attributable, in part, to its excellent data r
 
 Although in theory, our GraphQL API service should be a successor to the REST APIs currently used by the CanDIGv2 stack, as of right now, it simply sits alongside them. Previous CanDIG Intern, Nina Wang, [goes into greater depth] about the process required to generate a GraphQL service within the current CanDIG infrastructure in her blog post.
 
-For services with existing GA4GH REST APIs within the CanDIGv2 stack, setting up corresponding GraphQL resources is relatively straightforward. We simply call the RESTful service with the given input parameters and mirror the output through the GraphQL Interface. The approach taken to implement a GraphQL service for a standard that doesn't have a CanDIGv2 microservice differs slightly. Let's delve deeper into the implementation of such a service.
+For services with existing GA4GH REST APIs within the CanDIGv2 stack, setting up corresponding GraphQL resources is relatively straightforward. We simply call the RESTful service with the given input parameters and mirror the output through the GraphQL Interface. The approach taken to implement a GraphQL service for a standard that doesn't have a CanDIGv2 microservice differs slightly. Let's delve deeper into the implementation of such a service. The code for this implementation is at https://github.com/CanDIG/GraphQL-interface.
 
 ## GA4GH Beacon Standard
 
