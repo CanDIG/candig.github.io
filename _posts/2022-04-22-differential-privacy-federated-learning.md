@@ -51,7 +51,7 @@ The formal definition of differential privacy is:
 Note that the M here is the randomized algorithm. The **_&epsilon;_** is the measure of the maximum distance between one query on two different databases and the **_&delta;_** is the probability of information getting leaked. Also note that a smaller **_&epsilon;_** will yield better privacy results but the accuracy will in turn be lower. 
 
 ## Applying to Federated Learning
-There are a few differential privacy algorithms considered when selecting an algorithm but few served our purpose since the bulk of differential privacy algorithms propose targeting the privacy of each member of the federation instead of targeting each data point in the dataset. This is done by injecting noise at the fl-server’s training level. This is ideal for many scenarios such as a federation of smartphones because there are millions of clients within the federation. However, this is not suitable for healthcare research as patient health information (PHI) is private and protected under acts such as the Personal Health Information Protection Act (PHIPA) in Ontario. Furthermore, it is crucial to inject noise at the fl-client-training level to ensure that the individual examples in a dataset are protected. More background can be found in the [JIRA tickets] associated with this task.
+There are a few differential privacy algorithms considered when selecting an algorithm but few served our purpose since the bulk of differential privacy algorithms propose targeting the privacy of each member of the federation instead of targeting each data point in the dataset. This is done by injecting noise at the fl-server’s training level. This is ideal for many scenarios such as a federation of smartphones because there are millions of clients within the federation. However, this is not suitable for healthcare research as patient health information (PHI) is private and protected under acts such as the Personal Health Information Protection Act (PHIPA) in Ontario. Furthermore, it is crucial to inject noise at the fl-client-training level to ensure that the individual examples in a dataset are protected. 
 
 The algorithm best served for our purposes would be Algorithm 4 (Figure 2) proposed by Nikolaos Tatarakis, in their thesis titled “[Differentially Private Federated Learning]”. This algorithm is based on two different algorithms. It combines an algorithm that computes the gradient of a specific example with the Federated Averaging algorithm. This gives rise to a comprehensive algorithm for differential privacy in federated learning.
 
@@ -121,7 +121,6 @@ Reference Links
 
 
 <!-- links -->
-[JIRA tickets]: https://candig.atlassian.net/browse/DIG-817
 [Flower]: https://flower.dev/
 [logistic regression model]: https://github.com/IBM/differential-privacy-library/blob/main/diffprivlib/models/logistic_regression.py#L169
 [L-BFGS-B algorithm]: (https://docs.scipy.org/doc/scipy/reference/optimize.minimize-lbfgsb.html#optimize-minimize-lbfgsb)
