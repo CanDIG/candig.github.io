@@ -69,7 +69,7 @@ There were three criterion considered when selecting a framework:
 - Noise in the algorithm is added at the `fl-client`-training level instead of the `fl-server` level.
 - A balance between accuracy and privacy loss should be achieved.
 
-Moreover, many differential privacy frameworks explored were unmaintained, incomplete and written in a variety of different languages. Thus, Ali (a fellow co-op student) and I opted to use the open-source `diffprivlib` library provided by IBM instead. This library has extensive documentation and is well-maintained. It is also useful since `diffprivlib` inherits from Scikit-Learn, which allows for differential privacy to be easily implemented when running the model. It also offers a variety of different modules, such as `models`, `mechanisms`, `tools` and `accountant`. These modules are especially useful when building complex models.
+Moreover, many differential privacy frameworks explored were unmaintained, incomplete and written in a variety of different languages. Thus, Ali (a fellow co-op student) and I opted to use the open-source [diffprivlib] library provided by IBM instead. This library has extensive documentation and is well-maintained. It is also useful since `diffprivlib` inherits from Scikit-Learn, which allows for differential privacy to be easily implemented when running the model. It also offers a variety of different modules, such as `models`, `mechanisms`, `tools` and `accountant`. These modules are especially useful when building complex models.
 
 ## Differential Privacy on Synthea/CodeX Dataset
 Implementing differential privacy on the already existing federated learning experiment on the Synthea dataset only required modification to the `model.py` file and adding the appropriate constants to the `settings.py` file. The other required files remained the same.
@@ -122,6 +122,7 @@ Reference Links
 
 <!-- links -->
 [Flower]: https://flower.dev/
+[diffprivlib]: https://github.com/IBM/differential-privacy-library
 [logistic regression model]: https://github.com/IBM/differential-privacy-library/blob/main/diffprivlib/models/logistic_regression.py#L169
 [L-BFGS-B algorithm]: (https://docs.scipy.org/doc/scipy/reference/optimize.minimize-lbfgsb.html#optimize-minimize-lbfgsb)
 [stack-overflow discussion]: https://stackoverflow.com/questions/38640109/logistic-regression-python-solvers-definitions#:~:text=The%20SAGA%20solver%20is%20a,suitable%20for%20very%20Large%20dataset.
