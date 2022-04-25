@@ -117,13 +117,6 @@ people:
   position: Clinical Research Data and Regulatory Coordinator, UHN
   team: implementation
   
-- name: Laiba Zaman
-  lastname: Zaman
-  firstname: Laiba
-  pic: blank.jpg
-  position: University of Waterloo Software Developer Co-op, UHN
-  team: implementation
-  
 - name: Niharika Srivatsa
   lastname:  Srivatsa
   firstname: Niharika
@@ -179,6 +172,13 @@ people:
   pic: michael_brudno.jpg
   position: Prof, CS, U Toronto; Director, HPC4Health
   team: leadership
+
+- name: Laiba Zaman
+  lastname: Zaman
+  firstname: Laiba
+  pic: blank.jpg
+  position: University of Waterloo Software Developer Co-op, UHN
+  team: recent_alumni
 
 - name: Ali Raza Zaidi
   lastname: Zaidi
