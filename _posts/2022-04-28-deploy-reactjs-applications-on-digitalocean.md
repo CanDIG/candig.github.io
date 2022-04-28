@@ -81,8 +81,6 @@ If you have any environment variables, you may specify them under `Settings -> A
 
 It is very common that your React.js application may not work on reload, this is because the server is not configured to understand the paths. Oftentimes they are handled by the React.js app itself via React-Router or something similar. To fix this issue, add the `catchall_document: index.html` to your app spec.
 
-I believe that this issue is common enough to warrant its own checkbox for a relevant setting on the User Interface.
-
 ```
 static_sites:
 - build_command: npm run build
