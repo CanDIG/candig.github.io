@@ -51,7 +51,7 @@ Once you select your repo, the UI asks you to select the Type of your applicatio
 
  <figure style="margin-bottom: 2em; margin-top: 1em; text-align: center">
     <img src="/img/posts/deploy-reactjs-apps/2.png"
-    width="80%" style="margin: 10px 10px 10px 10px;">
+    width="50%" style="margin: 10px 10px 10px 10px;">
     <figcaption>Figure 2: Select the correct type of the app</figcaption>
  </figure>
 
@@ -61,7 +61,7 @@ DigitalOceans uses a different way to allocate subdomains; it always appends a f
 
  <figure style="margin-bottom: 2em; margin-top: 1em; text-align: center">
     <img src="/img/posts/deploy-reactjs-apps/3.png"
-    width="80%" style="margin: 10px 10px 10px 10px;">
+    width="50%" style="margin: 10px 10px 10px 10px;">
     <figcaption>Figure 3: Choose a name of your app</figcaption>
  </figure>
 
@@ -71,7 +71,7 @@ If you have any environment variables, you may specify them under `Settings -> A
 
  <figure style="margin-bottom: 2em; margin-top: 1em; text-align: center">
     <img src="/img/posts/deploy-reactjs-apps/4.png"
-    width="80%" style="margin: 10px 10px 10px 10px;">
+    width="50%" style="margin: 10px 10px 10px 10px;">
     <figcaption>Figure 4: Specify Environment Variables, if any</figcaption>
  </figure>
 
