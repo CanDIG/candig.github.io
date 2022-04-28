@@ -27,6 +27,8 @@ table tr:nth-child(even){
 }
 </style>
 
+## Overview
+
 At CanDIG, we have developed multiple React.js-based frontend applications. For demo purposes, we wanted to deploy them on a public hosting platform. There are multiple app hosting platforms, including Amazon AWS, DigitalOceans, Google Cloud, Heroku, etc. 
 
 Currently, our demo React.js applications are hosted on [DigitalOceans’ App Platform](https://www.digitalocean.com/products/app-platform). It supports the deployment of applications written in multiple languages and frameworks and allows free deployment of up to three static sites. For non-static sites, the starting cost is $5/month.
@@ -55,24 +57,23 @@ Once you select your repo, the UI asks you to select the Type of your applicatio
 
 Some platforms, like Heroku, use a first-come-first-serve way to allocate subdomains. On the plus side, you may be able to get the subdomain exactly as you want it to be. However, it is also possible that the subdomains have been taken.
 
+DigitalOceans uses a different way to allocate subdomains; it always appends a few randomly-generated characters to the end of your chosen subdomain, so your actual subdomain will differ from the one you put in.
+
  <figure style="margin-bottom: 2em; margin-top: 1em; text-align: center">
     <img src="/img/posts/deploy-reactjs-apps/3.png"
     width="80%" style="margin: 10px 10px 10px 10px;">
     <figcaption>Figure 3: Choose a name of your app</figcaption>
  </figure>
 
-DigitalOceans uses a different way to allocate subdomains; it always appends a few randomly-generated characters to the end of your chosen subdomain, so your actual subdomain will differ from the one you put in.
-
-
 Finally, you can choose the hosting plan. As mentioned above, the free starter plan is sufficient for up to three static sites/apps.
+
+If you have any environment variables, you may specify them under `Settings -> App-Level Environment Variables`.
 
  <figure style="margin-bottom: 2em; margin-top: 1em; text-align: center">
     <img src="/img/posts/deploy-reactjs-apps/4.png"
     width="80%" style="margin: 10px 10px 10px 10px;">
     <figcaption>Figure 4: Specify Environment Variables, if any</figcaption>
  </figure>
-
-If you have any environment variables, you may specify them under `Settings -> App-Level Environment Variables`.
 
 <br>
 
@@ -99,13 +100,9 @@ static_sites:
 
 As of April 2022, the platform does not seem to support editing App Spec online via the UI, so you would need to make the changes locally and replace the App Spec by re-uploading the file.
 
-<br>
-
 ## Conclusion
 
 Depending on the needs, the DigitalOceans App Platform could be a good option for hosting static applications. The hosting is free for up to three static sites, and the overall deployment process is straightforward.
-
-<br>
 
 Do you have any questions? Feel free to contact us at info@distributedgenomics.ca or on Twitter at @distribgenomics.
 
