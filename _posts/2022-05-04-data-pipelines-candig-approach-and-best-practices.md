@@ -131,12 +131,3 @@ Upon further inspection of cohort data and the ARGO rendered, we see that there 
  
 For any questions,  feel free to contact us at [info@distributedgenomics.ca](mailto:info@distributedgenomics.ca) or on Twitter at [@distribgenomics](https://twitter.com/distribgenomics).
 
- 
- 
-
-
-
-
-
-
- 
