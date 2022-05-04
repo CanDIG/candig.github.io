@@ -13,10 +13,11 @@ Data is key to CanDIG’s operations. CanDIG is constantly receiving data from v
 Data pipelines are a set of actions that process the data from different sources into the desired output. One type of data pipeline is ETL, which stands for extract, transform and load. Extraction involves taking  the data from several heterogeneous sources. The next step involves transforming the data into a usable resource by cleaning and conforming the data to a standard model. The last step is to load that data into the system so that it can be used for applications, analytics, or machine learning algorithms. ELT is another type of data pipeline, similar to ETL except the transformations take place after data is loaded into the system. ELT comes in handy when there is a misalignment in supported data types between the source and destination or for speed and efficiency as load and transform can be performed simultaneously. There is no defined way of building data pipelines, each pipeline is unique based on schema, model, and standardization requirements. Figure 1 provides an overview of CanDIG’s current data pipeline.
 
  <figure style="margin-bottom: 1em; margin-top: 1em;">
-    <img src="/img/posts/dp-fl-experiments/differential-privacy-algorithm.png"
+    <img src="/img/posts/data-pipeline-in-candig/figure1.png"
     width="95%" style="margin: 10px 10px 10px 10px;">
     <figcaption>Figure 1: CanDIG’s Data Pipeline</figcaption>
  </figure>
+ 
  
 CanDIG uses a combination of ETL and ELT pipelines to transform  data. The first step requires the extraction of data from the cohorts followed by a transformation into [mCODE](http://hl7.org/fhir/us/mcode/STU1/#Modeling). The current project requires cohort’s data to be translated to a data model based on a version of [ICGC-ARGO](https://docs.icgc-argo.org/dictionary). Although, the internal data model for CanDIG’s metadata service, a PostgreSQL based database ([Katsu](https://github.com/bento-platform/katsu)) supports mCODE. 
  
@@ -30,7 +31,7 @@ When building the pipeline it is preferential to start one cohort and complete t
 
 Once extraction is complete, transforming clinical cohort data into mCODE can begin. The clinical ETL build makes the process easier. We start off filling this mapping template. To start, create a folder that includes the following three files:
 
-A. Make a mapping template CSV file that follows this format. The value on the left is the mCODE element and the value on the right is the cohort element with its transformation function. Some transformation functions can be reused, such as single_val. This function takes in the value at mapping elements and combines into one and returns it. The date function that standardizes the ISO standard,  Whereas all other transformation functions are cohort-specific and must be defined in a separate file. 
+**A.** Make a mapping template CSV file that follows this format. The value on the left is the mCODE element and the value on the right is the cohort element with its transformation function. Some transformation functions can be reused, such as single_val. This function takes in the value at mapping elements and combines into one and returns it. The date function that standardizes the ISO standard,  Whereas all other transformation functions are cohort-specific and must be defined in a separate file. 
 
 ```
 ## mcodepacket element, function(column-name)
@@ -44,7 +45,7 @@ subject.date_of_birth, {mappings.date(PER_BIR_DT_RAW)}
 subject.sex,{COHORT.sex(PRSN_GENDER_TXT_TP)}
 ```
 
-B. Make a file that includes all the special mapping functions for the specific cohort. The following is an example of a simple special function that can be included in this file.
+**B.** Make a file that includes all the special mapping functions for the specific cohort. The following is an example of a simple special function that can be included in this file.
 
 ```python
 def vital_signs_node(mapping):
@@ -69,7 +70,7 @@ def vital_signs_node(mapping):
 
 This function takes in vital signs from different columns and saves them in a dictionary with mCODE appropriate schemas. In addition, it makes sure to check for null values before returning the dictionary. Some other examples of transformations might include: removing duplicate values, accounting for missing values, returning ontology codes, performing calculations, and combining or splitting up values of data.
 
-C. The last step is to make a manifest file containing mapping functions used and mapping template files as shown below. Once this is done, the tool can be run by passing in the input dataset and manifest file. 
+**C.** The last step is to make a manifest file containing mapping functions used and mapping template files as shown below. Once this is done, the tool can be run by passing in the input dataset and manifest file. 
 
 ```
 description: Mapping of COHORT dateset to mCODEpacket format for katsu ingestion
@@ -84,7 +85,7 @@ functions:
 Finally, the last two steps are to ingest the mCODE packet received into the destination source (Katsu) and use its rendering functionalities to render the data in ARGO format. This process can be automated with a python script and is reusable across cohorts. Hence, the only changes in the pipeline between cohorts would be the individual transformation functions. Below is some synthetic data rendered in ARGO format.
 
 <figure style="margin-bottom: 1em; margin-top: 1em;">
-    <img src="/img/posts/dp-fl-experiments/differential-privacy-algorithm.png"
+    <img src="/img/posts/data-pipeline-in-candig/figure2.png"
     width="95%" style="margin: 10px 10px 10px 10px;">
     <figcaption>Figure 2: ARGO Rendered Data in JSON format</figcaption>
  </figure>
