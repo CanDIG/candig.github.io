@@ -6,6 +6,33 @@ author: Niharika Srivatsa
 date: 2022-05-04
 ---
 
+<!-- The code for table styling was copied from Courtney Gosselin's blog post markdown file. https://github.com/CanDIG/candig.github.io/blob/production/_posts/2022-02-18-introduction-to-figma-and-design-principles.md -->
+
+<style> 
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+th { 
+    background: #17a018; 
+    color: white; 
+}
+
+table, th, td { 
+    padding: 0.5em; 
+    margin: 0.5em; 
+}
+
+table tr:hover { 
+    background: #D6EEDC; 
+}
+
+table tr:nth-child(even){ 
+    background: #f2f2f2; 
+} 
+</style>
+
 Data is key to CanDIG’s operations. CanDIG is constantly receiving data from various sources, including different clinical trials. In the past year, CanDIG received data from over seven different clinical trials. About 97% of all cancer data is recorded in Electronic Health Records (EHRs) in various institutions and cohorts. The data in these institutions and cohorts all differ in data models and standardizations. This poses an issue for the analysis and reporting of health related research. A solution includes developing strong and maintainable data pipelines to effectively convert cohort data into a standard data model. This would ensure a meaningful exchange of health information within a shared framework and make analysis and reporting of oncology-related research more effective.
 
 ## Overview of CanDIG’s Data Pipeline
