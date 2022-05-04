@@ -84,9 +84,9 @@ functions:
 
 Finally, the last two steps are to ingest the mCODE packet received into the destination source (Katsu) and use its rendering functionalities to render the data in ARGO format. This process can be automated with a python script and is reusable across cohorts. Hence, the only changes in the pipeline between cohorts would be the individual transformation functions. Below is some synthetic data rendered in ARGO format.
 
-<figure style="margin-bottom: 1em; margin-top: 1em;">
+<figure style="margin-bottom: 1em; margin-top: 1em text-align: center;">
     <img src="/img/posts/data-pipeline-in-candig/figure2.png"
-    width="95%" style="margin: 10px 10px 10px 10px;">
+    width="60%" style="margin: 10px 10px 10px 10px;">
     <figcaption>Figure 2: ARGO Rendered Data in JSON format</figcaption>
  </figure>
  
