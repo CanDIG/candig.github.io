@@ -29,9 +29,9 @@ When building the pipeline it is preferential to start one cohort and complete t
 
 ### Step 2: Translate to mCODE
 
-Once extraction is complete, transforming clinical cohort data into mCODE can begin. The clinical ETL build makes the process easier. We start off filling this mapping template. To start, create a folder that includes the following three files:
+Once extraction is complete, transforming clinical cohort data into mCODE can begin. The clinical ETL tool build makes the process easier. We start off filling this mapping template. To start, create a folder that includes the following three files:
 
-**A.** Make a mapping template CSV file that follows this format. The value on the left is the mCODE element and the value on the right is the cohort element with its transformation function. Some transformation functions can be reused, such as single_val. This function takes in the value at mapping elements and combines into one and returns it. The date function that standardizes the ISO standard,  Whereas all other transformation functions are cohort-specific and must be defined in a separate file. 
+**A.** Make a mapping template CSV file that follows this format. The value on the left is the mCODE element and the value on the right is the cohort element with its transformation function. Some transformation functions can be reused, such as `single_val`. This function takes in the value at mapping elements and combines into one and returns it. The `date` function that standardizes the ISO standard,  Whereas all other transformation functions are cohort-specific and must be defined in a separate file. 
 
 ```
 ## mcodepacket element, function(column-name)
@@ -68,7 +68,7 @@ def vital_signs_node(mapping):
         return new_dict
 ```
 
-This function takes in vital signs from different columns and saves them in a dictionary with mCODE appropriate schemas. In addition, it makes sure to check for null values before returning the dictionary. Some other examples of transformations might include: removing duplicate values, accounting for missing values, returning ontology codes, performing calculations, and combining or splitting up values of data.
+This function takes in `vital signs` from different columns and saves them in a dictionary with mCODE appropriate schemas. In addition, it makes sure to check for null values before returning the dictionary. Some other examples of transformations might include: removing duplicate values, accounting for missing values, returning ontology codes, performing calculations, and combining or splitting up values of data.
 
 **C.** The last step is to make a manifest file containing mapping functions used and mapping template files as shown below. Once this is done, the tool can be run by passing in the input dataset and manifest file. 
 
