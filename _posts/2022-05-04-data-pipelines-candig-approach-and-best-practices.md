@@ -82,13 +82,38 @@ functions:
 
 ### Step 3 & 4: Load and Render ARGO Data
 
-Finally, the last two steps are to ingest the mCODE packet received into the destination source (Katsu) and use its rendering functionalities to render the data in ARGO format. This process can be automated with a python script and is reusable across cohorts. Hence, the only changes in the pipeline between cohorts would be the individual transformation functions. Below is some synthetic data rendered in ARGO format.
+Finally, the last two steps are to ingest the mCODE packet received into the destination source (Katsu) and use its rendering functionalities to render the data in ARGO format. This process can be automated with a python script and is reusable across cohorts. Hence, the only changes in the pipeline between cohorts would be the individual transformation functions. Below an example of some synthetic data rendered in ARGO JSON format.
 
-<figure style="margin-bottom: 1em; margin-top: 1em text-align: center;">
-    <img src="/img/posts/data-pipeline-in-candig/figure2.png"
-    width="60%" style="margin: 10px 10px 10px 10px;">
-    <figcaption>Figure 2: ARGO Rendered Data in JSON format</figcaption>
- </figure>
+```
+{
+    "composition_objects": [
+        {
+            "donor": {
+                "submitter_donor_id": "INS-001",
+                "vital_status": true,
+                "gender": "Male"
+            },
+            "primary_diagnoses": [
+                {
+                    "submitter_primary_diagnosis_id": "1000-0",
+                    "cancer_type_code": {
+                        "id": "SNOMED:103329007",
+                        "label": "Not available"
+                    }
+                }
+            ],
+            "treatments": [
+                {
+                    "submitter_treatment_id": "1000-0",
+                    "treatment_type": "Radiation therapy",
+                    "radiation_therapy_modality": {
+                        "id": "SNOMED:103329007",
+                        "label": "Not available"
+                    },
+                    "anatomical_site_irradiated": "TONGUE BASE"
+                },
+               
+```
  
 ## Best Practices while writing ETL Pipelines
  
