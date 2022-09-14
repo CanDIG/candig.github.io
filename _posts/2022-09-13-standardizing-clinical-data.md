@@ -1,6 +1,6 @@
 ---
 layout: blogpost
-title: Data Pipelines - CanDIG’s Approach and Best Practices
+title: Standardizing Clinical Data for Canada-wide Cancer Research
 summary: Addressing the heterogeneity in standards for clinical data sharing
 author: Javier Castillo-Arnemann
 date: 2022-09-14
