@@ -18,7 +18,7 @@ In addition, a good clinical data standard must translate the  natural-speech of
 
 <Center>
 
-![](/img/posts/standardizing-clinical-data/xkcd_standards.png#center)
+![](/img/posts/standardizing-clinical-data/xkcd_standards.png)
 
 Source: [xkcd](https://xkcd.com/)
 </Center>
