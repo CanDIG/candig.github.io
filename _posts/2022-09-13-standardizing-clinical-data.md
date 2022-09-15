@@ -14,13 +14,14 @@ Creating data models for biological processes is particularly difficult since th
 
 In addition, a good clinical data standard must translate the  natural-speech of a clinician into the rigid computer-speech of coding systems while minimizing the loss of meaning, a concept called semantic interoperability. Due to this complexity, there is still no single gold standard for clinical cancer data, and CanDIG’s data translation pipeline currently employs both the [mCODE](https://confluence.hl7.org/display/COD/mCODE/) and [ICGC-ARGO](https://www.icgc-argo.org/) models, resulting in some data loss during each translation step. 
 
-<br>
-
 <Center>
-
-![](/img/posts/standardizing-clinical-data/xkcd_standards.png)
-
-Source: [xkcd](https://xkcd.com/)
+ <figure>
+    <img src="/img/posts/standardizing-clinical-data/xkcd_standards.png"
+        width="50%" style="margin: 10px 10px 10px 10px;">
+        <figcaption>
+            Source: <a href="https://xkcd.com/">xkcd</a>
+        </figcaption>
+ </figure>
 </Center>
 
 ## CanDIG hosts genomic and clinical data to enable Canada-wide cancer research
@@ -43,9 +44,8 @@ Regardless of which data model is used, these are some guidelines to address the
 
 It is important to note that these issues are well-known in cancer research and not unique to CanDIG. The ongoing revolution in sequencing technologies has resulted in massive amounts of data, and the current challenge lies in organizing, analyzing and integrating it.
 
->*“There are currently no mechanisms to standardize the complex analyses, or efficient mechanisms for data sharing for cancer that will enable composite and pooled analyses of data from around the world.”*
-
->-[ICGC-ARGO](https://www.icgc-argo.org/)
+>*“There are currently no mechanisms to standardize the complex analyses, or efficient mechanisms for data sharing for cancer that will enable composite and pooled analyses of data from around the world.”*  
+-[ICGC-ARGO](https://www.icgc-argo.org/)
 
 This is why working on CanDIG is so exciting - we get to contribute to this effort and attempt something that has never been done before, enabling cancer research across Canada that will hopefully save lives and further our understanding of this complex disease.
 
