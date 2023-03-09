@@ -10,22 +10,29 @@ As a <a href="https://www.ga4gh.org">GA4GH</a> driver project, we
 work closely with our fellow driver projects - the largest genomics
 projects in the world - developing, testing, and implementing
 emerging standards for health genomics projects, on matters technical,
-of security, and of governance and ethics.  Through the GA4GH we
-collaborate with hospitals, universities, and major private sector
-companies like Amazon, Azure, and Google; and through international
-grants we are taking what Canada has learned about secure federated
+of security, and of governance and ethics.  Through 
+international grants we are taking what Canada has learned about 
+secure federated
 data analysis and introducing it to the international community.
 </p>
 
 <p>
-We have a modern software stack, with RESTful APIs, Python and Go,
-OpenID Connect, Swagger/OpenAPI, Docker and Singularity.  We have
+We have a modern software stack, with RESTful APIs, Python,
+OpenID Connect, Swagger/OpenAPI, and Docker.  We have
 a growing national profile, supporting important research projects
 like the <a
 href="https://www.marathonofhopecancercentres.ca/">Marathon of Hope Cancer Centres Networks</a>
 and the 
-<a href="https://genomecanada.ca/challenge-areas/cancogen/">Canadian COVD-19 Genomics Network</a>,
-and international visibility.</p>
+<a href="https://genomecanada.ca/challenge-areas/cancogen/">Canadian COVD-19 Genomics Network</a>.
+</p>
+
+<p>The CanDIG team is nationally-distributed, with members at the 
+<a href="https://uhndata.io/">UHN DATA group</a>, at McGill's 
+<a href="https://computationalgenomics.ca/">Canadian Centre for Computational Genomics</a>, 
+and at the <a href="https://bcgsc.ca/">BC Genome Sciences Centre</a>. We work as 
+a remote team, but all sites have physical offices that are available for local 
+staff. 
+</p>
 
 <p>
 Does that sound like something you'd like to be a part of?  Great!  We're frequently looking for new team mates!
@@ -43,6 +50,11 @@ Take a look below and see if any of these job look right for you; and if not, ch
                 <b><a href="{{job.url}}">{{job.title}}</a></b>
             {% else %}
                 <b>{{job.title}}</b>
+            {% endif %}
+            </p>
+            <p>
+            {% if job.postingdate %}
+            Posting Date: {{job.postingdate}}
             {% endif %}
             </p>
             <p class="job_description">
