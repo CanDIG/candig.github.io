@@ -52,6 +52,11 @@ Take a look below and see if any of these job look right for you; and if not, ch
                 <b>{{job.title}}</b>
             {% endif %}
             </p>
+            <p>
+            {% if job.postingdate %}
+            Posting Date: {{job.postingdate}}
+            {% endif %}
+            </p>
             <p class="job_description">
             {{job.description}}
             </p>
