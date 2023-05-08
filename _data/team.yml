@@ -10,13 +10,13 @@ people:
   firstname: Jonathan
   pic: jonathan_dursi.jpg
   position: Technical Lead
-  team: implementation
+  team: recent_alumni
 
 - name: Karen Cranston
   lastname: Cranston
   firstname: Karen
   pic: karen_cranston.jpg
-  position: Technical Project Manager
+  position: Technical Lead, UHN
   team: implementation
 
 - name: Jimmy Li
@@ -24,7 +24,7 @@ people:
   firstname: Jimmy
   pic: blank.jpg
   position: Research Programmer, BCGSC
-  team: implementation
+  team: recent_alumni
 
 - name: Courtney Gosselin
   lastname: Gosselin
@@ -52,7 +52,7 @@ people:
   firstname: Yuriy
   pic: blank.jpg
   position: Clin/Pheno Data Models, UHN
-  team: implementation
+  team: recent_alumni
 
 - name: Brendan O'Huiginn
   lastname: O'Huiginn
@@ -73,7 +73,7 @@ people:
   firstname: Shaikh
   pic: shaikh_rashid.jpg
   position: Architecture & Devops, UHN
-  team: implementation
+  team: recent_alumni
 
 - name: Brennan Brouillette
   lastname: Brouillette
@@ -94,14 +94,14 @@ people:
   firstname: Ksenia
   pic: ksenia_zaytseva.jpg
   position: Data Architect, C3G McGill
-  team: implementation
+  team: recent_alumni
 
 - name: Krista Pace
   lastname: Pace
   firstname: Krista
   pic: krista_pace.png
   position: Product Manager, UHN
-  team: implementation  
+  team: recent_alumni  
   
 - name: Daisie Huang
   lastname: Huang
@@ -115,7 +115,7 @@ people:
   firstname: Justin
   pic: justin_y.jpg
   position: University of Waterloo Software Development Co-Op, UHN
-  team: Implementation
+  team: implementation
   
 - name: Nebiyou Petros
   lastname: Petros
@@ -213,42 +213,42 @@ people:
   firstname: Rishabh
   pic: rishabh_sambare.jpg
   position: University of Waterloo Co-op, UHN
-  team: recent_alumni
+  team: alumni
 
 - name: Siyue Wang
   lastname: Wang
   firstname: Siyue
   pic: siyue-wang-uhn.jpg
   position: University of Toronto Co-op, UHN
-  team: recent_alumni
+  team: alumni
 
 - name: Samarth Agarwal
   lastname: Agarwal
   firstname: Samarth
   pic: blank.jpg
   position: University of Toronto Co-op, UHN
-  team: recent_alumni
+  team: alumni
   
 - name: Jessica Yang
   lastname: Yang    
   firstname: Jessica
   pic: jessica-yang-uhn.jpg
   position: Waterloo Co-op, UHN
-  team: recent_alumni
+  team: alumni
 
 - name: Dashaylan Naidoo
   lastname: Naidoo
   firstname: Dashaylan
   pic: dashaylan_naidoo.jpg
   position: Research Programmer, BCGSC
-  team: recent_alumni
+  team: alumni
 
 - name: Felipe Coral-Sasso
   lastname: Coral-Sasso
   firstname: Felipe
   pic: felipe_sasso.jpg
   position: Research Programmer, BCGSC
-  team: recent_alumni
+  team: alumni
 
 - name: Jackson Zheng
   lastname: Zheng
