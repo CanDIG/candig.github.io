@@ -109,7 +109,14 @@ people:
   pic: daisieh.jpg
   position: Bioinformatics Specialist, UHN
   team: implementation  
-
+  
+- name: Justin Young
+  lastname: Young
+  firstname: Justin
+  pic: justin_y.jpg
+  position: University of Waterloo Software Development Co-Op, UHN
+  team: Implementation
+  
 - name: Nebiyou Petros
   lastname: Petros
   firstname: Nebiyou
