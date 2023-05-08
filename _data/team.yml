@@ -10,7 +10,7 @@ people:
   firstname: Jonathan
   pic: jonathan_dursi.jpg
   position: Technical Lead
-  team: alumni
+  team: recent_alumni
 
 - name: Karen Cranston
   lastname: Cranston
@@ -24,7 +24,7 @@ people:
   firstname: Jimmy
   pic: blank.jpg
   position: Research Programmer, BCGSC
-  team: implementation
+  team: recent_alumni
 
 - name: Courtney Gosselin
   lastname: Gosselin
@@ -52,7 +52,7 @@ people:
   firstname: Yuriy
   pic: blank.jpg
   position: Clin/Pheno Data Models, UHN
-  team: alumni
+  team: recent_alumni
 
 - name: Brendan O'Huiginn
   lastname: O'Huiginn
@@ -73,7 +73,7 @@ people:
   firstname: Shaikh
   pic: shaikh_rashid.jpg
   position: Architecture & Devops, UHN
-  team: alumni
+  team: recent_alumni
 
 - name: Brennan Brouillette
   lastname: Brouillette
@@ -94,14 +94,14 @@ people:
   firstname: Ksenia
   pic: ksenia_zaytseva.jpg
   position: Data Architect, C3G McGill
-  team: alumni
+  team: recent_alumni
 
 - name: Krista Pace
   lastname: Pace
   firstname: Krista
   pic: krista_pace.png
   position: Product Manager, UHN
-  team: alumni  
+  team: recent_alumni  
   
 - name: Daisie Huang
   lastname: Huang
@@ -185,28 +185,28 @@ people:
   firstname: Niharika
   pic: niharikasrivatsa.jpg
   position: University of Waterloo Software Developer Co-op, UHN
-  team: alumni
+  team: recent_alumni
 
 - name: Laiba Zaman
   lastname: Zaman
   firstname: Laiba
   pic: blank.jpg
   position: University of Waterloo Software Developer Co-op, UHN
-  team: alumni
+  team: recent_alumni
 
 - name: Ali Raza Zaidi
   lastname: Zaidi
   firstname: Ali Raza
   pic: ali_raza_zaidi.jpg
   position: University of Waterloo Software Developer Co-op, UHN
-  team: alumni
+  team: recent_alumni
 
 - name: Amanjeev Sethi
   lastname: Sethi
   firstname: Amanjeev
   pic: amanjeev-sethi.jpg
   position: Software and Privacy, UHN
-  team: alumni
+  team: recent_alumni
   
 - name: Rishabh Sambare
   lastname: Sambare
