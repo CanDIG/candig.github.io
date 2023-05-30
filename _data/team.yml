@@ -396,3 +396,11 @@ people:
   pic: kevin_chan.jpg
   position: Authentication
   team: alumni
+
+- name: Francis Nguyen
+  lastname: Nguyen
+  firstname: Francis
+  pic: francis_nguyen.jpg
+  position: Application Development Specialist, UHN
+  team: implementation
+
