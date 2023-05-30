@@ -1,10 +1,3 @@
-CanDIG Variant Search 
-
-Francis Nguyen
-March 2, 2023
-An overview of CanDIG's ingestion and search of genomic variant data.
-One figure from below chosen as a primary figure
-
 ---
 layout: blogpost
 title: CanDIG Variant Search
@@ -37,17 +30,19 @@ Currently, HTSGet ingests data by creating Data Repository Service objects for e
 
 Suppose we have a region of the genome, and two VCFs containing SNVs at those locations like the following figure:
 
-
-<Center>
-![](/img/posts/variant-search/ingest-1.png)
-</Center>
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+    <img src="/img/posts/variant-search/ingest-1.png"
+    width="95%" style="margin: 10px 10px 10px 10px;">
+    <figcaption>Figure 1: Ingestion</figcaption>
+</figure>
 
 Since we use 10kbp bins, we create indexes for each SNV along those bins, like so:
 
-
-<Center>
-![](/img/posts/variant-search/ingest-2.png)
-</Center>
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+    <img src="/img/posts/variant-search/ingest-2.png"
+    width="95%" style="margin: 10px 10px 10px 10px;">
+    <figcaption>Figure 2: Binning</figcaption>
+</figure>
 
 This index of bins->VCF, and the headers for each VCF, is now stored in the SQLite database for easier retrieval.
 
@@ -61,19 +56,33 @@ When a search comes in, we:
 
 Suppose we have a request for a region covered by one of the VCFs above. First, this request is transformed into bins, and we search the index for each file covered by those bins:
 
-<Center>
-![](/img/posts/variant-search/search.png)
-</Center>
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+    <img src="/img/posts/variant-search/search.png"
+    width="95%" style="margin: 10px 10px 10px 10px;">
+    <figcaption>Figure 3: Search</figcaption>
+</figure>
 
 From the indexes, we know that PatientA.vcf has variants in this region. We can then grab the relevant segment via `pysam`, and combine with header information for the metadata.
 
 ## Frontend
 Two sections to the frontend. A summary landing page:
 
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+    <img src="/img/posts/variant-search/search.png"
+    width="95%" style="margin: 10px 10px 10px 10px;">
+    <figcaption>Figure 4: Summary page</figcaption>
+</figure>
+
 And a search page. There are many features to this search page:
 - A sidebar to filter results, similar to how other genomics sites allow you to filter data, passing these queries to the backend to obtain a paginated list on the frontend.
 - Data privacy is also respected -- if a researcher does not have the credentials necessary to view the patients, counts are returned instead.
 - As we implement the GA4GH HTSGet protocol, we are interoperable with software that can interface with it (e.g. IGV viewers)
+
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+    <img src="/img/posts/variant-search/searchpage.png"
+    width="95%" style="margin: 10px 10px 10px 10px;">
+    <figcaption>Figure 5: Search page</figcaption>
+</figure>
 
 ## Conclusion
 Genomic variants are variations in the genome that can be of interest to researchers. CanDIG allows researchers to find genomic variants of interest in a performant manner, using binning and indexes to speed up searches over the entire genome. These searches are supported by a frontend that shows the data privacy aspect of CanDIG, and implements GA4GH HTSGet.
