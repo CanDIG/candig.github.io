@@ -2,6 +2,7 @@
 layout: blogpost
 title: CanDIG Variant Search
 summary: An overview of CanDIG's ingestion and search of genomic variant data.
+image: /img/posts/variant-search/search.png
 author: Francis Nguyen
 date: 2023-05-30
 ---
