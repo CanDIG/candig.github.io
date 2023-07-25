@@ -11,8 +11,12 @@ date: 2023-07-05
 
 At CANDIG, we leverage [Docker](https://www.docker.com/) to streamline the [setup of microservices](https://github.com/CanDIG/CanDIGv2/blob/develop/docs/install-docker.md), providing a lightweight and adaptable environment across various platforms. However, using Docker adds a layer of complexity to developers' workflows. In this blog post, we will explore how Dev Environments can simplify development and streamline the process of creating, running, and sharing code.
 
-![Dev Environment](/img/posts/dev-env/dev-environments.png)
-*Docker Dev Environments*
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+  <img src="{{ site.url }}/img/posts/dev-env/dev-environments.png" 
+  alt="Docker Dev Environments" 
+  width="95%" style="margin: 10px 10px 10px 10px;">
+ <figcaption>Figure 1: Docker Dev Environments.</figcaption>
+</figure>
 
 ### Development with Docker: The Challenges
 
@@ -30,8 +34,13 @@ Developing applications using Docker can be challenging, especially when it come
 ### Introducing Docker Dev Environments
 
 To address these challenges, Docker introduced a new feature called Dev Environments to simplify the development workflow by providing quick and configurable environments with pre-configured code and tools. Developers can leverage an intuitive GUI to effortlessly launch and manage these containers, reducing the time spent on manual setup and enabling a seamless development experience.
-![Docker](/img/posts/dev-env/docker.png)
-*Docker Dev Environments Interface*
+
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+  <img src="{{ site.url }}/img/posts/dev-env/docker.png" 
+  alt="Docker Dev Environments Interface" 
+  width="95%" style="margin: 10px 10px 10px 10px;">
+ <figcaption>Figure 2: Docker Dev Environments Interface</figcaption>
+</figure>
 
 Let's take a closer look at how it works:
 
@@ -52,8 +61,12 @@ You can start by choosing an [example](https://github.com/docker/awesome-compose
 
 After selecting the example, set up your development environment:
 
-![Open VScode](/img/posts/dev-env/open-vscode.png)
-*Opening the Project in VSCode*
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+  <img src="{{ site.url }}/img/posts/dev-env/open-vscode.png" 
+  alt="Opening the Project in VSCode" 
+  width="95%" style="margin: 10px 10px 10px 10px;">
+ <figcaption>Figure 3: Opening the Project in VSCode</figcaption>
+</figure>
 
 1. Open the project in Visual Studio Code (VSCode).
 
@@ -79,11 +92,21 @@ If your teammate makes changes to the backend and asks you to review them, you c
    - Install the required dependencies: `npm install`.
    - Start the backend server with the debugger: `npm start`.
    - Set breakpoints or use the debugger as needed to investigate issues.
-![Debugger](/img/posts/dev-env/debugger.png)
-*Debugging the Backend with VSCode*
 
-![Breakpoint](/img/posts/dev-env/breakpoint.png)
-*Setting a Breakpoint for Investigation*
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+  <img src="{{ site.url }}/img/posts/dev-env/debugger.png" 
+  alt="Debugging the Backend with VSCode" 
+  width="95%" style="margin: 10px 10px 10px 10px;">
+ <figcaption>Figure 4: Debugging the Backend with VSCode</figcaption>
+</figure>
+
+
+<figure style="margin-bottom: 1em; margin-top: 1em;">
+  <img src="{{ site.url }}/img/posts/dev-env/breakpoint.png" 
+  alt="Setting a Breakpoint for Investigation" 
+  width="95%" style="margin: 10px 10px 10px 10px;">
+ <figcaption>Figure 5: Setting a Breakpoint for Investigation</figcaption>
+</figure>
 
 Once you're done with debugging, you can shut down the backend environment and return to working on the frontend.
 
