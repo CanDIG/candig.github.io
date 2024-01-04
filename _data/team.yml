@@ -115,14 +115,14 @@ people:
   firstname: Justin
   pic: justin_y.jpg
   position: University of Waterloo Software Development Co-Op, UHN
-  team: alumni
+  team: recent_alumni
   
 - name: Nebiyou Petros
   lastname: Petros
   firstname: Nebiyou
   pic: nebiyou_petros.jpg
   position: Clinical Research Data and Regulatory Coordinator, UHN
-  team: alumni
+  team: recent_alumni
   
 - name: Son Chau
   lastname:  Chau
@@ -407,7 +407,7 @@ people:
 - name: Marion Shadbolt
   lastname: Shadbolt
   firstname: Marion
-  pic:
+  pic: blank.jpg
   position: Technical Project Manager, UHN
   team: implementation
 
