@@ -80,7 +80,7 @@ people:
   firstname: Brennan
   pic: brennan_brouillette.jpg
   position: Software & DevOps, C3G McGill
-  team: implementation
+  team: alumni
   
 - name: Samantha Palmer
   lastname: Palmer
@@ -115,14 +115,14 @@ people:
   firstname: Justin
   pic: justin_y.jpg
   position: University of Waterloo Software Development Co-Op, UHN
-  team: implementation
+  team: alumni
   
 - name: Nebiyou Petros
   lastname: Petros
   firstname: Nebiyou
   pic: nebiyou_petros.jpg
   position: Clinical Research Data and Regulatory Coordinator, UHN
-  team: implementation
+  team: alumni
   
 - name: Son Chau
   lastname:  Chau
@@ -402,5 +402,12 @@ people:
   firstname: Francis
   pic: francis_nguyen.jpg
   position: Application Development Specialist, UHN
+  team: implementation
+
+- name: Marion Shadbolt
+  lastname: Shadbolt
+  firstname: Marion
+  pic:
+  position: Technical Project Manager, UHN
   team: implementation
 
