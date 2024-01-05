@@ -38,3 +38,6 @@ Icon
 
 *~
 *.swp
+
+#PyCharm files
+.idea/*
