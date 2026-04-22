@@ -3,7 +3,7 @@ twitter_username: distribgenomics
 
 # Site settings
 title: CanDIG
-email: Jonathan.Dursi@sickkids.ca
+email: info@distributedgenomics.ca
 description: "CanDIG enables national-scale analysis of locally-controlled private genomic data"
 
 collections:
@@ -16,8 +16,6 @@ collections:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/distribgenomics
   - title: github
     url: http://github.com/candig
   - title: envelope
