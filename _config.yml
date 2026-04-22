@@ -33,3 +33,5 @@ plugins:
 - jekyll-autoprefixer
 
 include: [ "_pages" ]
+
+encoding: utf-8
