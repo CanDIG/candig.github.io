@@ -31,7 +31,7 @@ people:
   firstname: Courtney
   pic: courtney_gosselin.png
   position: Research Programmer, BCGSC
-  team: implementation
+  team: recent_alumni
  
 - name: Javier Castillo-Arnemann
   lastname: Castillo-Arnemann
@@ -82,8 +82,8 @@ people:
   position: Software & DevOps, C3G McGill
   team: alumni
   
-- name: Samantha Palmer
-  lastname: Palmer
+- name: Samantha Thompson
+  lastname: Thompson
   firstname: Samantha
   pic: samantha_palmer.png
   position: Health Data Policy, UHN
