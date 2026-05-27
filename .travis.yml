@@ -1,8 +1,12 @@
 language: ruby
 rvm:
-  - 2.6.3
+  - 4.0.3
 python:
   - 2.7
+before_install:
+  - export LANG="en_US.UTF-8"
+  - export LANGUAGE="en_US.UTF-8"
+  - export LC_ALL="C.UTF-8"
 install: 
   - gem install jekyll bundler ffi
   - bundle update
@@ -12,7 +16,7 @@ script:
   - bundle exec jekyll build
 deploy:
   on:
-    branch: production
+    all_branches: true
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
@@ -21,6 +25,7 @@ deploy:
   skip_cleanup: true
   local_dir: _site
   acl: public_read
+
 after_deploy:
   - aws configure set preview.cloudfront true
   - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"

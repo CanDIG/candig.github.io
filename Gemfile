@@ -20,8 +20,13 @@ gem "jekyll"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem 'jekyll-autoprefixer'
    gem 'jekyll-paginate'
    gem 'jekyll-feed'
    gem 'kramdown-parser-gfm'
+   gem 'logger'
+   gem 'csv'
+   gem 'base64'
+   gem 'bigdecimal'
 end
+
+gem "webrick", "~> 1.9"
