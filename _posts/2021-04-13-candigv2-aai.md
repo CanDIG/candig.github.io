@@ -80,4 +80,4 @@ Right now we ask Tyk to do a *lot* — OIDC RP, session management, API gateway,
 
 As mentioned, we currently enforce the OPA-made policy decisions in the data services themselves.  That works, but we would like to be writing less authorization code than this requires, and protecting the data as close to the persistence layer as possible.  Slightly further down the road than any changes in our use of Tyk, we aim to push more policy enforcement into the data persistence layer itself (the databases and MinIO).  Not only will this be safer and require less code, it will enable some fairly cool things in the future.
 
-And that’s our CanDIGv2 AuthN/Z stack.  Do you have any questions?  Feel free to contact us at info@distributedgenomics.ca, or on Twitter at [@distribgenomics](https://twitter.com/distribgenomics).
+And that’s our CanDIGv2 AuthN/Z stack.  Do you have any questions?  Feel free to contact us at {% include email.html %}.

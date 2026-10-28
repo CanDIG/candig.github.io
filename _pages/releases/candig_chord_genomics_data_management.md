@@ -28,7 +28,7 @@ aims to address these data issues across fields, by funding software development
 for [nine National Data Services](https://www.canarie.ca/rdm-funding-call-recipients/) in fields as 
 diverse as ocean studies, quantitative social sciences, and genomics.
 
-In genomics, this service will be built upon [CanDIG](https://www.distributedgenomics.ca)
+In genomics, this service will be built upon [CanDIG](https://candig.github.io)
 &mdash; the Canadian Distributed Infrastructure for Genomics &mdash; which provides
 a national platform for enabling large-scale genomic analyses across 
 private datasets controlled by the local institutions who are responsible for the data.

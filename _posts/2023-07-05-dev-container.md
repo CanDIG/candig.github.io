@@ -23,7 +23,7 @@ At CANDIG, we leverage [Docker](https://www.docker.com/) to streamline the [setu
 Developing applications using Docker can be challenging, especially when it comes to certain aspects of the development workflow. Here are some common pain points faced by developers:
 
 1. **Setting up the Debugger:** 
-   Configuring the debugger to work seamlessly with a Dockerized application can be complicated, especially with a complex stack like [CANDIG](https://www.distributedgenomics.ca/posts/candigv2-aai/), where multiple services need to run simultaneously. Running a single service for debugging might not be enough to trace errors effectively.
+   Configuring the debugger to work seamlessly with a Dockerized application can be complicated, especially with a complex stack like [CANDIG](/posts/candigv2-aai/), where multiple services need to run simultaneously. Running a single service for debugging might not be enough to trace errors effectively.
 
 2. **Slow Testing:** 
    Reviewing pull requests or making changes can be time-consuming, as it often involves rebuilding the entire container or stack. This disrupts the current working environment when switching between branches or features. Developers need a faster and more efficient approach to test changes without compromising productivity.

@@ -32,16 +32,11 @@ And, absent any errors you'll be able to view the website at `http://localhost:4
 As you edit files, jekyll will re-build periodicially for frequent updates.  The generated
 pages are in the `_site` directory if you want to directly view the outputs.
 
-Commits will trigger a Cloudflare Pages build after a few minutes; PRs will be updated with links
-ot previews.  For changes and updates, make a PR and request a review so everyone can benefit
-from the preview.
+The site is published at https://candig.github.io. Pushes to the `production` branch trigger the
+GitHub Actions workflow in `.github/workflows/pages_deploy.yml`, which builds the site and deploys it
+to GitHub Pages. For changes and updates, make a PR and request a review before merging.
 
-Note for building locally: for Historical Reasons (tm), people still point to candig.github.io, and we want
-them to be redirected to the real URL.  By default Jekyll builds with the Jekyll `environment`
-variable set to `development`; the GitHub pages deployment builds with the variable set to
-`production`.  So if environment is not `development`, a meta refresh tag is included in the
-header (`_includes/head.html`) to refresh to distributedgenomics.ca (properly, `{{ site.url }}`;
-otherwise it doesn't.  You can test this behaviour by setting the environment variable explicitly:
+The deployment builds with `JEKYLL_ENV=production`; to check a production build locally, run
 
 ```
 JEKYLL_ENV=production bundle exec jekyll serve

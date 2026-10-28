@@ -38,7 +38,7 @@ Regardless of which data model is used, these are some guidelines to address the
 
 - Discuss with researchers, clinicians, data custodians and developers to define a set of required data fields that must be included and complete for clinical data to be loaded into CanDIG, taking into account common analysis and research questions. 
 - Record these fields in a specification document that we can share with data custodians, who would then ensure these data are included.
-- Develop a set of software tools to translate and standardize clinical data across cohorts and quantify how much data is lost during translation. For more details on this process, read [Niharika's blog post](https://www.distributedgenomics.ca/posts/data-pipelines-candig-approach-and-best-practices/).
+- Develop a set of software tools to translate and standardize clinical data across cohorts and quantify how much data is lost during translation. For more details on this process, read [Niharika's blog post](/posts/data-pipelines-candig-approach-and-best-practices/).
 
 ## Final thoughts
 
@@ -49,5 +49,5 @@ It is important to note that these issues are well-known in cancer research and 
 
 This is why working on CanDIG is so exciting - we get to contribute to this effort and attempt something that has never been done before, enabling cancer research across Canada that will hopefully save lives and further our understanding of this complex disease.
 
-Do you have any questions? Feel free to contact us at [info@distributedgenomics.ca](mailto:info@distributedgenomics.ca) or on Twitter at [@distribgenomics](https://twitter.com/distribgenomics).
+Do you have any questions? Feel free to contact us at {% include email.html %}.
 

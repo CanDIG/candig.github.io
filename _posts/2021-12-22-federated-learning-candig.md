@@ -150,6 +150,6 @@ While there are several other considerations and processes (particularly in secu
 [Tensorflow Federated]: https://www.tensorflow.org/federated
 [NVFlare]: https://github.com/NVIDIA/NVFlare
 [Flower]: https://flower.dev/
-[GraphQL Interface]: https://www.distributedgenomics.ca/posts/secure-cross-service-graphql-interface/
-[Secure Cross-service GraphQL Interface]: https://www.distributedgenomics.ca/posts/secure-cross-service-graphql-interface/
+[GraphQL Interface]: /posts/secure-cross-service-graphql-interface/
+[Secure Cross-service GraphQL Interface]: /posts/secure-cross-service-graphql-interface/
 [Katsu]: https://github.com/CanDIG/katsu
