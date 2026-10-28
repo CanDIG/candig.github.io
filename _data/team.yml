@@ -38,7 +38,7 @@ people:
   firstname: Javier
   pic: javier_castillo-arnemann.jpg
   position: Research Programmer, BCGSC
-  team: implementation
+  team: recent_alumni
 
 - name: Zhibin Lu
   lastname: Lu
@@ -402,7 +402,7 @@ people:
   firstname: Francis
   pic: francis_nguyen.jpg
   position: Application Development Specialist, UHN
-  team: implementation
+  team: recent_alumni
 
 - name: Marion Shadbolt
   lastname: Shadbolt
