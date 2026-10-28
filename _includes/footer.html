@@ -10,11 +10,12 @@
                         <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
                         </li>
                         {% endfor %}
+                        <li>{% include email.html text='<i class="fa fa-envelope"></i>' %}</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="mailto:info@distributedgenomics.ca">Contact Us</a>
+                        <li>{% include email.html text="Contact Us" %}
                         </li>
                     </ul>
                 </div>

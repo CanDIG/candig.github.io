@@ -1,0 +1,8 @@
+{%- comment -%}
+  Contact email link, obfuscated against scrapers. The address is stored reversed in data
+  attributes and assembled by js/email.js, which copies it to the clipboard on click. Without JavaScript, readers see
+  "user [at] domain [dot] tld". Usage: {% include email.html %} or {% include email.html text="Contact Us" %}
+{%- endcomment -%}
+{%- assign user = site.contact_email.user -%}
+{%- assign domain = site.contact_email.domain -%}
+<a class="obfuscated-email" data-u="{{ user | split: '' | reverse | join: '' }}" data-d="{{ domain | split: '' | reverse | join: '' }}"{% if include.text %} data-keep-text="true"{% endif %}>{% if include.text %}{{ include.text }}{% else %}{{ user | replace: '.', ' [dot] ' }} [at] {{ domain | replace: '.', ' [dot] ' }}{% endif %}</a>

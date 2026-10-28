@@ -129,5 +129,5 @@ Finally, the last two steps are to ingest the mCODE packet received into the des
 
 Upon further inspection of cohort data and the ARGO rendered, we see that there is a slight data loss. We can attribute this to the fact that there are elements in the ARGO data model that don't exist in mCODE, but when cohort data was translated to mCODE, this data was lost. Although the data loss is limited, one way to prevent this would be to use the clinical ETL tool directly to transform the data into ARGO instead of mCODE. To do so, the destination source Katsu must support the ARGO ingestion. This can be implemented either in the existing service or a new service entirely. A NoSQL based service might be one option to support heterogeneous or dynamic data.
  
-For any questions,  feel free to contact us at [info@distributedgenomics.ca](mailto:info@distributedgenomics.ca) or on Twitter at [@distribgenomics](https://twitter.com/distribgenomics).
+For any questions,  feel free to contact us at {% include email.html %}.
 

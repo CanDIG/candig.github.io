@@ -282,7 +282,7 @@ The 13 design principles are used to guide and understand design. There is no on
 - [Figma Tutorial - A Free UI Design/Prototyping Tool. It's awesome. by DesignCourse](https://www.youtube.com/watch?v=3q3FV65ZrUs)
 
 <br>
-Do you have any questions? Feel free to contact us at [info@distributedgenomics.ca](mailto:info@distributedgenomics.ca) or on Twitter at [@distribgenomics](https://twitter.com/distribgenomics).
+Do you have any questions? Feel free to contact us at {% include email.html %}.
 
 
 
