@@ -2,7 +2,7 @@ name: Deploy Jekyll site to GitHub Pages
 
 on:
   push:
-    branches: [production]
+    branches: [production, mshadbolt/github-pages-deploy] # TEMP: test deploy from branch, revert before merge
   pull_request: # build only, to check PRs; deploy is skipped
     branches: [production]
   workflow_dispatch:
