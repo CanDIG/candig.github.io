@@ -27,7 +27,7 @@ The ClinDIG project builds on CanDIG's experience supporting access to national 
 
 ###
                               
-For more information, contact: Jonathan Dursi, Staff Scientist, UHN and Technical Lead, CanDIG; info@distributedgenomics.ca
+For more information, contact: Jonathan Dursi, Staff Scientist, UHN and Technical Lead, CanDIG; {% include email.html %}
 
 **About CanDIG:**
 

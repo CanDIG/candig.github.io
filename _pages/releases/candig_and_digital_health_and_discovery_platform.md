@@ -89,6 +89,6 @@ Sciences Centre, Jewish General Hospital and Université de Sherbrooke.
 It is also a collaboration with Genome Canada, Compute Canada and
 CANARIE.
 
-email: [info@distributedgenomics.ca](mailto:info@distributedgenomics.ca)
+email: {% include email.html %}
 
-website: [www.distributedgenomics.ca](http://www.distributedgenomics.ca)
+website: [candig.github.io](https://candig.github.io)

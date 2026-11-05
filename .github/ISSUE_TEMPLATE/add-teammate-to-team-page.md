@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Submit a pull request with a square jpg representing you (a photo, or an avatar of some sort; recommended resolution 1280x1280) in `img/team` and adding your info to `_data/team.yml` in this repo - that’ll show up (after a little delay) on https://www.distributedgenomics.ca/team.html .
+Submit a pull request with a square jpg representing you (a photo, or an avatar of some sort; recommended resolution 1280x1280) in `img/team` and adding your info to `_data/team.yml` in this repo - that’ll show up (after a little delay) on https://candig.github.io/team.html .
 
 You can copy (say) Matthew Wong's info block in `_data/team.yml` and change `team: alumni` to `team: implementation` (along with name, image name, etc).
 

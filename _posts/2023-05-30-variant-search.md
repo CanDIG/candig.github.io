@@ -88,7 +88,7 @@ There are many features to this search page:
 CanDIG allows researchers to find genomic variants of interest in a performant manner, using binning and indexes to speed up searches over the entire genome. These searches are supported by a frontend that shows the data privacy aspect of CanDIG and implements GA4GH HTSGet.
 
 Do you have any questions? Feel free to contact us at
-info@distributedgenomics.ca or on Twitter at @distribgenomics.
+{% include email.html %}.
 
 
 

@@ -1,9 +1,10 @@
-url: https://www.distributedgenomics.ca
-twitter_username: distribgenomics
+url: https://candig.github.io
 
 # Site settings
 title: CanDIG
-email: info@distributedgenomics.ca
+contact_email:  # split to deter scrapers; rendered by _includes/email.html
+  user: karen.cranston
+  domain: uhn.ca
 description: "CanDIG enables national-scale analysis of locally-controlled private genomic data"
 
 collections:
@@ -18,8 +19,6 @@ collections:
 social:
   - title: github
     url: http://github.com/candig
-  - title: envelope
-    url: mailto:info@distributedgenomics.ca
 
 # Build settings
 markdown: kramdown

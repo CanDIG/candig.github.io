@@ -102,7 +102,7 @@ As of April 2022, the platform does not seem to support editing App Spec online 
 
 Depending on the needs, the DigitalOceans App Platform could be a good option for hosting static applications. The hosting is free for up to three static sites, and the overall deployment process is straightforward.
 
-Do you have any questions? Feel free to contact us at info@distributedgenomics.ca or on Twitter at @distribgenomics.
+Do you have any questions? Feel free to contact us at {% include email.html %}.
 
 ## Reference Materials
 - [The official guide on how to deploy react.js apps](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-to-digitalocean-app-platform)

@@ -110,7 +110,7 @@ However, there is no server-side differential privacy currently implemented. Thi
 Nevertheless, a custom differentially private algorithm can be added for future experiments by modifying the [`Strategy`] abstract base class in Flower. Since this class inherits from the `FedAvg` class, there are some parameters that need to be maintained in order to be compatible with the `fl-server`. These parameters are `on_fit_config_fn`, `eval_fn` and `min_available_clients`.
 
 
-Do you have any questions? Feel free to contact us at [info@distributedgenomics.ca] or on Twitter at [@distribgenomics].
+Do you have any questions? Feel free to contact us at {% include email.html %}.
 
 Reference Links
 - [Docs folder in Federated Learning Repository]
@@ -134,5 +134,3 @@ Reference Links
 [Diffprivlib documentation]: https://diffprivlib.readthedocs.io/en/latest/modules/models.html
 [Differentially Private Federated Learning]: http://kth.diva-portal.org/smash/get/diva2:1415980/FULLTEXT01.pdf
 [Differential privacy definitions]: https://medium.com/@shaistha24/differential-privacy-definition-bbd638106242
-[info@distributedgenomics.ca]: mailto:info@distributedgenomics.ca
-[@distribgenomics]: https://twitter.com/distribgenomics

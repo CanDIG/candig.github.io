@@ -76,7 +76,7 @@ be found [here](https://www.ebi.ac.uk/about/news/press-releases/CINECA-facilitat
 CanDIG is a Canadian national health and genomics platform for allowing
 authorized queries and analysis of data over locally-controlled private
 data sets. For more information, see
-[distributedgenomics.ca](https://www.distributedgenomics.ca/)
+[candig.github.io](https://candig.github.io)
 
 [^1]: Common Infrastructure for National Cohorts in Europe, Canada, and Africa
 

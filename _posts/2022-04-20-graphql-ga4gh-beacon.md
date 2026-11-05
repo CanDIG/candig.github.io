@@ -211,7 +211,7 @@ We have only modelled one GA4GH REST API as a GraphQL service here, but there ar
 
 <br>
 
-Do you have any questions? Feel free to contact us at [info@distributedgenomics.ca] or on Twitter at [@distribgenomics].
+Do you have any questions? Feel free to contact us at {% include email.html %}.
 
 <hr/>
 
@@ -220,10 +220,10 @@ Do you have any questions? Feel free to contact us at [info@distributedgenomics.
 
 <!-- links -->
 
-[quest]: https://www.distributedgenomics.ca/architecture
+[quest]: /architecture.html
 [ga4gh]: https://ga4gh.org
 [over-fetching and under-fetching]: https://www.howtographql.com/basics/1-graphql-is-the-better-rest/
-[goes into greater depth]: https://www.distributedgenomics.ca/posts/secure-cross-service-graphql-interface/
+[goes into greater depth]: /posts/secure-cross-service-graphql-interface/
 [beacon]: https://beacon-project.io/
 [beacon elixir]: https://github.com/ga4gh-beacon/beacon-elixir
 [standard]: https://github.com/ga4gh-beacon/specification/blob/master/beacon.md
@@ -233,5 +233,3 @@ Do you have any questions? Feel free to contact us at [info@distributedgenomics.
 [katsu]: https://github.com/CanDIG/katsu/blob/develop/README.md
 [beacon rest api specs]: https://github.com/ga4gh-beacon/specification/blob/master/beacon.md
 [faster]: https://softwareengineering.stackexchange.com/questions/286788/what-is-faster-using-rest-api-or-querying-a-database-directly
-[info@distributedgenomics.ca]: mailto:info@distributedgenomics.ca
-[@distribgenomics]: https://twitter.com/distribgenomics

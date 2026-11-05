@@ -29,8 +29,8 @@ research studies performed internationally.  This depends on standards
 for exchanging knowledge between and within these studies in a
 standard, interoperable, and secure way.
 
-Today in Orlando it was announced that [CanDIG](http://distributedgenomics.ca) will help drive the
-development of those standards.  [CanDIG](http://distributedgenomics.ca) is a Canadian approach to
+Today in Orlando it was announced that [CanDIG](https://candig.github.io) will help drive the
+development of those standards.  [CanDIG](https://candig.github.io) is a Canadian approach to
 building a genomics research platform, allowing researchers to study
 national-scale genomic data sets while respecting provincial
 jurisdiction of health data and privacy.
@@ -59,12 +59,12 @@ to learn from each other and share data and resources between the
 two,” said Peter Goodhand of the Ontario Institute for Cancer
 Research.
 
-By contributing to this international effort, [CanDIG](http://distributedgenomics.ca) will advance
+By contributing to this international effort, [CanDIG](https://candig.github.io) will advance
 Canadian health research, building Canadian tools that are interoperable
 with those of international colleagues while respecting Canada's
 federation.  In addition, work on best practices for privacy and
 security will ensure the protection of Canadian patient data within
-the [CanDIG](http://distributedgenomics.ca) platform.
+the [CanDIG](https://candig.github.io) platform.
 
 “International collaboration is THE critical ingredient for success
 in harnessing lifesaving insights from the vast amounts of human

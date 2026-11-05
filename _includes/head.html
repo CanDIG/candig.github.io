@@ -1,7 +1,4 @@
 <head>
-    {% if jekyll.environment != "development" %}  <!-- for Jekyll builds on Github -->
-    <meta http-equiv="Refresh" content="0; url={{site.url}}{{ page.url }}" />
-    {% endif %}
     <meta name="environment" content="{{ jekyll.environment }}">
 
     <meta charset="utf-8">
@@ -22,15 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <!-- Twitter cards: thank you, https://brianbunke.com/blog/2017/09/06/twitter-cards-on-jekyll/ -->
-    <meta name="twitter:site"    content="@{{ site.twitter_username }}">
     <meta name="twitter:creator" content="{{ page.author }}">
     {% if page.title %}
       <meta name="twitter:title"   content="{{ page.title }}">
@@ -53,5 +42,4 @@
       <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/img/logo_only.png">
     {% endif %}
 
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "80f255d49b114086bdd92097713ef50b"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
